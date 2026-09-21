@@ -1,6 +1,6 @@
 # Documentación del Proyecto - Inscripción 2027
 
-Este documento contiene la información técnica, la estructura del proyecto y la guía de uso del sistema de control de versiones y respaldos automáticos para el archivo `index.html`.
+Este documento contiene la información técnica, la estructura del proyecto, la gestión del trabajo colaborativo y la guía de uso del sistema de control de versiones para `index.html`.
 
 ---
 
@@ -12,22 +12,31 @@ Este documento contiene la información técnica, la estructura del proyecto y l
 
 ---
 
-## 📁 Archivos del Proyecto
+## 👥 Trabajo Colaborativo (Múltiples personas al mismo tiempo)
 
-- **`index.html`**: Página principal del sistema de inscripción (gestionada con control de versiones estricto).
-- **`paso1.html`**: Formulario / Paso 1 del proceso de inscripción.
-- **`paso2.html`**: Formulario / Paso 2 del proceso de inscripción.
-- **`articulo7-extranjeros.html`**: Sección / Requisitos del Artículo 7 para aspirantes extranjeros.
-- **`AGENTS.md`**: Reglas y directivas de trabajo para el asistente de desarrollo.
-- **`.agents/rules/git_versioning.md`**: Regla automática de control de versiones.
+### ¿Qué pasa si dos personas trabajan simultáneamente en el mismo archivo?
+
+1. **Si modifican partes/secciones distintas:** Git fusiona (merge) automáticamente los cambios de ambas personas sin que nadie pierda nada.
+2. **Si modifican exactamente las mismas líneas:** Git detecta un **conflicto**, congela la fusión y marca las líneas en conflicto (`<<<<<<<` / `>>>>>>>`) para decidir qué versión mantener. **Nunca se sobreescribe ni se borra trabajo a ciegas**.
+
+### ¿Cómo tener siempre la última versión online de forma automática?
+
+En este proyecto se estableció una **regla de trabajo automática**:
+- **Paso 1 (Automático antes de modificar):** El asistente ejecuta `git pull origin main` para traer a tu disco local cualquier cambio recién subido a GitHub por tus compañeros.
+- **Paso 2 (Automático al terminar la modificación):** Se crea el commit respaldando la versión en el historial local.
+- **Paso 3 (Automático al publicar):** Se ejecuta `git push origin main --tags` para subir tu nueva versión a GitHub.
 
 ---
 
-## 🛡️ Sistema de Control de Versiones y Respaldo para `index.html`
+## 📁 Archivos del Proyecto
 
-Cada vez que se trabaje en este proyecto y se modifique el archivo `index.html`, se genera de forma automática un **nuevo commit en Git** (y opcionalmente una etiqueta de versión como `v1.0.1`, `v1.0.2`, etc.).
-
-Esto garantiza que **nunca se pierda una versión previa funcional** y sea posible volver atrás en cualquier momento si surge un fallo o error en la versión nueva.
+- **`index.html`**: Página principal del sistema de inscripción.
+- **`paso1.html`**: Formulario / Paso 1 del proceso de inscripción.
+- **`paso2.html`**: Formulario / Paso 2 del proceso de inscripción.
+- **`articulo7-extranjeros.html`**: Requisitos del Artículo 7 para aspirantes extranjeros.
+- **`documentacion.md`**: Este documento de referencia y guía de uso.
+- **`AGENTS.md`**: Directivas de trabajo para el asistente de desarrollo.
+- **`.agents/rules/git_versioning.md`**: Regla de sincronización y versionado automático.
 
 ---
 
@@ -56,9 +65,13 @@ git restore --source=v1.0.0 index.html
 
 ---
 
-## 🚀 Comandos para Sincronizar con GitHub
+## 🚀 Comandos Manuales de Sincronización
 
-Para enviar manualmente los commits y tags locales al repositorio remoto:
-```bash
-git push origin main --tags
-```
+- **Descargar la última versión desde GitHub:**
+  ```bash
+  git pull origin main
+  ```
+- **Subir cambios locales a GitHub:**
+  ```bash
+  git push origin main --tags
+  ```

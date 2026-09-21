@@ -1,10 +1,15 @@
 # Reglas de Proyecto y Control de Versiones
 
-## Control de Versiones para `index.html`
+## Flujo de Trabajo Automático para `index.html`
 
-- **Cada modificación a `index.html` debe registrarse como un nuevo commit en Git** para asegurar que no se pierda ninguna versión funcional y sea posible restaurar versiones anteriores si surge algún problema.
-- Mensaje de commit estandarizado: `Actualizar index.html: [descripción de los cambios realizados]`.
-- Después de commitear localmente, ejecutar `git push origin main --tags`.
+1. **Antes de editar:** Ejecutar siempre `git pull origin main` para descargar la versión más reciente alojada en GitHub.
+2. **Después de editar:** Registrar los cambios inmediatamente en Git: `git commit -am "Actualizar index.html: [descripción]"`
+3. **Publicar cambios:** Subir la nueva versión a GitHub: `git push origin main --tags`
+
+## Manejo de Trabajo Concurrente (Múltiples personas)
+
+- Si otra persona subió cambios a GitHub mientras trabajabas, `git pull` descargará e integrará automáticamente esos cambios.
+- Si dos personas modificaron las mismas líneas exactamente, Git avisará de un **conflicto** para revisar y decidir qué versión conservar sin perder ningún cambio.
 
 ## Cómo Restaurar una Versión Anterior de `index.html`
 
