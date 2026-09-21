@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proceso de Inscripción UNLa 2026 · Paso 2: Autogestión y Pago de Tasa</title>
+
+<!-- Google Font: Archivo -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+<style>
+/* ===== ESTILOS ENCAPSULADOS BAJO #unla-insc-2026 ===== */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+
+#unla-insc-2026 {
+  font-family: 'Archivo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5; color: #1e293b; background-color: #f8fafc; padding: 24px 12px; box-sizing: border-box; scroll-behavior: smooth;
+}
+#unla-insc-2026 *, #unla-insc-2026 *::before, #unla-insc-2026 *::after { box-sizing: inherit; font-family: inherit; }
+#unla-insc-2026 .wrap { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+
+/* Enlaces base */
+#unla-insc-2026 a { color: #8c1d2c; text-decoration: none; font-weight: 600; transition: color 0.15s ease, text-decoration 0.15s ease; }
+#unla-insc-2026 a:hover, #unla-insc-2026 a:focus-visible { color: #5e0e25; text-decoration: underline; }
+
+/* Tarjetas (Cards) y encabezados */
+#unla-insc-2026 .card {
+  background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px 28px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.04), 0 2px 4px -2px rgba(0,0,0,0.03);
+}
+#unla-insc-2026 h1, #unla-insc-2026 h2, #unla-insc-2026 h3 { margin: 0 0 10px 0; font-weight: 700; line-height: 1.25; letter-spacing: -0.01em; }
+#unla-insc-2026 h1.hero-title { font-size: 1.55rem; color: #7c1331; display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+#unla-insc-2026 h3 { font-size: 1.15rem; color: #0f172a; display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+#unla-insc-2026 .intro-text { font-size: 1.02rem; color: #475569; margin-bottom: 0; }
+
+/* Pasos del proceso */
+#unla-insc-2026 .step-card {
+  background: #ffffff; border: 1px solid #e2e8f0; border-left: 5px solid #8c1d2c; border-radius: 14px;
+  padding: 20px 22px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+#unla-insc-2026 .step-card:hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(0,0,0,0.06); }
+#unla-insc-2026 .step-card p { margin: 8px 0; font-size: 0.95rem; color: #334155; }
+#unla-insc-2026 .step-card p:last-child { margin-bottom: 0; }
+#unla-insc-2026 .step-card ul { margin: 8px 0; padding-left: 22px; color: #334155; font-size: 0.95rem; }
+#unla-insc-2026 .step-card li { margin: 6px 0; }
+
+/* Resaltados y avisos */
+#unla-insc-2026 .important { font-weight: 700; color: #9f1239; }
+#unla-insc-2026 .alert-box {
+  background: #fff8f9; border: 1px solid #fecdd3; border-radius: 10px; padding: 12px 16px; margin: 10px 0;
+  font-size: 0.92rem; color: #9f1239; display: flex; gap: 8px; align-items: flex-start;
+}
+#unla-insc-2026 .link-box {
+  background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 10px; padding: 12px 16px; margin: 12px 0;
+  font-size: 0.95rem; display: flex; align-items: center; gap: 8px;
+}
+
+/* Botón flotante volver arriba */
+#unla-insc-2026 .back-to-top-btn {
+  position: fixed; bottom: 26px; right: 26px; width: 48px; height: 48px; border-radius: 50%; background: #8c1d2c;
+  color: #ffffff; border: 2px solid #ffffff; box-shadow: 0 4px 14px rgba(0,0,0,0.25); cursor: pointer; display: flex;
+  align-items: center; justify-content: center; font-size: 1.35rem; font-weight: 800; opacity: 0; visibility: hidden;
+  transform: translateY(16px); transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.2s ease, visibility 0.25s; z-index: 9999;
+}
+#unla-insc-2026 .back-to-top-btn.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+#unla-insc-2026 .back-to-top-btn:hover { background: #5e0e25; transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,0.3); }
+
+/* Responsividad & Impresión */
+@media (max-width: 768px) {
+  #unla-insc-2026 { padding: 16px 8px; }
+  #unla-insc-2026 .card, #unla-insc-2026 .step-card { padding: 16px 18px; border-radius: 12px; }
+  #unla-insc-2026 .back-to-top-btn { bottom: 18px; right: 18px; width: 44px; height: 44px; font-size: 1.2rem; }
+}
+@media print {
+  body, #unla-insc-2026 { background: #ffffff !important; color: #000000 !important; padding: 0 !important; }
+  #unla-insc-2026 .wrap { max-width: 100% !important; gap: 12px !important; }
+  #unla-insc-2026 .back-to-top-btn { display: none !important; }
+  #unla-insc-2026 .card, #unla-insc-2026 .step-card { box-shadow: none !important; border: 1px solid #cbd5e1 !important; page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<main id="unla-insc-2026">
+<div class="wrap">
+
+  <!-- ENCABEZADO -->
+  <header class="card">
+    <h1 class="hero-title">💳 Guía de Inscripción · Paso 2: Autogestión y Pago de Tasa</h1>
+    <p class="intro-text">
+      Una vez confirmado el correo electrónico de tu documentación, deberás acceder al sistema de autogestión estudiantil para generar tu usuario definitivo y abonar el cupón de la tasa de inscripción.
+    </p>
+  </header>
+
+  <!-- PASO 1 -->
+  <section class="step-card">
+    <h3><span>🌐</span> 1. Acceso a SIU-Guaraní 3W</h3>
+    <p>Una vez que hayas recibido el mail que confirma que tu documentación está aprobada, ingresá al sistema de autogestión estudiantil:</p>
+    <div class="link-box">
+      <span>👉</span>
+      <span>Portal de Autogestión: <a href="https://estudiantes.unla.edu.ar/autogestion3w/" target="_blank" rel="noopener noreferrer"><strong>https://estudiantes.unla.edu.ar/autogestion3w/ ↗</strong></a></span>
+    </div>
+    <p>Recordá que el cupón de pago estará habilitado <strong>24 horas hábiles posteriores</strong> a la llegada del mail de confirmación.</p>
+  </section>
+
+  <!-- PASO 2 -->
+  <section class="step-card">
+    <h3><span>👤</span> 2. Primer Ingreso y Generación de Contraseña</h3>
+    <p>Al ser tu primer ingreso en este sistema, deberás crear tu contraseña de acceso:</p>
+    <ul>
+      <li>Hacé click en el enlace: <span class="important">"¿Olvidaste tu contraseña o sos un usuario nuevo?"</span>.</li>
+      <li>Completá el campo <strong>Número de documento</strong> ingresando tu DNI sin puntos ni espacios.</li>
+      <li>Recibirás un correo electrónico en tu casilla registrada con un enlace seguro para crear tu clave. <em>(Revisá la bandeja de entrada y la carpeta de correo no deseado/spam)</em>.</li>
+      <li>Abrí el enlace, escribí y confirmá tu nueva contraseña y hacé click en <strong>"Acceder"</strong>.</li>
+      <li>Iniciá sesión completando el campo <strong>Usuario</strong> con tu número de DNI (sin puntos) y la <strong>Contraseña</strong> que acabás de definir.</li>
+    </ul>
+  </section>
+
+  <!-- PASO 3 -->
+  <section class="step-card">
+    <h3><span>📋</span> 3. Cupón de Pago de la Tasa de Inscripción</h3>
+    <p>Una vez dentro del portal de autogestión <strong>SIU-Guaraní 3W</strong>, finalizá el proceso con el pago correspondiente:</p>
+    <ul>
+      <li>El cupón de pago aparecerá en la plataforma <strong>a partir de las 24 horas hábiles</strong> desde la confirmación de tu documentación por email.</li>
+      <li>Hacé click sobre el cupón y el sistema te redirigirá a la pasarela de <strong>Mercado Pago</strong> para realizar el pago de forma digital y segura con tarjeta de débito, crédito o dinero en cuenta.</li>
+    </ul>
+    
+    <div class="alert-box">
+      <span>ℹ️</span>
+      <div>El abono de la tasa de inscripción se abona por única vez y se destina al fondo de becas estudiantiles de la Universidad.</div>
+    </div>
+  </section>
+
+  <!-- BOTÓN FLOTANTE VOLVER ARRIBA -->
+  <button type="button" id="btn-back-to-top" class="back-to-top-btn" title="Volver arriba" aria-label="Volver arriba">↑</button>
+
+</div>
+</main>
+
+<script>
+(function() {
+  "use strict";
+
+  const backToTopBtn = document.getElementById("btn-back-to-top");
+  if (backToTopBtn) {
+    window.addEventListener("scroll", () => {
+      backToTopBtn.classList.toggle("visible", window.scrollY > 300);
+    }, { passive: true });
+    backToTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  }
+})();
+</script>
+</body>
+</html>

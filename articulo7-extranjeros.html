@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Ingreso por Artículo 7 y Estudiantes Extranjeros · UNLa</title>
+
+<!-- Google Font: Archivo -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+<style>
+/* ===== ESTILOS ENCAPSULADOS BAJO #unla-insc-2026 ===== */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+
+#unla-insc-2026 {
+  font-family: 'Archivo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5; color: #1e293b; background-color: #f8fafc; padding: 24px 12px; box-sizing: border-box; scroll-behavior: smooth;
+}
+#unla-insc-2026 *, #unla-insc-2026 *::before, #unla-insc-2026 *::after { box-sizing: inherit; font-family: inherit; }
+#unla-insc-2026 .wrap { max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+
+/* Enlaces base */
+#unla-insc-2026 a { color: #8c1d2c; text-decoration: none; transition: color 0.15s ease, text-decoration 0.15s ease; }
+#unla-insc-2026 a:hover, #unla-insc-2026 a:focus-visible { color: #5e0e25; text-decoration: underline; }
+
+/* Tarjetas (Cards) y encabezados */
+#unla-insc-2026 .card {
+  background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px 28px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.04), 0 2px 4px -2px rgba(0,0,0,0.03);
+}
+#unla-insc-2026 h1, #unla-insc-2026 h2, #unla-insc-2026 h3 { margin: 0 0 12px 0; font-weight: 700; line-height: 1.25; letter-spacing: -0.01em; }
+#unla-insc-2026 h1.hero-title { font-size: 1.55rem; color: #7c1331; display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+#unla-insc-2026 h2 {
+  font-size: 1.35rem; color: #7c1331; display: flex; align-items: center; gap: 10px;
+  border-bottom: 2px solid #f1f5f9; padding-bottom: 12px; margin-bottom: 18px;
+}
+#unla-insc-2026 .intro-text { font-size: 1.02rem; color: #475569; margin-bottom: 14px; }
+
+/* Navegación rápida */
+#unla-insc-2026 .quick-nav-container { border-top: 1px solid #f1f5f9; padding-top: 16px; margin-top: 8px; }
+#unla-insc-2026 .quick-nav-label { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: #64748b; margin-bottom: 8px; display: block; }
+#unla-insc-2026 .quick-nav { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
+#unla-insc-2026 .quick-nav a {
+  display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; background: #f1f5f9; color: #334155;
+  border-radius: 999px; font-size: 0.88rem; font-weight: 600; border: 1px solid #e2e8f0; text-decoration: none; transition: all 0.2s ease;
+}
+#unla-insc-2026 .quick-nav a.highlight-nav { background: #fff1f2; color: #8c1d2c; border-color: #fecdd3; }
+#unla-insc-2026 .quick-nav a:hover { background: #8c1d2c; color: #ffffff; border-color: #8c1d2c; transform: translateY(-1px); }
+
+/* Listas de pasos y requisitos */
+#unla-insc-2026 .law-steps { padding-left: 20px; margin: 14px 0; }
+#unla-insc-2026 .law-steps li { margin-bottom: 10px; color: #334155; font-size: 0.96rem; line-height: 1.5; }
+#unla-insc-2026 .notice-box {
+  background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px 18px; margin-top: 14px;
+  font-size: 0.92rem; color: #475569; border-left: 4px solid #7c1331;
+}
+
+/* Banner de Aviso */
+#unla-insc-2026 .cta-banner {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); border: 2px dashed #f59e0b; border-radius: 14px;
+  padding: 20px 24px; text-align: center; display: flex; align-items: center; justify-content: center; gap: 14px;
+  color: #92400e; font-weight: 600; font-size: 1.05rem; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.08);
+}
+#unla-insc-2026 .cta-banner .cta-icon { font-size: 1.8rem; flex-shrink: 0; }
+
+/* Botón flotante volver arriba */
+#unla-insc-2026 .back-to-top-btn {
+  position: fixed; bottom: 26px; right: 26px; width: 48px; height: 48px; border-radius: 50%; background: #8c1d2c;
+  color: #ffffff; border: 2px solid #ffffff; box-shadow: 0 4px 14px rgba(0,0,0,0.25); cursor: pointer; display: flex;
+  align-items: center; justify-content: center; font-size: 1.35rem; font-weight: 800; opacity: 0; visibility: hidden;
+  transform: translateY(16px); transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.2s ease, visibility 0.25s; z-index: 9999;
+}
+#unla-insc-2026 .back-to-top-btn.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+#unla-insc-2026 .back-to-top-btn:hover { background: #5e0e25; transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,0.3); }
+
+/* Responsividad & Impresión */
+@media (max-width: 768px) {
+  #unla-insc-2026 { padding: 16px 8px; }
+  #unla-insc-2026 .card { padding: 18px 16px; border-radius: 12px; }
+  #unla-insc-2026 .cta-banner { flex-direction: column; font-size: 0.95rem; padding: 16px; }
+  #unla-insc-2026 .back-to-top-btn { bottom: 18px; right: 18px; width: 44px; height: 44px; font-size: 1.2rem; }
+}
+@media print {
+  body, #unla-insc-2026 { background: #ffffff !important; color: #000000 !important; padding: 0 !important; }
+  #unla-insc-2026 .wrap { max-width: 100% !important; gap: 12px !important; }
+  #unla-insc-2026 .quick-nav-container, #unla-insc-2026 .back-to-top-btn, #unla-insc-2026 .cta-banner { display: none !important; }
+  #unla-insc-2026 .card { box-shadow: none !important; border: 1px solid #cbd5e1 !important; padding: 14px 18px !important; page-break-inside: avoid; }
+  #unla-insc-2026 a { color: #000000 !important; text-decoration: none !important; }
+}
+</style>
+</head>
+<body>
+
+<main id="unla-insc-2026">
+<div class="wrap">
+
+  <!-- SECCIÓN: ENCABEZADO Y NAVEGACIÓN -->
+  <section class="card" aria-label="Ingreso Especial UNLa">
+    <h1 class="hero-title">📜 Modalidades Especiales de Ingreso · UNLa</h1>
+    <p class="intro-text">
+      Información y requisitos para postulantes mayores de 25 años sin título secundario (Artículo 7 de la Ley de Educación Superior) y estudiantes con estudios secundarios cursados en el extranjero.
+    </p>
+
+    <div class="quick-nav-container">
+      <span class="quick-nav-label">Navegación de secciones:</span>
+      <ul class="quick-nav" aria-label="Accesos directos">
+        <li><a href="#law-title" class="highlight-nav">📜 Ingreso por Artículo 7 (+25 años)</a></li>
+        <li><a href="#foreign-title">🌐 Estudiantes extranjeros</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: ARTÍCULO 7 -->
+  <section id="law-section" aria-labelledby="law-title" class="card law-section">
+    <h2 id="law-title">📜 Ingreso por Artículo 7 - Ley 24.521</h2>
+    <p class="intro-text">Las personas mayores de 25 años que no hayan finalizado sus estudios secundarios pueden ingresar a la Universidad siempre que reúnan los siguientes requisitos:</p>
+    <ol class="law-steps">
+      <li><strong>Edad:</strong> Tener 25 años cumplidos al momento de formalizar la inscripción.</li>
+      <li><strong>Experiencia laboral:</strong> Acreditar un mínimo de tres (3) años de experiencia laboral comprobable afín al área de la carrera elegida.</li>
+      <li><strong>Entrevista institucional:</strong> Aprobar la entrevista personal con la persona responsable de Secretaría Académica y la Dirección de la carrera.</li>
+      <li><strong>Examen general:</strong> Aprobar el examen referido a las cuatro áreas del conocimiento: Lengua, Matemática, Ciencias Sociales y Ciencias Naturales.</li>
+    </ol>
+    
+    <div class="notice-box">
+      ℹ️ La modalidad del examen, así como la fecha y horario de la entrevista individual, se comunicarán oportunamente a través de la casilla de correo electrónico informada por el aspirante.<br/>
+      Los aspirantes que aprueben satisfactoriamente la entrevista y el examen estarán en condiciones de ingresar a la carrera.
+    </div>
+  </section>
+
+  <!-- SECCIÓN: ESTUDIANTES EXTRANJEROS -->
+  <section id="foreign-section" aria-labelledby="foreign-title" class="card foreign-section">
+    <h2 id="foreign-title">🌐 Estudiantes Extranjeros</h2>
+    <p class="intro-text">
+      Si sos extranjero o completaste tus estudios secundarios en el exterior, debés convalidar tu título de nivel medio ante el Ministerio de Capital Humano / Educación de la Nación Argentina antes de formalizar tu ingreso.
+    </p>
+    <p style="margin: 12px 0 6px 0; font-size: 0.95rem; color: #334155;">
+      Este trámite requiere una solicitud previa de turno online. Para conocer los requisitos, documentación a presentar y realizar la solicitud, ingresá al sitio oficial del trámite nacional:
+    </p>
+    <p style="margin-top: 10px;">
+      👉 <a href="https://www.argentina.gob.ar/convalidar-titulo-secundario-de-paises-con-convenio" rel="noopener noreferrer" target="_blank"><strong>https://www.argentina.gob.ar/convalidar-titulo-secundario-de-paises-con-convenio ↗</strong></a>
+    </p>
+  </section>
+
+  <!-- BANNER: AVISO DE HABILITACIÓN DE FORMULARIO -->
+  <aside class="cta-banner" role="alert">
+    <span class="cta-icon" aria-hidden="true">⚠️</span>
+    <span>El botón de acceso al formulario de inscripción online se habilitará en este sitio web únicamente durante los días y horarios correspondientes a cada carrera.</span>
+  </aside>
+
+  <!-- BOTÓN FLOTANTE VOLVER ARRIBA -->
+  <button type="button" id="btn-back-to-top" class="back-to-top-btn" title="Volver arriba" aria-label="Volver arriba">↑</button>
+
+</div>
+</main>
+
+<script>
+(function() {
+  "use strict";
+
+  // Desplazamiento suave para enlaces ancla
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href.length > 1) {
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  });
+
+  // Botón flotante volver arriba
+  const backToTopBtn = document.getElementById("btn-back-to-top");
+  if (backToTopBtn) {
+    window.addEventListener("scroll", () => {
+      backToTopBtn.classList.toggle("visible", window.scrollY > 300);
+    }, { passive: true });
+    backToTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  }
+})();
+</script>
+</body>
+</html>

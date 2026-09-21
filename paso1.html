@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proceso de Inscripción UNLa 2026 · Paso 1: Preinscripción Online</title>
+
+<!-- Google Font: Archivo -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+<style>
+/* ===== ESTILOS ENCAPSULADOS BAJO #unla-insc-2026 ===== */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+
+#unla-insc-2026 {
+  font-family: 'Archivo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5; color: #1e293b; background-color: #f8fafc; padding: 24px 12px; box-sizing: border-box; scroll-behavior: smooth;
+}
+#unla-insc-2026 *, #unla-insc-2026 *::before, #unla-insc-2026 *::after { box-sizing: inherit; font-family: inherit; }
+#unla-insc-2026 .wrap { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+
+/* Enlaces base */
+#unla-insc-2026 a { color: #8c1d2c; text-decoration: none; font-weight: 600; transition: color 0.15s ease, text-decoration 0.15s ease; }
+#unla-insc-2026 a:hover, #unla-insc-2026 a:focus-visible { color: #5e0e25; text-decoration: underline; }
+
+/* Tarjetas (Cards) y encabezados */
+#unla-insc-2026 .card {
+  background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px 28px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.04), 0 2px 4px -2px rgba(0,0,0,0.03);
+}
+#unla-insc-2026 h1, #unla-insc-2026 h2, #unla-insc-2026 h3 { margin: 0 0 10px 0; font-weight: 700; line-height: 1.25; letter-spacing: -0.01em; }
+#unla-insc-2026 h1.hero-title { font-size: 1.55rem; color: #7c1331; display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+#unla-insc-2026 h3 { font-size: 1.15rem; color: #0f172a; display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+#unla-insc-2026 .intro-text { font-size: 1.02rem; color: #475569; margin-bottom: 0; }
+
+/* Pasos del proceso */
+#unla-insc-2026 .step-card {
+  background: #ffffff; border: 1px solid #e2e8f0; border-left: 5px solid #8c1d2c; border-radius: 14px;
+  padding: 20px 22px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+#unla-insc-2026 .step-card:hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(0,0,0,0.06); }
+#unla-insc-2026 .step-card p { margin: 6px 0; font-size: 0.95rem; color: #334155; }
+#unla-insc-2026 .step-card p:last-child { margin-bottom: 0; }
+#unla-insc-2026 .step-card ul { margin: 8px 0; padding-left: 22px; color: #334155; font-size: 0.95rem; }
+#unla-insc-2026 .step-card li { margin: 5px 0; }
+
+/* Resaltados y avisos */
+#unla-insc-2026 .important { font-weight: 700; color: #9f1239; }
+#unla-insc-2026 .alert-box {
+  background: #fff8f9; border: 1px solid #fecdd3; border-radius: 10px; padding: 12px 16px; margin: 10px 0;
+  font-size: 0.92rem; color: #9f1239; display: flex; gap: 8px; align-items: flex-start;
+}
+#unla-insc-2026 .info-box {
+  background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 12px 16px; margin: 10px 0;
+  font-size: 0.92rem; color: #166534;
+}
+
+/* Botón flotante volver arriba */
+#unla-insc-2026 .back-to-top-btn {
+  position: fixed; bottom: 26px; right: 26px; width: 48px; height: 48px; border-radius: 50%; background: #8c1d2c;
+  color: #ffffff; border: 2px solid #ffffff; box-shadow: 0 4px 14px rgba(0,0,0,0.25); cursor: pointer; display: flex;
+  align-items: center; justify-content: center; font-size: 1.35rem; font-weight: 800; opacity: 0; visibility: hidden;
+  transform: translateY(16px); transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.2s ease, visibility 0.25s; z-index: 9999;
+}
+#unla-insc-2026 .back-to-top-btn.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+#unla-insc-2026 .back-to-top-btn:hover { background: #5e0e25; transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,0.3); }
+
+/* Responsividad & Impresión */
+@media (max-width: 768px) {
+  #unla-insc-2026 { padding: 16px 8px; }
+  #unla-insc-2026 .card, #unla-insc-2026 .step-card { padding: 16px 18px; border-radius: 12px; }
+  #unla-insc-2026 .back-to-top-btn { bottom: 18px; right: 18px; width: 44px; height: 44px; font-size: 1.2rem; }
+}
+@media print {
+  body, #unla-insc-2026 { background: #ffffff !important; color: #000000 !important; padding: 0 !important; }
+  #unla-insc-2026 .wrap { max-width: 100% !important; gap: 12px !important; }
+  #unla-insc-2026 .back-to-top-btn { display: none !important; }
+  #unla-insc-2026 .card, #unla-insc-2026 .step-card { box-shadow: none !important; border: 1px solid #cbd5e1 !important; page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<main id="unla-insc-2026">
+<div class="wrap">
+
+  <!-- ENCABEZADO -->
+  <header class="card">
+    <h1 class="hero-title">📝 Guía de Inscripción · Paso 1: Preinscripción Online</h1>
+    <p class="intro-text">
+      Seguí este instructivo paso a paso para completar tu formulario digital de preinscripción en el sistema SIU-Guaraní de la UNLa.
+    </p>
+  </header>
+
+  <!-- PASO 1 -->
+  <section class="step-card">
+    <h3><span>🌐</span> 1. Acceso al Sistema</h3>
+    <p>En el portal web de la UNLa, hacé click en la opción del menú superior que dice <strong>"INGRESO"</strong>. Luego, seleccioná el botón <strong>"¡INSCRIBITE AQUÍ!"</strong> para ingresar al sistema de preinscripción.</p>
+  </section>
+
+  <!-- PASO 2 -->
+  <section class="step-card">
+    <h3><span>👤</span> 2. Creación de Usuario en SIU-Guaraní</h3>
+    <p>Serás redirigido al sistema de preinscripción SIU-Guaraní. Si es tu primera vez, hacé click en el botón <strong>"Registrate"</strong> para generar tu cuenta de usuario.</p>
+  </section>
+
+  <!-- PASO 3 -->
+  <section class="step-card">
+    <h3><span>✍️</span> 3. Completar Datos Personales</h3>
+    <p>Rellená el formulario con tu información personal. Asegurate de que los datos sean exactos y coincidan con tu DNI:</p>
+    <ul>
+      <li><strong>Género, Nacionalidad y número de DNI.</strong></li>
+      <li><strong>Apellido y Nombre:</strong> <span class="important">tal cual figuran en tu documento</span>. El campo "Nombre de Pila Elegido" debe completarse únicamente si el nombre con el que te identificás, por tu identidad de género, difiere del documento. Caso contrario, dejalo vacío.</li>
+      <li><strong>Datos de contacto:</strong> Celular, pregunta secreta de recuperación y un correo electrónico válido.</li>
+    </ul>
+    
+    <div class="alert-box">
+      <span>⚠️</span>
+      <div><strong>¡Atención!</strong> Verificá muy bien al escribir tu correo electrónico, ya que será la vía de comunicación oficial que utilizará la UNLa para notificarte.</div>
+    </div>
+    
+    <p>Finalmente, completá el reCAPTCHA (<em>"No soy un robot"</em>) y hacé click en <strong>"Generar usuario"</strong>.</p>
+  </section>
+
+  <!-- PASO 4 -->
+  <section class="step-card">
+    <h3><span>📧</span> 4. Verificación de Correo Electrónico</h3>
+    <p>Recibirás un email automático del sistema. Abrilo y hacé click en el <strong>enlace de confirmación</strong> para activar tu cuenta y continuar con la preinscripción.</p>
+  </section>
+
+  <!-- PASO 5 -->
+  <section class="step-card">
+    <h3><span>🎓</span> 5. Elección de la Carrera</h3>
+    <p>Una vez confirmada tu cuenta, iniciá sesión para elegir tu carrera. El sistema te solicitará los siguientes campos:</p>
+    <ul>
+      <li><strong>Responsable Académica:</strong> El Departamento al que pertenece tu carrera (ej: Humanidades y Artes, Salud Comunitaria, Desarrollo Productivo y Tecnológico, o Planificación y Políticas Públicas).</li>
+      <li><strong>Propuesta:</strong> El nombre de la carrera que elegiste.</li>
+      <li><strong>Ubicación:</strong> Lanús.</li>
+      <li><strong>Modalidad:</strong> Presencial (o A distancia, según corresponda).</li>
+    </ul>
+    <p><em>Nota: Si te equivocás de propuesta, podés eliminarla y seleccionarla nuevamente antes de finalizar.</em></p>
+  </section>
+
+  <!-- PASO 6 -->
+  <section class="step-card">
+    <h3><span>📋</span> 6. Carga de Datos Adicionales y Formularios</h3>
+    <p>Completá los formularios con tu información adicional. Los campos marcados con asterisco (*) <span class="important">son obligatorios</span>. Guardá los cambios a medida que avanzás:</p>
+    <ul>
+      <li><strong>Turno de cursada:</strong> Seleccioná el turno (Mañana, Tarde o Noche) entre los que ofrece tu carrera. <span class="important">¡Importante!</span> Aunque el sistema despliegue los tres turnos, verificá que el elegido esté habilitado para tu carrera en el cronograma oficial; de lo contrario, se te reasignará automáticamente uno válido.</li>
+      <li><strong>Datos principales, personales y de discapacidad:</strong> Completá toda la información requerida.</li>
+      <li><strong>Situación laboral y estudios previos:</strong> Completá las secciones restantes.</li>
+    </ul>
+  </section>
+
+  <!-- PASO 7 -->
+  <section class="step-card">
+    <h3><span>📤</span> 7. Carga de Documentación Digital</h3>
+    <p>En la sección <strong>"Documentación"</strong> deberás adjuntar tus archivos en formato JPG o PDF.</p>
+    <div class="alert-box">
+      <span>📎</span>
+      <div>Los archivos <span class="important">no deben superar los 2 MB</span> cada uno y deben ser totalmente legibles y nítidos.</div>
+    </div>
+    <p>Documentación requerida:</p>
+    <ul>
+      <li><strong>Documento de Identidad:</strong> archivo con frente y dorso legibles.</li>
+      <li><strong>Foto digital:</strong> reciente, de frente y con fondo claro.</li>
+      <li><strong>Título secundario</strong>, constancia de título en trámite o certificado de alumno regular / materias adeudadas.</li>
+    </ul>
+  </section>
+
+  <!-- PASO 8 -->
+  <section class="step-card">
+    <h3><span>🏁</span> 8. Finalización de la Preinscripción</h3>
+    <p>Una vez completados todos los campos y adjuntados los archivos, hacé click en el botón <strong>"Finalizar"</strong> para enviar tu postulación.</p>
+  </section>
+
+  <!-- PASO 9 -->
+  <section class="step-card">
+    <h3><span>⏳</span> 9. Revisión y Confirmación</h3>
+    <p>Tu documentación será revisada por el equipo de Ingreso. Deberás esperar un correo electrónico que confirme la correcta recepción de tu trámite. Si completaste el formulario dentro del plazo, no te preocupes: el mail de confirmación puede llegar en días posteriores al cierre.</p>
+    
+    <div class="info-box">
+      <strong>⚠️ Recomendación importante:</strong> Mientras se procesa la revisión, por favor <strong>no vuelvas a ingresar al formulario para realizar modificaciones</strong>. Si se detecta algún error en tus archivos, se te notificará por correo.
+    </div>
+
+    <p>Transcurridas <strong>24 horas hábiles</strong> desde la llegada del mail de confirmación, se habilitará en el sistema de autogestión el cupón para continuar con el <strong>Paso 2 (pago de la tasa de inscripción)</strong>.</p>
+  </section>
+
+  <!-- BOTÓN FLOTANTE VOLVER ARRIBA -->
+  <button type="button" id="btn-back-to-top" class="back-to-top-btn" title="Volver arriba" aria-label="Volver arriba">↑</button>
+
+</div>
+</main>
+
+<script>
+(function() {
+  "use strict";
+
+  const backToTopBtn = document.getElementById("btn-back-to-top");
+  if (backToTopBtn) {
+    window.addEventListener("scroll", () => {
+      backToTopBtn.classList.toggle("visible", window.scrollY > 300);
+    }, { passive: true });
+    backToTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  }
+})();
+</script>
+</body>
+</html>
