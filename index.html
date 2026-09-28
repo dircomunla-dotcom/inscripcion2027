@@ -133,6 +133,12 @@
 #unla-insc-2026 .li-line a.career-link { color: #0f172a; text-decoration: none; font-weight: 600; }
 #unla-insc-2026 .li-line a.career-link:hover { color: #8c1d2c; text-decoration: underline; }
 #unla-insc-2026 .li-line .asterisk-note { font-size: 0.8rem; color: #64748b; font-style: italic; margin-top: 4px; }
+#unla-insc-2026 .li-date-range {
+  display: flex; align-items: center; gap: 5px; margin-top: 6px; padding-top: 7px;
+  border-top: 1px dashed #e2e8f0; font-size: 0.78rem; color: #64748b; line-height: 1.3;
+}
+#unla-insc-2026 .li-date-range .cal-icon { font-size: 0.85rem; flex-shrink: 0; }
+#unla-insc-2026 .li-line.selected .li-date-range { border-top-color: color-mix(in srgb, var(--sel-color, #8c1d2c) 30%, #e2e8f0); color: color-mix(in srgb, var(--sel-color, #8c1d2c) 70%, #64748b); }
 #unla-insc-2026 .li-line.selected {
   background: color-mix(in srgb, var(--sel-color, #8c1d2c) 15%, #ffffff) !important; border: 2px solid var(--sel-color, #8c1d2c) !important;
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--sel-color, #8c1d2c) 25%, transparent); animation: pulse-selection 1.2s ease;
@@ -752,6 +758,18 @@
     URL.revokeObjectURL(url);
   }
 
+  function formatDateRange(inicioStr, finStr) {
+    const optsDay = { day: 'numeric', timeZone: 'America/Argentina/Buenos_Aires' };
+    const optsFull = { day: 'numeric', month: 'long', timeZone: 'America/Argentina/Buenos_Aires' };
+    const start = new Date(inicioStr), end = new Date(finStr);
+    const startMonth = start.toLocaleDateString('es-AR', { month: 'long', timeZone: 'America/Argentina/Buenos_Aires' });
+    const endFull = end.toLocaleDateString('es-AR', optsFull);
+    if (start.getMonth() === end.getMonth() && start.getFullYear() === end.getFullYear()) {
+      return `${start.toLocaleDateString('es-AR', optsDay)} al ${endFull}`;
+    }
+    return `${start.toLocaleDateString('es-AR', optsFull)} al ${endFull}`;
+  }
+
   // Renderizar Calendario
   const datesRoot = document.getElementById("dates");
   data.fechas.forEach((grupo, i) => {
@@ -822,6 +840,15 @@
       topRow.appendChild(nameEl);
       topRow.appendChild(createBadges(item.turnos, item.modalidad, false));
       li.appendChild(topRow);
+
+      // Fecha de inscripción
+      if (grupo.inicio && grupo.fin) {
+        const dateEl = document.createElement("div");
+        dateEl.className = "li-date-range";
+        const rangoTexto = formatDateRange(grupo.inicio, grupo.fin);
+        dateEl.innerHTML = `<span class="cal-icon">📅</span><span><strong>Inscripción:</strong> ${rangoTexto}</span>`;
+        li.appendChild(dateEl);
+      }
 
       if (item.notaModulo0) {
         const note = document.createElement("span"); note.className = "asterisk-note";
