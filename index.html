@@ -642,7 +642,7 @@
     ],
     fechas: [
       {
-        rango: "ABRE: Martes 13 de Octubre a las 11:00 hs\nCIERRA: Miércoles 14 de Octubre a las 17:00 hs",
+        rango: "La inscripción abre el Martes 13 de octubre a las 11:00 hs\ny cierra el Miércoles 14 de octubre a las 17:00 hs",
         inicio: "2026-10-13T11:00:00-03:00", fin: "2026-10-14T17:00:00-03:00",
         titulo: "Inscripción UNLa: Nutrición y Sistemas",
         carreras: [
@@ -651,7 +651,7 @@
         ]
       },
       {
-        rango: "ABRE: Domingo 19 de Octubre a las 11:00 hs\nCIERRA: Viernes 23 de Octubre a las 17:00 hs",
+        rango: "La inscripción abre el Lunes 19 de octubre a las 11:00 hs\ny cierra el Viernes 23 de octubre a las 17:00 hs",
         inicio: "2026-10-19T11:00:00-03:00", fin: "2026-10-23T17:00:00-03:00",
         titulo: "Inscripción UNLa: Audiovisión, Diseño y Com. Visual, Enfermería, Turismo",
         carreras: [
@@ -662,7 +662,7 @@
         ]
       },
       {
-        rango: "ABRE: Domingo 19 de Octubre a las 11:00 hs\nCIERRA: Viernes 13 de Noviembre a las 17:00 hs",
+        rango: "La inscripción abre el Lunes 19 de octubre a las 11:00 hs\ny cierra el Viernes 13 de noviembre a las 17:00 hs",
         inicio: "2026-10-19T11:00:00-03:00", fin: "2026-11-13T17:00:00-03:00",
         titulo: "Inscripción UNLa: Carreras de Grado y Pregrado",
         carreras: [
@@ -837,11 +837,7 @@
       if (grupo.rango) {
         const dateEl = document.createElement("div");
         dateEl.className = "li-date-range";
-        const rangoHtml = grupo.rango
-          .replace("ABRE: ", "<strong>Abre:</strong> ")
-          .replace("CIERRA: ", "<strong>Cierra:</strong> ")
-          .replace("\n", "<br>");
-        dateEl.innerHTML = `<span class="cal-icon">📅</span><span>${rangoHtml}</span>`;
+        dateEl.innerHTML = `<span class="cal-icon">📅</span><span>${grupo.rango.replace(/\n/g, '<br>')}</span>`;
         li.appendChild(dateEl);
       }
 
