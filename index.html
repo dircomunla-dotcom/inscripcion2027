@@ -123,6 +123,11 @@
   font-size: 0.95rem; font-weight: 700; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; line-height: 1.4; border-bottom: 1px solid #334155;
 }
 #unla-insc-2026 .date__header span.icon { font-size: 1.25rem; }
+#unla-insc-2026 .date__header .date-highlight {
+  font-weight: 800; color: #fde68a; letter-spacing: 0.01em;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+#unla-insc-2026 .date__header .date-label { font-weight: 400; opacity: 0.8; font-size: 0.9em; }
 #unla-insc-2026 .career-list { list-style: none; margin: 0; padding: 16px; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
 #unla-insc-2026 .li-line {
   display: flex; flex-direction: column; justify-content: space-between; gap: 6px; background: #f8fafc;
@@ -775,7 +780,11 @@
 
     const titleWrap = document.createElement("div");
     titleWrap.style.display = "flex"; titleWrap.style.alignItems = "center"; titleWrap.style.gap = "10px";
-    titleWrap.innerHTML = `<span class="icon">📆</span> <span>${grupo.rango.replace(/\n/g, '<br>')}</span>`;
+    const rangoStyled = grupo.rango
+      .replace("La inscripci\u00f3n abre el ", '<span class="date-label">La inscripci\u00f3n abre el </span><span class="date-highlight">')
+      .replace("\ny cierra el ", '</span><br><span class="date-label">y cierra el </span><span class="date-highlight">')
+      + '</span>';
+    titleWrap.innerHTML = `<span class="icon">\uD83D\uDCC6</span> <span>${rangoStyled}</span>`;
     header.appendChild(titleWrap);
 
     if (st) {
