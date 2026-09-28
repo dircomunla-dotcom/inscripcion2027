@@ -1,1015 +1,1848 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Inscripción 2026 · Carreras UNLa</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Inscripción 2026 · Carreras UNLa</title>
 
-<!-- Google Font: Archivo -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <!-- Google Font: Archivo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
 
-<style>
-/* ===== ESTILOS ENCAPSULADOS BAJO #unla-insc-2026 ===== */
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+  <style>
+    /* ===== ESTILOS ENCAPSULADOS BAJO #unla-insc-2026 ===== */
+    @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
 
-#unla-insc-2026 {
-  font-family: 'Archivo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.5; color: #1e293b; background-color: #f8fafc; padding: 24px 12px; box-sizing: border-box; scroll-behavior: smooth;
-}
-#unla-insc-2026 *, #unla-insc-2026 *::before, #unla-insc-2026 *::after { box-sizing: inherit; font-family: inherit; }
-#unla-insc-2026 .wrap { max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+    #unla-insc-2026 {
+      font-family: 'Archivo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      color: #1e293b;
+      background-color: #f8fafc;
+      padding: 24px 12px;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
 
-/* Enlaces base */
-#unla-insc-2026 a { color: #8c1d2c; text-decoration: none; transition: color 0.15s ease, text-decoration 0.15s ease; }
-#unla-insc-2026 a:hover, #unla-insc-2026 a:focus-visible { color: #5e0e25; text-decoration: underline; }
+    #unla-insc-2026 *,
+    #unla-insc-2026 *::before,
+    #unla-insc-2026 *::after {
+      box-sizing: inherit;
+      font-family: inherit;
+    }
 
-/* Tarjetas (Cards) y encabezados */
-#unla-insc-2026 .card {
-  background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 24px 28px;
-  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.04), 0 2px 4px -2px rgba(0,0,0,0.03);
-}
-#unla-insc-2026 h1, #unla-insc-2026 h2, #unla-insc-2026 h3 { margin: 0 0 12px 0; font-weight: 700; line-height: 1.25; letter-spacing: -0.01em; }
-#unla-insc-2026 h1.hero-title { font-size: 1.55rem; color: #7c1331; display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
-#unla-insc-2026 h2 {
-  font-size: 1.35rem; color: #7c1331; display: flex; align-items: center; gap: 10px;
-  border-bottom: 2px solid #f1f5f9; padding-bottom: 12px; margin-bottom: 18px;
-}
-#unla-insc-2026 h3 { font-size: 1.15rem; color: #0f172a; display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
-#unla-insc-2026 .intro-text { font-size: 1.02rem; color: #475569; margin-bottom: 14px; }
+    #unla-insc-2026 .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
 
-/* Resumen de Inscripción (Pasos) */
-#unla-insc-2026 .steps-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin: 18px 0 22px; }
-#unla-insc-2026 .step-item { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 16px 18px; display: flex; gap: 14px; align-items: flex-start; }
-#unla-insc-2026 .step-number {
-  background: #8c1d2c; color: #ffffff; font-weight: 800; font-size: 0.95rem; width: 32px; height: 32px;
-  border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-}
-#unla-insc-2026 .step-content h4 { margin: 0 0 4px 0; font-size: 0.98rem; font-weight: 700; color: #0f172a; }
-#unla-insc-2026 .step-content p { margin: 0; font-size: 0.88rem; color: #64748b; line-height: 1.4; }
+    /* Enlaces base */
+    #unla-insc-2026 a {
+      color: #8c1d2c;
+      text-decoration: none;
+      transition: color 0.15s ease, text-decoration 0.15s ease;
+    }
 
-/* Barra de Navegación Rápida */
-#unla-insc-2026 .quick-nav-container { border-top: 1px solid #f1f5f9; padding-top: 16px; margin-top: 8px; }
-#unla-insc-2026 .quick-nav-label { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: #64748b; margin-bottom: 8px; display: block; }
-#unla-insc-2026 .quick-nav { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
-#unla-insc-2026 .quick-nav a {
-  display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; background: #f1f5f9; color: #334155;
-  border-radius: 999px; font-size: 0.88rem; font-weight: 600; border: 1px solid #e2e8f0; text-decoration: none; transition: all 0.2s ease;
-}
-#unla-insc-2026 .quick-nav a.highlight-nav { background: #fff1f2; color: #8c1d2c; border-color: #fecdd3; }
-#unla-insc-2026 .quick-nav a:hover { background: #8c1d2c; color: #ffffff; border-color: #8c1d2c; transform: translateY(-1px); }
+    #unla-insc-2026 a:hover,
+    #unla-insc-2026 a:focus-visible {
+      color: #5e0e25;
+      text-decoration: underline;
+    }
 
-/* Buscador y Filtros */
-#unla-insc-2026 .search-bar-wrap { position: relative; margin-bottom: 18px; }
-#unla-insc-2026 .search-input {
-  width: 100%; padding: 12px 16px 12px 42px; font-size: 0.98rem; border: 2px solid #e2e8f0; border-radius: 12px;
-  outline: none; background: #ffffff; color: #1e293b; transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-#unla-insc-2026 .search-input:focus { border-color: #8c1d2c; box-shadow: 0 0 0 3px rgba(140, 29, 44, 0.12); }
-#unla-insc-2026 .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: 1.1rem; opacity: 0.5; pointer-events: none; }
-#unla-insc-2026 .filters-container {
-  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;
-  background: #f8fafc; border: 1px solid #e2e8f0; padding: 12px 16px; border-radius: 12px; margin-bottom: 10px;
-}
-#unla-insc-2026 .filters-group { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-#unla-insc-2026 .filters-title { font-size: 0.85rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.04em; margin-right: 4px; }
-#unla-insc-2026 .chip {
-  display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; border: 1px solid #cbd5e1;
-  background: #ffffff; font-size: 0.88rem; font-weight: 500; color: #334155; cursor: pointer; user-select: none; transition: all 0.15s ease;
-}
-#unla-insc-2026 .chip:hover { border-color: #8c1d2c; background: #fff5f6; }
-#unla-insc-2026 .chip input { accent-color: #8c1d2c; cursor: pointer; }
-#unla-insc-2026 .btn-reset-filters {
-  font-size: 0.85rem; background: #fee2e2; border: 1px solid #fca5a5; color: #991b1b; cursor: pointer;
-  font-weight: 700; padding: 6px 14px; border-radius: 999px; transition: all 0.15s ease;
-}
-#unla-insc-2026 .btn-reset-filters:hover { background: #fecaca; color: #7f1d1d; }
-#unla-insc-2026 .turnos-note {
-  display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
-  font-size: 0.88rem; color: #475569; background: #fff8f9; border-left: 4px solid #8c1d2c; padding: 10px 14px; border-radius: 0 8px 8px 0; margin: 0 0 20px 0;
-}
+    /* Tarjetas (Cards) y encabezados */
+    #unla-insc-2026 .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 24px 28px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -2px rgba(0, 0, 0, 0.03);
+    }
 
-/* TOC: Departamentos y Carreras */
-#unla-insc-2026 .toc { display: grid; gap: 18px; }
-#unla-insc-2026 .dept { display: grid; grid-template-columns: 32% 1fr; gap: 16px; align-items: start; padding: 14px 0; border-bottom: 1px solid #f1f5f9; }
-#unla-insc-2026 .dept:last-child { border-bottom: none; }
-#unla-insc-2026 .dept__title { font-weight: 800; font-size: 0.95rem; color: var(--dept-color, #1e293b); line-height: 1.35; border-left: 4px solid var(--dept-color, #1e293b); padding-left: 10px; }
-#unla-insc-2026 .dept__list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
-#unla-insc-2026 .toc .pill {
-  display: inline-flex; gap: 8px; align-items: center; padding: 8px 12px; border-radius: 8px;
-  border: 1px solid color-mix(in srgb, var(--dept-color, #8c1d2c) 30%, #e2e8f0);
-  background: color-mix(in srgb, var(--dept-color, #8c1d2c) 8%, #ffffff);
-  color: #0f172a !important; font-size: 0.9rem; font-weight: 500; text-decoration: none !important; cursor: pointer; transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-#unla-insc-2026 .toc .pill:hover { background: color-mix(in srgb, var(--dept-color, #8c1d2c) 16%, #ffffff); border-color: var(--dept-color, #8c1d2c); transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.06); }
+    #unla-insc-2026 h1,
+    #unla-insc-2026 h2,
+    #unla-insc-2026 h3 {
+      margin: 0 0 12px 0;
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
 
-/* Badges de Turnos */
-#unla-insc-2026 .badges { display: inline-flex; gap: 4px; flex-wrap: wrap; }
-#unla-insc-2026 .badge {
-  font-size: 0.72rem; font-weight: 700; line-height: 1; padding: 4px 7px; border-radius: 6px; border: 1px solid #cbd5e1;
-  background: #f1f5f9; color: #334155; white-space: nowrap; letter-spacing: 0.02em; text-transform: uppercase;
-}
-/* Turnos: gama de rojos — diferenciada de los colores de departamentos */
-#unla-insc-2026 .badge.badge-mañana { background: #fce7f3; color: #be185d; border-color: #f9a8d4; }
-#unla-insc-2026 .badge.badge-tarde  { background: #fee2e2; color: #dc2626; border-color: #fca5a5; }
-#unla-insc-2026 .badge.badge-noche  { background: #450a0a; color: #fca5a5; border-color: #7f1d1d; }
-#unla-insc-2026 .badge.badge-distancia { background: #dcfce7; color: #15803d; border-color: #bbf7d0; }
-#unla-insc-2026 .pill .mini { font-size: 0.68rem; padding: 3px 6px; opacity: 0.92; }
+    #unla-insc-2026 h1.hero-title {
+      font-size: 1.55rem;
+      color: #7c1331;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
 
-/* Calendario */
-#unla-insc-2026 .dates__group { margin-bottom: 24px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; }
-#unla-insc-2026 .dates__group:last-child { margin-bottom: 8px; }
-#unla-insc-2026 .date__header {
-  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: #ffffff; padding: 14px 18px; margin: 0;
-  font-size: 0.95rem; font-weight: 700; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; line-height: 1.4; border-bottom: 1px solid #334155;
-}
-#unla-insc-2026 .date__header span.icon { font-size: 1.25rem; }
-#unla-insc-2026 .date__header .date-highlight {
-  font-weight: 800; color: #fde68a; letter-spacing: 0.01em;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.25);
-}
-#unla-insc-2026 .date__header .date-label { font-weight: 400; opacity: 0.8; font-size: 0.9em; }
-#unla-insc-2026 .career-list { list-style: none; margin: 0; padding: 16px; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
-#unla-insc-2026 .li-line {
-  display: flex; flex-direction: column; justify-content: space-between; gap: 6px; background: #f8fafc;
-  padding: 10px 14px; border-radius: 10px; border: 1px solid #e2e8f0; transition: all 0.25s ease;
-}
-#unla-insc-2026 .li-line:hover { background: #ffffff; border-color: #cbd5e1; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
-#unla-insc-2026 .li-line .name { font-weight: 600; font-size: 0.95rem; color: #0f172a; }
-#unla-insc-2026 .li-line a.career-link { color: #0f172a; text-decoration: none; font-weight: 600; }
-#unla-insc-2026 .li-line a.career-link:hover { color: #8c1d2c; text-decoration: underline; }
-#unla-insc-2026 .li-line .asterisk-note { font-size: 0.8rem; color: #64748b; font-style: italic; margin-top: 4px; }
-#unla-insc-2026 .li-date-range {
-  display: none; align-items: flex-start; gap: 6px; margin-top: 8px; padding-top: 8px;
-  border-top: 1px dashed #e2e8f0; font-size: 0.78rem; color: #64748b; line-height: 1.45;
-}
-#unla-insc-2026 .li-date-range .cal-icon { font-size: 0.9rem; flex-shrink: 0; margin-top: 1px; }
-#unla-insc-2026 .li-line.selected .li-date-range {
-  display: flex;
-  border-top-color: color-mix(in srgb, var(--sel-color, #8c1d2c) 30%, #e2e8f0);
-  color: color-mix(in srgb, var(--sel-color, #8c1d2c) 80%, #334155);
-}
-#unla-insc-2026 .li-line.selected {
-  background: color-mix(in srgb, var(--sel-color, #8c1d2c) 15%, #ffffff) !important; border: 2px solid var(--sel-color, #8c1d2c) !important;
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--sel-color, #8c1d2c) 25%, transparent); animation: pulse-selection 1.2s ease;
-}
-@keyframes pulse-selection { 0% { transform: scale(0.98); } 50% { transform: scale(1.02); } 100% { transform: scale(1); } }
-#unla-insc-2026 .group-footer { padding: 8px 16px 12px; background: #ffffff; text-align: right; }
-#unla-insc-2026 .back { font-size: 0.82rem; font-weight: 600; color: #64748b; }
+    #unla-insc-2026 h2 {
+      font-size: 1.35rem;
+      color: #7c1331;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 2px solid #f1f5f9;
+      padding-bottom: 12px;
+      margin-bottom: 18px;
+    }
 
-/* Status Badges y Acciones de Calendario */
-#unla-insc-2026 .status-pill {
-  font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 999px; display: inline-flex;
-  align-items: center; gap: 6px; letter-spacing: 0.02em; text-transform: uppercase; white-space: nowrap;
-}
-#unla-insc-2026 .status-pill.status-open { background: #dcfce7; color: #15803d; border: 1px solid #86efac; box-shadow: 0 0 0 2px rgba(34,197,94,0.2); }
-#unla-insc-2026 .status-pill.status-upcoming { background: #fef9c3; color: #854d0e; border: 1px solid #fde047; }
-#unla-insc-2026 .status-pill.status-closed { background: #f1f5f9; color: #64748b; border: 1px solid #cbd5e1; }
-#unla-insc-2026 .cal-actions { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 16px; background: #f8fafc; border-bottom: 1px solid #e2e8f0; align-items: center; }
-#unla-insc-2026 .cal-actions .cal-actions-title { font-size: 0.78rem; font-weight: 700; color: #64748b; text-transform: uppercase; margin-right: 4px; }
-#unla-insc-2026 .btn-cal-action {
-  display: inline-flex; align-items: center; gap: 5px; padding: 5px 10px; background: #ffffff; border: 1px solid #cbd5e1;
-  border-radius: 6px; font-size: 0.8rem; font-weight: 600; color: #334155; cursor: pointer; text-decoration: none !important; transition: all 0.15s ease;
-}
-#unla-insc-2026 .btn-cal-action:hover { background: #f1f5f9; border-color: #94a3b8; color: #0f172a; }
+    #unla-insc-2026 h3 {
+      font-size: 1.15rem;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
 
-/* Checklist, Notices & Banner */
-#unla-insc-2026 .checklist { list-style: none; margin: 12px 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-#unla-insc-2026 .checklist li { position: relative; padding-left: 28px; font-size: 0.95rem; color: #334155; }
-#unla-insc-2026 .checklist li::before {
-  content: "✓"; position: absolute; left: 0; top: 0; font-weight: 800; color: #15803d; background: #dcfce7;
-  width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem;
-}
-#unla-insc-2026 .notice { background: #fff8f9; border: 1px solid #fecdd3; border-radius: 12px; padding: 14px 18px; margin-top: 14px; }
-#unla-insc-2026 .notice-title { font-weight: 700; color: #9f1239; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
-#unla-insc-2026 .cta-banner {
-  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); border: 2px dashed #f59e0b; border-radius: 14px;
-  padding: 20px 24px; text-align: center; display: flex; align-items: center; justify-content: center; gap: 14px;
-  color: #92400e; font-weight: 600; font-size: 1.05rem; box-shadow: 0 4px 12px rgba(245, 158, 11, 0.08);
-}
-#unla-insc-2026 .cta-banner .cta-icon { font-size: 1.8rem; flex-shrink: 0; }
-#unla-insc-2026 .no-results { text-align: center; padding: 24px; color: #64748b; font-style: italic; display: none; }
+    #unla-insc-2026 .intro-text {
+      font-size: 1.02rem;
+      color: #475569;
+      margin-bottom: 14px;
+    }
 
-/* Artículo 7 y Extranjeros */
-#unla-insc-2026 .law-steps { padding-left: 20px; margin: 14px 0; }
-#unla-insc-2026 .law-steps li { margin-bottom: 10px; color: #334155; font-size: 0.96rem; line-height: 1.5; }
-#unla-insc-2026 .notice-box {
-  background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px 18px; margin-top: 14px;
-  font-size: 0.92rem; color: #475569; border-left: 4px solid #7c1331;
-}
+    /* Resumen de Inscripción (Pasos) */
+    #unla-insc-2026 .steps-summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin: 18px 0 22px;
+    }
 
-/* Pasos del proceso (paso1 y paso2) */
-#unla-insc-2026 .step-card {
-  background: #ffffff; border: 1px solid #e2e8f0; border-left: 5px solid #8c1d2c; border-radius: 14px;
-  padding: 20px 22px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-#unla-insc-2026 .step-card:hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(0,0,0,0.06); }
-#unla-insc-2026 .step-card p { margin: 6px 0; font-size: 0.95rem; color: #334155; }
-#unla-insc-2026 .step-card p:last-child { margin-bottom: 0; }
-#unla-insc-2026 .step-card ul { margin: 8px 0; padding-left: 22px; color: #334155; font-size: 0.95rem; }
-#unla-insc-2026 .step-card li { margin: 5px 0; }
+    #unla-insc-2026 .step-item {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 16px 18px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
 
-/* Resaltados y avisos (paso1 y paso2) */
-#unla-insc-2026 .important { font-weight: 700; color: #9f1239; }
-#unla-insc-2026 .alert-box {
-  background: #fff8f9; border: 1px solid #fecdd3; border-radius: 10px; padding: 12px 16px; margin: 10px 0;
-  font-size: 0.92rem; color: #9f1239; display: flex; gap: 8px; align-items: flex-start;
-}
-#unla-insc-2026 .info-box {
-  background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 12px 16px; margin: 10px 0;
-  font-size: 0.92rem; color: #166534;
-}
-#unla-insc-2026 .link-box {
-  background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 10px; padding: 12px 16px; margin: 12px 0;
-  font-size: 0.95rem; display: flex; align-items: center; gap: 8px;
-}
+    #unla-insc-2026 .step-number {
+      background: #8c1d2c;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 0.95rem;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
 
-/* Separadores de sección */
-#unla-insc-2026 .section-divider {
-  border: none; border-top: 2px dashed #e2e8f0; margin: 8px 0;
-}
+    #unla-insc-2026 .step-content h4 {
+      margin: 0 0 4px 0;
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
 
-/* Botón flotante volver arriba */
-#unla-insc-2026 .back-to-top-btn {
-  position: fixed; bottom: 26px; right: 26px; width: 48px; height: 48px; border-radius: 50%; background: #8c1d2c;
-  color: #ffffff; border: 2px solid #ffffff; box-shadow: 0 4px 14px rgba(0,0,0,0.25); cursor: pointer; display: flex;
-  align-items: center; justify-content: center; font-size: 1.35rem; font-weight: 800; opacity: 0; visibility: hidden;
-  transform: translateY(16px); transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.2s ease, visibility 0.25s; z-index: 9999;
-}
-#unla-insc-2026 .back-to-top-btn.visible { opacity: 1; visibility: visible; transform: translateY(0); }
-#unla-insc-2026 .back-to-top-btn:hover { background: #5e0e25; transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,0.3); }
+    #unla-insc-2026 .step-content p {
+      margin: 0;
+      font-size: 0.88rem;
+      color: #64748b;
+      line-height: 1.4;
+    }
 
-/* Responsividad & Impresión */
-@media (max-width: 768px) {
-  #unla-insc-2026 { padding: 16px 8px; }
-  #unla-insc-2026 .card { padding: 18px 16px; border-radius: 12px; }
-  #unla-insc-2026 .step-card { padding: 16px 18px; border-radius: 12px; }
-  #unla-insc-2026 .dept { grid-template-columns: 1fr; gap: 8px; }
-  #unla-insc-2026 .dept__title { border-left-width: 3px; padding-left: 8px; margin-bottom: 4px; }
-  #unla-insc-2026 .filters-container { flex-direction: column; align-items: flex-start; }
-  #unla-insc-2026 .career-list { grid-template-columns: 1fr; }
-  #unla-insc-2026 .cta-banner { flex-direction: column; font-size: 0.95rem; padding: 16px; }
-  #unla-insc-2026 .cal-actions { flex-direction: column; align-items: flex-start; }
-  #unla-insc-2026 .back-to-top-btn { bottom: 18px; right: 18px; width: 44px; height: 44px; font-size: 1.2rem; }
-}
-@media print {
-  body, #unla-insc-2026 { background: #ffffff !important; color: #000000 !important; padding: 0 !important; }
-  #unla-insc-2026 .wrap { max-width: 100% !important; gap: 12px !important; }
-  #unla-insc-2026 .search-bar-wrap, #unla-insc-2026 .filters-container, #unla-insc-2026 .quick-nav-container,
-  #unla-insc-2026 .btn-reset-filters, #unla-insc-2026 .back-to-top-btn, #unla-insc-2026 .back,
-  #unla-insc-2026 .group-footer, #unla-insc-2026 .cal-actions, #unla-insc-2026 .cta-banner { display: none !important; }
-  #unla-insc-2026 .card { box-shadow: none !important; border: 1px solid #cbd5e1 !important; padding: 14px 18px !important; page-break-inside: avoid; }
-  #unla-insc-2026 .step-card { box-shadow: none !important; border: 1px solid #cbd5e1 !important; page-break-inside: avoid; }
-  #unla-insc-2026 .dates__group { border: 1px solid #cbd5e1 !important; page-break-inside: avoid; margin-bottom: 14px !important; }
-  #unla-insc-2026 .date__header { background: #f1f5f9 !important; color: #0f172a !important; border-bottom: 1px solid #cbd5e1 !important; }
-  #unla-insc-2026 .li-line { background: #ffffff !important; border: 1px solid #e2e8f0 !important; break-inside: avoid; }
-  #unla-insc-2026 .toc .pill { background: #ffffff !important; border: 1px solid #cbd5e1 !important; color: #000000 !important; }
-  #unla-insc-2026 a { color: #000000 !important; text-decoration: none !important; }
-  #unla-insc-2026 .li-line, #unla-insc-2026 .dept, #unla-insc-2026 .dept li, #unla-insc-2026 .dates__group { display: block !important; }
-  #unla-insc-2026 .career-list { display: grid !important; grid-template-columns: 1fr 1fr !important; }
-}
-</style>
+    /* Barra de Navegación Rápida */
+    #unla-insc-2026 .quick-nav-container {
+      border-top: 1px solid #f1f5f9;
+      padding-top: 16px;
+      margin-top: 8px;
+    }
+
+    #unla-insc-2026 .quick-nav-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #64748b;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    #unla-insc-2026 .quick-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #unla-insc-2026 .quick-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: #f1f5f9;
+      color: #334155;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      border: 1px solid #e2e8f0;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    #unla-insc-2026 .quick-nav a.highlight-nav {
+      background: #fff1f2;
+      color: #8c1d2c;
+      border-color: #fecdd3;
+    }
+
+    #unla-insc-2026 .quick-nav a:hover {
+      background: #8c1d2c;
+      color: #ffffff;
+      border-color: #8c1d2c;
+      transform: translateY(-1px);
+    }
+
+    /* Buscador y Filtros */
+    #unla-insc-2026 .search-bar-wrap {
+      position: relative;
+      margin-bottom: 18px;
+    }
+
+    #unla-insc-2026 .search-input {
+      width: 100%;
+      padding: 12px 16px 12px 42px;
+      font-size: 0.98rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      outline: none;
+      background: #ffffff;
+      color: #1e293b;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    #unla-insc-2026 .search-input:focus {
+      border-color: #8c1d2c;
+      box-shadow: 0 0 0 3px rgba(140, 29, 44, 0.12);
+    }
+
+    #unla-insc-2026 .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.1rem;
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    #unla-insc-2026 .filters-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 12px 16px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+
+    #unla-insc-2026 .filters-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    #unla-insc-2026 .filters-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-right: 4px;
+    }
+
+    #unla-insc-2026 .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: #334155;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.15s ease;
+    }
+
+    #unla-insc-2026 .chip:hover {
+      border-color: #8c1d2c;
+      background: #fff5f6;
+    }
+
+    #unla-insc-2026 .chip input {
+      accent-color: #8c1d2c;
+      cursor: pointer;
+    }
+
+    #unla-insc-2026 .btn-reset-filters {
+      font-size: 0.85rem;
+      background: #fee2e2;
+      border: 1px solid #fca5a5;
+      color: #991b1b;
+      cursor: pointer;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 999px;
+      transition: all 0.15s ease;
+    }
+
+    #unla-insc-2026 .btn-reset-filters:hover {
+      background: #fecaca;
+      color: #7f1d1d;
+    }
+
+    #unla-insc-2026 .turnos-note {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.88rem;
+      color: #475569;
+      background: #fff8f9;
+      border-left: 4px solid #8c1d2c;
+      padding: 10px 14px;
+      border-radius: 0 8px 8px 0;
+      margin: 0 0 20px 0;
+    }
+
+    /* TOC: Departamentos y Carreras */
+    #unla-insc-2026 .toc {
+      display: grid;
+      gap: 18px;
+    }
+
+    #unla-insc-2026 .dept {
+      display: grid;
+      grid-template-columns: 32% 1fr;
+      gap: 16px;
+      align-items: start;
+      padding: 14px 0;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    #unla-insc-2026 .dept:last-child {
+      border-bottom: none;
+    }
+
+    #unla-insc-2026 .dept__title {
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--dept-color, #1e293b);
+      line-height: 1.35;
+      border-left: 4px solid var(--dept-color, #1e293b);
+      padding-left: 10px;
+    }
+
+    #unla-insc-2026 .dept__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    #unla-insc-2026 .toc .pill {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1px solid color-mix(in srgb, var(--dept-color, #8c1d2c) 30%, #e2e8f0);
+      background: color-mix(in srgb, var(--dept-color, #8c1d2c) 8%, #ffffff);
+      color: #0f172a !important;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none !important;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    #unla-insc-2026 .toc .pill:hover {
+      background: color-mix(in srgb, var(--dept-color, #8c1d2c) 16%, #ffffff);
+      border-color: var(--dept-color, #8c1d2c);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Badges de Turnos */
+    #unla-insc-2026 .badges {
+      display: inline-flex;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+
+    #unla-insc-2026 .badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      line-height: 1;
+      padding: 4px 7px;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+      background: #f1f5f9;
+      color: #334155;
+      white-space: nowrap;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    /* Turnos: gama de rojos — diferenciada de los colores de departamentos */
+    #unla-insc-2026 .badge.badge-mañana {
+      background: #fce7f3;
+      color: #be185d;
+      border-color: #f9a8d4;
+    }
+
+    #unla-insc-2026 .badge.badge-tarde {
+      background: #fee2e2;
+      color: #dc2626;
+      border-color: #fca5a5;
+    }
+
+    #unla-insc-2026 .badge.badge-noche {
+      background: #450a0a;
+      color: #fca5a5;
+      border-color: #7f1d1d;
+    }
+
+    #unla-insc-2026 .badge.badge-distancia {
+      background: #dcfce7;
+      color: #15803d;
+      border-color: #bbf7d0;
+    }
+
+    #unla-insc-2026 .pill .mini {
+      font-size: 0.68rem;
+      padding: 3px 6px;
+      opacity: 0.92;
+    }
+
+    /* Calendario */
+    #unla-insc-2026 .dates__group {
+      margin-bottom: 24px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    #unla-insc-2026 .dates__group:last-child {
+      margin-bottom: 8px;
+    }
+
+    #unla-insc-2026 .date__header {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      color: #ffffff;
+      padding: 14px 18px;
+      margin: 0;
+      font-size: 0.95rem;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      line-height: 1.4;
+      border-bottom: 1px solid #334155;
+    }
+
+    #unla-insc-2026 .date__header span.icon {
+      font-size: 1.25rem;
+    }
+
+    #unla-insc-2026 .date__header .date-highlight {
+      font-weight: 800;
+      color: #fde68a;
+      letter-spacing: 0.01em;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    }
+
+    #unla-insc-2026 .date__header .date-label {
+      font-weight: 400;
+      opacity: 0.8;
+      font-size: 0.9em;
+    }
+
+    #unla-insc-2026 .career-list {
+      list-style: none;
+      margin: 0;
+      padding: 16px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 10px;
+    }
+
+    #unla-insc-2026 .li-line {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 6px;
+      background: #f8fafc;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid #e2e8f0;
+      transition: all 0.25s ease;
+    }
+
+    #unla-insc-2026 .li-line:hover {
+      background: #ffffff;
+      border-color: #cbd5e1;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    #unla-insc-2026 .li-line .name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #0f172a;
+    }
+
+    #unla-insc-2026 .li-line a.career-link {
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    #unla-insc-2026 .li-line a.career-link:hover {
+      color: #8c1d2c;
+      text-decoration: underline;
+    }
+
+    #unla-insc-2026 .li-line .asterisk-note {
+      font-size: 0.8rem;
+      color: #64748b;
+      font-style: italic;
+      margin-top: 4px;
+    }
+
+    #unla-insc-2026 .li-date-range {
+      display: none;
+      align-items: flex-start;
+      gap: 6px;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed #e2e8f0;
+      font-size: 0.78rem;
+      color: #64748b;
+      line-height: 1.45;
+    }
+
+    #unla-insc-2026 .li-date-range .cal-icon {
+      font-size: 0.9rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    #unla-insc-2026 .li-line.selected .li-date-range {
+      display: flex;
+      border-top-color: color-mix(in srgb, var(--sel-color, #8c1d2c) 30%, #e2e8f0);
+      color: color-mix(in srgb, var(--sel-color, #8c1d2c) 80%, #334155);
+    }
+
+    #unla-insc-2026 .li-line.selected {
+      background: color-mix(in srgb, var(--sel-color, #8c1d2c) 15%, #ffffff) !important;
+      border: 2px solid var(--sel-color, #8c1d2c) !important;
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--sel-color, #8c1d2c) 25%, transparent);
+      animation: pulse-selection 1.2s ease;
+    }
+
+    @keyframes pulse-selection {
+      0% {
+        transform: scale(0.98);
+      }
+
+      50% {
+        transform: scale(1.02);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    #unla-insc-2026 .group-footer {
+      padding: 8px 16px 12px;
+      background: #ffffff;
+      text-align: right;
+    }
+
+    #unla-insc-2026 .back {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #64748b;
+    }
+
+    /* Status Badges y Acciones de Calendario */
+    #unla-insc-2026 .status-pill {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    #unla-insc-2026 .status-pill.status-open {
+      background: #dcfce7;
+      color: #15803d;
+      border: 1px solid #86efac;
+      box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2);
+    }
+
+    #unla-insc-2026 .status-pill.status-upcoming {
+      background: #fef9c3;
+      color: #854d0e;
+      border: 1px solid #fde047;
+    }
+
+    #unla-insc-2026 .status-pill.status-closed {
+      background: #f1f5f9;
+      color: #64748b;
+      border: 1px solid #cbd5e1;
+    }
+
+    #unla-insc-2026 .cal-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 10px 16px;
+      background: #f8fafc;
+      border-bottom: 1px solid #e2e8f0;
+      align-items: center;
+    }
+
+    #unla-insc-2026 .cal-actions .cal-actions-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-right: 4px;
+    }
+
+    #unla-insc-2026 .btn-cal-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 10px;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #334155;
+      cursor: pointer;
+      text-decoration: none !important;
+      transition: all 0.15s ease;
+    }
+
+    #unla-insc-2026 .btn-cal-action:hover {
+      background: #f1f5f9;
+      border-color: #94a3b8;
+      color: #0f172a;
+    }
+
+    /* Checklist, Notices & Banner */
+    #unla-insc-2026 .checklist {
+      list-style: none;
+      margin: 12px 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    #unla-insc-2026 .checklist li {
+      position: relative;
+      padding-left: 28px;
+      font-size: 0.95rem;
+      color: #334155;
+    }
+
+    #unla-insc-2026 .checklist li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: 800;
+      color: #15803d;
+      background: #dcfce7;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+    }
+
+    #unla-insc-2026 .notice {
+      background: #fff8f9;
+      border: 1px solid #fecdd3;
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-top: 14px;
+    }
+
+    #unla-insc-2026 .notice-title {
+      font-weight: 700;
+      color: #9f1239;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    #unla-insc-2026 .cta-banner {
+      background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+      border: 2px dashed #f59e0b;
+      border-radius: 14px;
+      padding: 20px 24px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      color: #92400e;
+      font-weight: 600;
+      font-size: 1.05rem;
+      box-shadow: 0 4px 12px rgba(245, 158, 11, 0.08);
+    }
+
+    #unla-insc-2026 .cta-banner .cta-icon {
+      font-size: 1.8rem;
+      flex-shrink: 0;
+    }
+
+    #unla-insc-2026 .no-results {
+      text-align: center;
+      padding: 24px;
+      color: #64748b;
+      font-style: italic;
+      display: none;
+    }
+
+    /* Artículo 7 y Extranjeros */
+    #unla-insc-2026 .law-steps {
+      padding-left: 20px;
+      margin: 14px 0;
+    }
+
+    #unla-insc-2026 .law-steps li {
+      margin-bottom: 10px;
+      color: #334155;
+      font-size: 0.96rem;
+      line-height: 1.5;
+    }
+
+    #unla-insc-2026 .notice-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-top: 14px;
+      font-size: 0.92rem;
+      color: #475569;
+      border-left: 4px solid #7c1331;
+    }
+
+    /* Pasos del proceso (paso1 y paso2) */
+    #unla-insc-2026 .step-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-left: 5px solid #8c1d2c;
+      border-radius: 14px;
+      padding: 20px 22px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    #unla-insc-2026 .step-card:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    }
+
+    #unla-insc-2026 .step-card p {
+      margin: 6px 0;
+      font-size: 0.95rem;
+      color: #334155;
+    }
+
+    #unla-insc-2026 .step-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    #unla-insc-2026 .step-card ul {
+      margin: 8px 0;
+      padding-left: 22px;
+      color: #334155;
+      font-size: 0.95rem;
+    }
+
+    #unla-insc-2026 .step-card li {
+      margin: 5px 0;
+    }
+
+    /* Resaltados y avisos (paso1 y paso2) */
+    #unla-insc-2026 .important {
+      font-weight: 700;
+      color: #9f1239;
+    }
+
+    #unla-insc-2026 .alert-box {
+      background: #fff8f9;
+      border: 1px solid #fecdd3;
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin: 10px 0;
+      font-size: 0.92rem;
+      color: #9f1239;
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+
+    #unla-insc-2026 .info-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin: 10px 0;
+      font-size: 0.92rem;
+      color: #166534;
+    }
+
+    #unla-insc-2026 .link-box {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin: 12px 0;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Separadores de sección */
+    #unla-insc-2026 .section-divider {
+      border: none;
+      border-top: 2px dashed #e2e8f0;
+      margin: 8px 0;
+    }
+
+    /* Botón flotante volver arriba */
+    #unla-insc-2026 .back-to-top-btn {
+      position: fixed;
+      bottom: 26px;
+      right: 26px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #8c1d2c;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.35rem;
+      font-weight: 800;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(16px);
+      transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.2s ease, visibility 0.25s;
+      z-index: 9999;
+    }
+
+    #unla-insc-2026 .back-to-top-btn.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    #unla-insc-2026 .back-to-top-btn:hover {
+      background: #5e0e25;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Responsividad & Impresión */
+    @media (max-width: 768px) {
+      #unla-insc-2026 {
+        padding: 16px 8px;
+      }
+
+      #unla-insc-2026 .card {
+        padding: 18px 16px;
+        border-radius: 12px;
+      }
+
+      #unla-insc-2026 .step-card {
+        padding: 16px 18px;
+        border-radius: 12px;
+      }
+
+      #unla-insc-2026 .dept {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      #unla-insc-2026 .dept__title {
+        border-left-width: 3px;
+        padding-left: 8px;
+        margin-bottom: 4px;
+      }
+
+      #unla-insc-2026 .filters-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #unla-insc-2026 .career-list {
+        grid-template-columns: 1fr;
+      }
+
+      #unla-insc-2026 .cta-banner {
+        flex-direction: column;
+        font-size: 0.95rem;
+        padding: 16px;
+      }
+
+      #unla-insc-2026 .cal-actions {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      #unla-insc-2026 .back-to-top-btn {
+        bottom: 18px;
+        right: 18px;
+        width: 44px;
+        height: 44px;
+        font-size: 1.2rem;
+      }
+    }
+
+    @media print {
+
+      body,
+      #unla-insc-2026 {
+        background: #ffffff !important;
+        color: #000000 !important;
+        padding: 0 !important;
+      }
+
+      #unla-insc-2026 .wrap {
+        max-width: 100% !important;
+        gap: 12px !important;
+      }
+
+      #unla-insc-2026 .search-bar-wrap,
+      #unla-insc-2026 .filters-container,
+      #unla-insc-2026 .quick-nav-container,
+      #unla-insc-2026 .btn-reset-filters,
+      #unla-insc-2026 .back-to-top-btn,
+      #unla-insc-2026 .back,
+      #unla-insc-2026 .group-footer,
+      #unla-insc-2026 .cal-actions,
+      #unla-insc-2026 .cta-banner {
+        display: none !important;
+      }
+
+      #unla-insc-2026 .card {
+        box-shadow: none !important;
+        border: 1px solid #cbd5e1 !important;
+        padding: 14px 18px !important;
+        page-break-inside: avoid;
+      }
+
+      #unla-insc-2026 .step-card {
+        box-shadow: none !important;
+        border: 1px solid #cbd5e1 !important;
+        page-break-inside: avoid;
+      }
+
+      #unla-insc-2026 .dates__group {
+        border: 1px solid #cbd5e1 !important;
+        page-break-inside: avoid;
+        margin-bottom: 14px !important;
+      }
+
+      #unla-insc-2026 .date__header {
+        background: #f1f5f9 !important;
+        color: #0f172a !important;
+        border-bottom: 1px solid #cbd5e1 !important;
+      }
+
+      #unla-insc-2026 .li-line {
+        background: #ffffff !important;
+        border: 1px solid #e2e8f0 !important;
+        break-inside: avoid;
+      }
+
+      #unla-insc-2026 .toc .pill {
+        background: #ffffff !important;
+        border: 1px solid #cbd5e1 !important;
+        color: #000000 !important;
+      }
+
+      #unla-insc-2026 a {
+        color: #000000 !important;
+        text-decoration: none !important;
+      }
+
+      #unla-insc-2026 .li-line,
+      #unla-insc-2026 .dept,
+      #unla-insc-2026 .dept li,
+      #unla-insc-2026 .dates__group {
+        display: block !important;
+      }
+
+      #unla-insc-2026 .career-list {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<main id="unla-insc-2026">
-<div class="wrap">
+  <main id="unla-insc-2026">
+    <div class="wrap">
 
-  <!-- ============================================================ -->
-  <!-- SECCIÓN: RESUMEN DE LA INSCRIPCIÓN E INTRODUCCIÓN            -->
-  <!-- ============================================================ -->
-  <section class="card" aria-label="Resumen de la inscripción">
-    <h1 class="hero-title">🎓 Inscripción a Carreras de Grado y Pregrado UNLa</h1>
-    <p class="intro-text">
-      El trámite de ingreso a la Universidad Nacional de Lanús es <strong>100% online</strong>. El proceso se realiza de manera virtual en las fechas estipuladas para cada carrera. A continuación te presentamos el resumen paso a paso:
-    </p>
+      <!-- ============================================================ -->
+      <!-- SECCIÓN: RESUMEN DE LA INSCRIPCIÓN E INTRODUCCIÓN            -->
+      <!-- ============================================================ -->
+      <section class="card" aria-label="Resumen de la inscripción">
+        <h1 class="hero-title">🎓 Inscripción a Carreras de Grado y Pregrado UNLa</h1>
+        <p class="intro-text">
+          El trámite de ingreso a la Universidad Nacional de Lanús es <strong>100% online</strong>. El proceso se
+          realiza de manera virtual en las fechas estipuladas para cada carrera. A continuación te presentamos el
+          resumen paso a paso:
+        </p>
 
-    <div class="steps-summary">
-      <div class="step-item">
-        <div class="step-number">1</div>
-        <div class="step-content">
-          <h4>Consultá tu carrera</h4>
-          <p>Encontrá la carrera que buscás y conocé a qué Departamento pertenece, los turnos de cursada y su fecha de inscripción asignada.</p>
+        <div class="steps-summary">
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Consultá tu carrera</h4>
+              <p>Encontrá la carrera que buscás y conocé a qué Departamento pertenece, los turnos de cursada y su fecha
+                de inscripción asignada.</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Prepará tus archivos</h4>
+              <p>Tené listos en digital (JPG o PDF) tu foto tipo carnet, DNI frente/dorso y título secundario o
+                constancia en trámite. Si no terminaste todavía el secundario, necesitarás constancia de las materias
+                que adeudás o certificado de alumno regular.</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>Completá el formulario</h4>
+              <p>Llegada la fecha de inscripción en esta misma web se habilitará el acceso a la inscripción y
+                publicaremos una guía para que puedas hacerla sin problemas.</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="step-item">
-        <div class="step-number">2</div>
-        <div class="step-content">
-          <h4>Prepará tus archivos</h4>
-          <p>Tené listos en digital (JPG o PDF) tu foto tipo carnet, DNI frente/dorso y título secundario o constancia en trámite. Si no terminaste todavía el secundario, necesitarás constancia de las materias que adeudás o certificado de alumno regular.</p>
+
+        <div class="quick-nav-container">
+          <span class="quick-nav-label">Navegación rápida de secciones:</span>
+          <ul class="quick-nav" aria-label="Accesos directos">
+            <li><a href="#toc-card" class="highlight-nav">🏛️ Carreras</a></li>
+            <li><a href="#calendario">📅 Fechas de inscripción</a></li>
+            <li><a href="#docs-title">🗂️ Documentación necesaria</a></li>
+            <li><a href="#art7-section">📜 Modalidades especiales de ingreso</a></li>
+            <li><a href="#paso1-section">📝 Paso 1: Preinscripción online</a></li>
+            <li><a href="#paso2-section">💳 Paso 2: Autogestión y pago</a></li>
+          </ul>
         </div>
-      </div>
-      <div class="step-item">
-        <div class="step-number">3</div>
-        <div class="step-content">
-          <h4>Completá el formulario</h4>
-          <p>Llegada la fecha de inscripción en esta misma web se habilitará el acceso a la inscripción y publicaremos una guía para que puedas hacerla sin problemas.</p>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SECCIÓN: ÍNDICE POR DEPARTAMENTO Y FILTROS                   -->
+      <!-- ============================================================ -->
+      <section id="toc-card" aria-labelledby="toc-title" class="card">
+        <h2 id="toc-title">🏛️ Carreras por Departamento</h2>
+
+        <div class="search-bar-wrap">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input type="search" id="career-search" class="search-input"
+            placeholder="Escribí el nombre de una carrera para buscarla..." aria-label="Buscar carrera"
+            autocomplete="off" />
         </div>
-      </div>
+
+        <div class="filters-container">
+          <div class="filters-group">
+            <span class="filters-title">Filtrar por turno:</span>
+            <label class="chip"><input id="f-manana" type="checkbox" /> Mañana</label>
+            <label class="chip"><input id="f-tarde" type="checkbox" /> Tarde</label>
+            <label class="chip"><input id="f-noche" type="checkbox" /> Noche</label>
+            <label class="chip"><input id="f-dist" type="checkbox" /> A distancia</label>
+          </div>
+          <button type="button" id="btn-clear" class="btn-reset-filters" style="display:none;">Borrar filtros</button>
+        </div>
+
+        <div class="turnos-note" role="note">
+          <span style="font-size:1rem;">🕒</span>
+          <span><strong>Franjas horarias:</strong></span>
+          <span class="badge badge-mañana" style="font-size:0.8rem;padding:5px 10px;">Turno Mañana &nbsp;09:00 – 13:00
+            hs</span>
+          <span class="badge badge-tarde" style="font-size:0.8rem;padding:5px 10px;">Turno Tarde &nbsp;14:00 – 18:00
+            hs</span>
+          <span class="badge badge-noche" style="font-size:0.8rem;padding:5px 10px;">Turno Noche &nbsp;18:00 – 22:00
+            hs</span>
+        </div>
+
+        <div class="toc" id="toc"></div>
+        <div id="no-results-toc" class="no-results">No se encontraron carreras que coincidan con los filtros
+          seleccionados.</div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SECCIÓN: CALENDARIO DE FECHAS                                -->
+      <!-- ============================================================ -->
+      <section aria-labelledby="cal-title" class="card" id="calendario">
+        <h2 id="cal-title">🗓️ Fechas de inscripción y turnos disponibles en los que se cursará</h2>
+        <div id="dates"></div>
+        <div id="no-results-dates" class="no-results">No se encontraron fechas de inscripción para la búsqueda actual.
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SECCIÓN: DOCUMENTACIÓN NECESARIA                             -->
+      <!-- ============================================================ -->
+      <section id="docs-title" aria-labelledby="docs-title" class="card doc-section">
+        <h2>🗂️ Documentación necesaria</h2>
+        <p class="intro-text">
+          <strong>La inscripción es 100% online a través de formulario.</strong> Tené preparados con anticipación
+          archivos claros, legibles y prolijos (escaneos o fotos nítidas) en formato JPG o PDF:
+        </p>
+
+        <ul class="checklist">
+          <li><strong>Foto digital tipo carnet:</strong> reciente, de frente, fondo claro, formato cuadrado para tu
+            legajo universitario.</li>
+          <li><strong>DNI / Cédula de identidad</strong> (países del Mercosur) o <strong>Pasaporte</strong>: archivo con
+            frente y dorso legibles.</li>
+          <li><strong>Título Secundario</strong> o <strong>Constancia de Título en trámite</strong> (sin materias
+            adeudadas).</li>
+        </ul>
+
+        <div class="notice">
+          <div class="notice-title">⚠️ ¿Todavía estás cursando el último año o adeudás materias?</div>
+          <p style="margin: 0 0 6px 0; color: #475569; font-size: 0.92rem;">Al momento de inscribirte deberás adjuntar:
+          </p>
+          <ul class="checklist" style="margin-bottom:0;">
+            <li><strong>Certificado de alumno/a regular</strong> o <strong>Constancia de materias adeudadas</strong>.
+              Deberás presentar el certificado definitivo de título en trámite a mediados de febrero de 2027.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- BANNER: AVISO DE HABILITACIÓN DE FORMULARIO -->
+      <aside class="cta-banner" role="alert">
+        <span class="cta-icon" aria-hidden="true">⚠️</span>
+        <span>El acceso a la inscripción online se habilitará en este sitio web únicamente durante los días y horarios
+          correspondientes a cada carrera.</span>
+      </aside>
+
+      <!-- ============================================================ -->
+      <!-- SECCIÓN: MODALIDADES ESPECIALES DE INGRESO (ARTÍCULO 7)      -->
+      <!-- ============================================================ -->
+      <section id="art7-section" class="card" aria-label="Modalidades Especiales de Ingreso">
+        <h2>📜 Modalidades Especiales de Ingreso · UNLa</h2>
+        <p class="intro-text">
+          Información y requisitos para postulantes mayores de 25 años sin título secundario (Artículo 7 de la Ley de
+          Educación Superior) y estudiantes con estudios secundarios cursados en el extranjero.
+        </p>
+
+        <div class="quick-nav-container">
+          <span class="quick-nav-label">Navegación de secciones:</span>
+          <ul class="quick-nav" aria-label="Accesos directos">
+            <li><a href="#law-title" class="highlight-nav">📜 Ingreso por Artículo 7 (+25 años)</a></li>
+            <li><a href="#foreign-title">🌐 Estudiantes extranjeros</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECCIÓN: ARTÍCULO 7 -->
+      <section id="law-section" aria-labelledby="law-title" class="card law-section">
+        <h2 id="law-title">📜 Ingreso por Artículo 7 - Ley 24.521</h2>
+        <p class="intro-text">Las personas mayores de 25 años que no hayan finalizado sus estudios secundarios pueden
+          ingresar a la Universidad siempre que reúnan los siguientes requisitos:</p>
+        <ol class="law-steps">
+          <li><strong>Edad:</strong> Tener 25 años cumplidos al momento de formalizar la inscripción.</li>
+          <li><strong>Experiencia laboral:</strong> Acreditar un mínimo de tres (3) años de experiencia laboral
+            comprobable afín al área de la carrera elegida.</li>
+          <li><strong>Entrevista institucional:</strong> Aprobar la entrevista personal con la persona responsable de
+            Secretaría Académica y la Dirección de la carrera.</li>
+          <li><strong>Examen general:</strong> Aprobar el examen referido a las cuatro áreas del conocimiento: Lengua,
+            Matemática, Ciencias Sociales y Ciencias Naturales.</li>
+        </ol>
+
+        <div class="notice-box">
+          ℹ️ La modalidad del examen, así como la fecha y horario de la entrevista individual, se comunicarán
+          oportunamente a través de la casilla de correo electrónico informada por el aspirante.<br />
+          Los aspirantes que aprueben satisfactoriamente la entrevista y el examen estarán en condiciones de ingresar a
+          la carrera.
+        </div>
+      </section>
+
+      <!-- SECCIÓN: ESTUDIANTES EXTRANJEROS -->
+      <section id="foreign-section" aria-labelledby="foreign-title" class="card foreign-section">
+        <h2 id="foreign-title">🌐 Estudiantes Extranjeros</h2>
+        <p class="intro-text">
+          Si sos extranjero o completaste tus estudios secundarios en el exterior, debés convalidar tu título de nivel
+          medio ante el Ministerio de Capital Humano / Educación de la Nación Argentina antes de formalizar tu ingreso.
+        </p>
+        <p style="margin: 12px 0 6px 0; font-size: 0.95rem; color: #334155;">
+          Este trámite requiere una solicitud previa de turno online. Para conocer los requisitos, documentación a
+          presentar y realizar la solicitud, ingresá al sitio oficial del trámite nacional:
+        </p>
+        <p style="margin-top: 10px;">
+          👉 <a href="https://www.argentina.gob.ar/convalidar-titulo-secundario-de-paises-con-convenio"
+            rel="noopener noreferrer"
+            target="_blank"><strong>https://www.argentina.gob.ar/convalidar-titulo-secundario-de-paises-con-convenio
+              ↗</strong></a>
+        </p>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SECCIÓN: PASO 1 - PREINSCRIPCIÓN ONLINE                      -->
+      <!-- ============================================================ -->
+      <section id="paso1-section" class="card" aria-label="Paso 1 Preinscripción Online">
+        <h2>📝 Guía de Inscripción · Paso 1: Preinscripción Online</h2>
+        <p class="intro-text">
+          Seguí este instructivo paso a paso para completar tu formulario digital de preinscripción en el sistema
+          SIU-Guaraní de la UNLa.
+        </p>
+      </section>
+
+      <section class="step-card">
+        <h3><span>🌐</span> 1. Acceso al Sistema</h3>
+        <p>En el portal web de la UNLa, hacé click en la opción del menú superior que dice <strong>"INGRESO"</strong>.
+          Luego, seleccioná el botón <strong>"¡INSCRIBITE AQUÍ!"</strong> para ingresar al sistema de preinscripción.
+        </p>
+      </section>
+
+      <section class="step-card">
+        <h3><span>👤</span> 2. Creación de Usuario en SIU-Guaraní</h3>
+        <p>Serás redirigido al sistema de preinscripción SIU-Guaraní. Si es tu primera vez, hacé click en el botón
+          <strong>"Registrate"</strong> para generar tu cuenta de usuario.</p>
+      </section>
+
+      <section class="step-card">
+        <h3><span>✍️</span> 3. Completar Datos Personales</h3>
+        <p>Rellená el formulario con tu información personal. Asegurate de que los datos sean exactos y coincidan con tu
+          DNI:</p>
+        <ul>
+          <li><strong>Género, Nacionalidad y número de DNI.</strong></li>
+          <li><strong>Apellido y Nombre:</strong> <span class="important">tal cual figuran en tu documento</span>. El
+            campo "Nombre de Pila Elegido" debe completarse únicamente si el nombre con el que te identificás, por tu
+            identidad de género, difiere del documento. Caso contrario, dejalo vacío.</li>
+          <li><strong>Datos de contacto:</strong> Celular, pregunta secreta de recuperación y un correo electrónico
+            válido.</li>
+        </ul>
+
+        <div class="alert-box">
+          <span>⚠️</span>
+          <div><strong>¡Atención!</strong> Verificá muy bien al escribir tu correo electrónico, ya que será la vía de
+            comunicación oficial que utilizará la UNLa para notificarte.</div>
+        </div>
+
+        <p>Finalmente, completá el reCAPTCHA (<em>"No soy un robot"</em>) y hacé click en <strong>"Generar
+            usuario"</strong>.</p>
+      </section>
+
+      <section class="step-card">
+        <h3><span>📧</span> 4. Verificación de Correo Electrónico</h3>
+        <p>Recibirás un email automático del sistema. Abrilo y hacé click en el <strong>enlace de confirmación</strong>
+          para activar tu cuenta y continuar con la preinscripción.</p>
+      </section>
+
+      <section class="step-card">
+        <h3><span>🎓</span> 5. Elección de la Carrera</h3>
+        <p>Una vez confirmada tu cuenta, iniciá sesión para elegir tu carrera. El sistema te solicitará los siguientes
+          campos:</p>
+        <ul>
+          <li><strong>Responsable Académica:</strong> El Departamento al que pertenece tu carrera (ej: Humanidades y
+            Artes, Salud Comunitaria, Desarrollo Productivo y Tecnológico, o Planificación y Políticas Públicas).</li>
+          <li><strong>Propuesta:</strong> El nombre de la carrera que elegiste.</li>
+          <li><strong>Ubicación:</strong> Lanús.</li>
+          <li><strong>Modalidad:</strong> Presencial (o A distancia, según corresponda).</li>
+        </ul>
+        <p><em>Nota: Si te equivocás de propuesta, podés eliminarla y seleccionarla nuevamente antes de finalizar.</em>
+        </p>
+      </section>
+
+      <section class="step-card">
+        <h3><span>📋</span> 6. Carga de Datos Adicionales y Formularios</h3>
+        <p>Completá los formularios con tu información adicional. Los campos marcados con asterisco (*) <span
+            class="important">son obligatorios</span>. Guardá los cambios a medida que avanzás:</p>
+        <ul>
+          <li><strong>Turno de cursada:</strong> Seleccioná el turno (Mañana, Tarde o Noche) entre los que ofrece tu
+            carrera. <span class="important">¡Importante!</span> Aunque el sistema despliegue los tres turnos, verificá
+            que el elegido esté habilitado para tu carrera en el cronograma oficial; de lo contrario, se te reasignará
+            automáticamente uno válido.</li>
+          <li><strong>Datos principales, personales y de discapacidad:</strong> Completá toda la información requerida.
+          </li>
+          <li><strong>Situación laboral y estudios previos:</strong> Completá las secciones restantes.</li>
+        </ul>
+      </section>
+
+      <section class="step-card">
+        <h3><span>📤</span> 7. Carga de Documentación Digital</h3>
+        <p>En la sección <strong>"Documentación"</strong> deberás adjuntar tus archivos en formato JPG o PDF.</p>
+        <div class="alert-box">
+          <span>📎</span>
+          <div>Los archivos <span class="important">no deben superar los 2 MB</span> cada uno y deben ser totalmente
+            legibles y nítidos.</div>
+        </div>
+        <p>Documentación requerida:</p>
+        <ul>
+          <li><strong>Documento de Identidad:</strong> archivo con frente y dorso legibles.</li>
+          <li><strong>Foto digital:</strong> reciente, de frente y con fondo claro.</li>
+          <li><strong>Título secundario</strong>, constancia de título en trámite o certificado de alumno regular /
+            materias adeudadas.</li>
+        </ul>
+      </section>
+
+      <section class="step-card">
+        <h3><span>🏁</span> 8. Finalización de la Preinscripción</h3>
+        <p>Una vez completados todos los campos y adjuntados los archivos, hacé click en el botón
+          <strong>"Finalizar"</strong> para enviar tu postulación.</p>
+      </section>
+
+      <section class="step-card">
+        <h3><span>⏳</span> 9. Revisión y Confirmación</h3>
+        <p>Tu documentación será revisada por el equipo de Ingreso. Deberás esperar un correo electrónico que confirme
+          la correcta recepción de tu trámite. Si completaste el formulario dentro del plazo, no te preocupes: el mail
+          de confirmación puede llegar en días posteriores al cierre.</p>
+
+        <div class="info-box">
+          <strong>⚠️ Recomendación importante:</strong> Mientras se procesa la revisión, por favor <strong>no vuelvas a
+            ingresar al formulario para realizar modificaciones</strong>. Si se detecta algún error en tus archivos, se
+          te notificará por correo.
+        </div>
+
+        <p>Transcurridas <strong>24 horas hábiles</strong> desde la llegada del mail de confirmación, se habilitará en
+          el sistema de autogestión el cupón para continuar con el <strong>Paso 2 (pago de la tasa de
+            inscripción)</strong>.</p>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- SECCIÓN: PASO 2 - AUTOGESTIÓN Y PAGO DE TASA                 -->
+      <!-- ============================================================ -->
+      <section id="paso2-section" class="card" aria-label="Paso 2 Autogestión y Pago">
+        <h2>💳 Guía de Inscripción · Paso 2: Autogestión y Pago de Tasa</h2>
+        <p class="intro-text">
+          Una vez confirmado el correo electrónico de tu documentación, deberás acceder al sistema de autogestión
+          estudiantil para generar tu usuario definitivo y abonar el cupón de la tasa de inscripción.
+        </p>
+      </section>
+
+      <section class="step-card">
+        <h3><span>🌐</span> 1. Acceso a SIU-Guaraní 3W</h3>
+        <p>Una vez que hayas recibido el mail que confirma que tu documentación está aprobada, ingresá al sistema de
+          autogestión estudiantil:</p>
+        <div class="link-box">
+          <span>👉</span>
+          <span>Portal de Autogestión: <a href="https://estudiantes.unla.edu.ar/autogestion3w/" target="_blank"
+              rel="noopener noreferrer"><strong>https://estudiantes.unla.edu.ar/autogestion3w/ ↗</strong></a></span>
+        </div>
+        <p>Recordá que el cupón de pago estará habilitado <strong>24 horas hábiles posteriores</strong> a la llegada del
+          mail de confirmación.</p>
+      </section>
+
+      <section class="step-card">
+        <h3><span>👤</span> 2. Primer Ingreso y Generación de Contraseña</h3>
+        <p>Al ser tu primer ingreso en este sistema, deberás crear tu contraseña de acceso:</p>
+        <ul>
+          <li>Hacé click en el enlace: <span class="important">"¿Olvidaste tu contraseña o sos un usuario
+              nuevo?"</span>.</li>
+          <li>Completá el campo <strong>Número de documento</strong> ingresando tu DNI sin puntos ni espacios.</li>
+          <li>Recibirás un correo electrónico en tu casilla registrada con un enlace seguro para crear tu clave.
+            <em>(Revisá la bandeja de entrada y la carpeta de correo no deseado/spam)</em>.</li>
+          <li>Abrí el enlace, escribí y confirmá tu nueva contraseña y hacé click en <strong>"Acceder"</strong>.</li>
+          <li>Iniciá sesión completando el campo <strong>Usuario</strong> con tu número de DNI (sin puntos) y la
+            <strong>Contraseña</strong> que acabás de definir.</li>
+        </ul>
+      </section>
+
+      <section class="step-card">
+        <h3><span>📋</span> 3. Cupón de Pago de la Tasa de Inscripción</h3>
+        <p>Una vez dentro del portal de autogestión <strong>SIU-Guaraní 3W</strong>, finalizá el proceso con el pago
+          correspondiente:</p>
+        <ul>
+          <li>El cupón de pago aparecerá en la plataforma <strong>a partir de las 24 horas hábiles</strong> desde la
+            confirmación de tu documentación por email.</li>
+          <li>Hacé click sobre el cupón y el sistema te redirigirá a la pasarela de <strong>Mercado Pago</strong> para
+            realizar el pago de forma digital y segura con tarjeta de débito, crédito o dinero en cuenta.</li>
+        </ul>
+
+        <div class="alert-box">
+          <span>ℹ️</span>
+          <div>El abono de la tasa de inscripción se abona por única vez y se destina al fondo de becas estudiantiles de
+            la Universidad.</div>
+        </div>
+      </section>
+
+      <!-- BOTÓN FLOTANTE VOLVER ARRIBA -->
+      <button type="button" id="btn-back-to-top" class="back-to-top-btn" title="Volver arriba"
+        aria-label="Volver arriba">↑</button>
+
     </div>
+  </main>
 
-    <div class="quick-nav-container">
-      <span class="quick-nav-label">Navegación rápida de secciones:</span>
-      <ul class="quick-nav" aria-label="Accesos directos">
-        <li><a href="#toc-card" class="highlight-nav">🏛️ Carreras por departamento</a></li>
-        <li><a href="#calendario">📅 Calendario de fechas</a></li>
-        <li><a href="#docs-title">🗂️ Documentación necesaria</a></li>
-        <li><a href="#art7-section">📜 Modalidades especiales de ingreso</a></li>
-        <li><a href="#paso1-section">📝 Paso 1: Preinscripción online</a></li>
-        <li><a href="#paso2-section">💳 Paso 2: Autogestión y pago</a></li>
-      </ul>
-    </div>
-  </section>
+  <script>
+    (function () {
+      "use strict";
 
-  <!-- ============================================================ -->
-  <!-- SECCIÓN: ÍNDICE POR DEPARTAMENTO Y FILTROS                   -->
-  <!-- ============================================================ -->
-  <section id="toc-card" aria-labelledby="toc-title" class="card">
-    <h2 id="toc-title">🏛️ Carreras por Departamento</h2>
+      const DEPT_COLORS_MAP = {
+        "DEPARTAMENTO DE HUMANIDADES Y ARTES": "#6d0f7d",
+        "DEPARTAMENTO DE DESARROLLO PRODUCTIVO Y TECNOLÓGICO": "#ce6c2f",
+        "DEPARTAMENTO DE PLANIFICACIÓN Y POLÍTICAS PÚBLICAS": "#273772",
+        "DEPARTAMENTO DE SALUD COMUNITARIA": "#787c12"
+      };
 
-    <div class="search-bar-wrap">
-      <span class="search-icon" aria-hidden="true">🔍</span>
-      <input type="search" id="career-search" class="search-input" placeholder="Escribí el nombre de una carrera para buscarla..." aria-label="Buscar carrera" autocomplete="off"/>
-    </div>
+      const CAREER_LINKS = {
+        'gestion de gobierno local': 'https://www.unla.edu.ar/carreras/pregrado/tecnicaturas/gestion-de-gobierno-local',
+        'tecnicatura universitaria en gestion de gobierno local': 'https://www.unla.edu.ar/carreras/pregrado/tecnicaturas/gestion-de-gobierno-local',
+        'tecnicatura superior en gestion de gobierno local': 'https://www.unla.edu.ar/carreras/pregrado/tecnicaturas/gestion-de-gobierno-local',
+        'gestion y administracion universitaria': 'https://www.unla.edu.ar/carreras/pregrado/tecnicaturas/gestion-y-administracion-universitaria',
+        'tecnicatura universitaria en gestion y administracion universitaria': 'https://www.unla.edu.ar/carreras/pregrado/tecnicaturas/gestion-y-administracion-universitaria',
+        'tecnicatura superior en gestion y administracion universitaria': 'https://www.unla.edu.ar/carreras/pregrado/tecnicaturas/gestion-y-administracion-universitaria',
+        'audiovision': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/audiovision',
+        'ciencia politica y gobierno': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/ciencia-politica-y-gobierno',
+        'ciencia y tecnologia de los alimentos': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/ciencia-y-tecnologia-de-los-alimentos',
+        'diseno industrial': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/diseno-industrial',
+        'diseno y comunicacion visual': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/diseno-y-comunicacion-visual',
+        'economia empresarial': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/economia-empresarial',
+        'economia politica': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/economia-politica',
+        'educacion': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/educacion',
+        'enfermeria': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/enfermeria',
+        'gestion ambiental urbana': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/gestion-ambiental-urbana',
+        'justicia y derechos humanos': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/justicia-y-derechos-humanos',
+        'musica de camara y sinfonica': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/musica-de-camara-y-sinfonica',
+        'nutricion': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/nutricion',
+        'planificacion logistica': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/planificacion-logistica',
+        'relaciones internacionales': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/relaciones-internacionales',
+        'seguridad ciudadana': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/seguridad-ciudadana',
+        'sistemas': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/sistemas',
+        'ingenieria ferroviaria': 'https://www.unla.edu.ar/carreras/grado/ingenierias/ferroviaria',
+        'trabajo social': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/trabajo-social',
+        'traductorado publico en idioma ingles': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/traductorado-publico-en-idioma-ingles',
+        'turismo': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/turismo'
+      };
 
-    <div class="filters-container">
-      <div class="filters-group">
-        <span class="filters-title">Filtrar por turno:</span>
-        <label class="chip"><input id="f-manana" type="checkbox"/> Mañana</label>
-        <label class="chip"><input id="f-tarde" type="checkbox"/> Tarde</label>
-        <label class="chip"><input id="f-noche" type="checkbox"/> Noche</label>
-        <label class="chip"><input id="f-dist" type="checkbox"/> A distancia</label>
-      </div>
-      <button type="button" id="btn-clear" class="btn-reset-filters" style="display:none;">Borrar filtros</button>
-    </div>
-
-    <div class="turnos-note" role="note">
-      <span style="font-size:1rem;">🕒</span>
-      <span><strong>Franjas horarias:</strong></span>
-      <span class="badge badge-mañana" style="font-size:0.8rem;padding:5px 10px;">Turno Mañana &nbsp;09:00 – 13:00 hs</span>
-      <span class="badge badge-tarde" style="font-size:0.8rem;padding:5px 10px;">Turno Tarde &nbsp;14:00 – 18:00 hs</span>
-      <span class="badge badge-noche" style="font-size:0.8rem;padding:5px 10px;">Turno Noche &nbsp;18:00 – 22:00 hs</span>
-    </div>
-
-    <div class="toc" id="toc"></div>
-    <div id="no-results-toc" class="no-results">No se encontraron carreras que coincidan con los filtros seleccionados.</div>
-  </section>
-
-  <!-- ============================================================ -->
-  <!-- SECCIÓN: CALENDARIO DE FECHAS                                -->
-  <!-- ============================================================ -->
-  <section aria-labelledby="cal-title" class="card" id="calendario">
-    <h2 id="cal-title">🗓️ Fechas de inscripción y turnos disponibles en los que se cursará</h2>
-    <div id="dates"></div>
-    <div id="no-results-dates" class="no-results">No se encontraron fechas de inscripción para la búsqueda actual.</div>
-  </section>
-
-  <!-- ============================================================ -->
-  <!-- SECCIÓN: DOCUMENTACIÓN NECESARIA                             -->
-  <!-- ============================================================ -->
-  <section id="docs-title" aria-labelledby="docs-title" class="card doc-section">
-    <h2>🗂️ Documentación necesaria</h2>
-    <p class="intro-text">
-      <strong>La inscripción es 100% online a través de formulario.</strong> Tené preparados con anticipación archivos claros, legibles y prolijos (escaneos o fotos nítidas) en formato JPG o PDF:
-    </p>
-    
-    <ul class="checklist">
-      <li><strong>Foto digital tipo carnet:</strong> reciente, de frente, fondo claro, formato cuadrado para tu legajo universitario.</li>
-      <li><strong>DNI / Cédula de identidad</strong> (países del Mercosur) o <strong>Pasaporte</strong>: archivo con frente y dorso legibles.</li>
-      <li><strong>Título Secundario</strong> o <strong>Constancia de Título en trámite</strong> (sin materias adeudadas).</li>
-    </ul>
-
-    <div class="notice">
-      <div class="notice-title">⚠️ ¿Todavía estás cursando el último año o adeudás materias?</div>
-      <p style="margin: 0 0 6px 0; color: #475569; font-size: 0.92rem;">Al momento de inscribirte deberás adjuntar:</p>
-      <ul class="checklist" style="margin-bottom:0;">
-        <li><strong>Certificado de alumno/a regular</strong> o <strong>Constancia de materias adeudadas</strong>. Deberás presentar el certificado definitivo de título en trámite a mediados de febrero de 2027.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- BANNER: AVISO DE HABILITACIÓN DE FORMULARIO -->
-  <aside class="cta-banner" role="alert">
-    <span class="cta-icon" aria-hidden="true">⚠️</span>
-    <span>El acceso a la inscripción online se habilitará en este sitio web únicamente durante los días y horarios correspondientes a cada carrera.</span>
-  </aside>
-
-  <!-- ============================================================ -->
-  <!-- SECCIÓN: MODALIDADES ESPECIALES DE INGRESO (ARTÍCULO 7)      -->
-  <!-- ============================================================ -->
-  <section id="art7-section" class="card" aria-label="Modalidades Especiales de Ingreso">
-    <h2>📜 Modalidades Especiales de Ingreso · UNLa</h2>
-    <p class="intro-text">
-      Información y requisitos para postulantes mayores de 25 años sin título secundario (Artículo 7 de la Ley de Educación Superior) y estudiantes con estudios secundarios cursados en el extranjero.
-    </p>
-
-    <div class="quick-nav-container">
-      <span class="quick-nav-label">Navegación de secciones:</span>
-      <ul class="quick-nav" aria-label="Accesos directos">
-        <li><a href="#law-title" class="highlight-nav">📜 Ingreso por Artículo 7 (+25 años)</a></li>
-        <li><a href="#foreign-title">🌐 Estudiantes extranjeros</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- SECCIÓN: ARTÍCULO 7 -->
-  <section id="law-section" aria-labelledby="law-title" class="card law-section">
-    <h2 id="law-title">📜 Ingreso por Artículo 7 - Ley 24.521</h2>
-    <p class="intro-text">Las personas mayores de 25 años que no hayan finalizado sus estudios secundarios pueden ingresar a la Universidad siempre que reúnan los siguientes requisitos:</p>
-    <ol class="law-steps">
-      <li><strong>Edad:</strong> Tener 25 años cumplidos al momento de formalizar la inscripción.</li>
-      <li><strong>Experiencia laboral:</strong> Acreditar un mínimo de tres (3) años de experiencia laboral comprobable afín al área de la carrera elegida.</li>
-      <li><strong>Entrevista institucional:</strong> Aprobar la entrevista personal con la persona responsable de Secretaría Académica y la Dirección de la carrera.</li>
-      <li><strong>Examen general:</strong> Aprobar el examen referido a las cuatro áreas del conocimiento: Lengua, Matemática, Ciencias Sociales y Ciencias Naturales.</li>
-    </ol>
-    
-    <div class="notice-box">
-      ℹ️ La modalidad del examen, así como la fecha y horario de la entrevista individual, se comunicarán oportunamente a través de la casilla de correo electrónico informada por el aspirante.<br/>
-      Los aspirantes que aprueben satisfactoriamente la entrevista y el examen estarán en condiciones de ingresar a la carrera.
-    </div>
-  </section>
-
-  <!-- SECCIÓN: ESTUDIANTES EXTRANJEROS -->
-  <section id="foreign-section" aria-labelledby="foreign-title" class="card foreign-section">
-    <h2 id="foreign-title">🌐 Estudiantes Extranjeros</h2>
-    <p class="intro-text">
-      Si sos extranjero o completaste tus estudios secundarios en el exterior, debés convalidar tu título de nivel medio ante el Ministerio de Capital Humano / Educación de la Nación Argentina antes de formalizar tu ingreso.
-    </p>
-    <p style="margin: 12px 0 6px 0; font-size: 0.95rem; color: #334155;">
-      Este trámite requiere una solicitud previa de turno online. Para conocer los requisitos, documentación a presentar y realizar la solicitud, ingresá al sitio oficial del trámite nacional:
-    </p>
-    <p style="margin-top: 10px;">
-      👉 <a href="https://www.argentina.gob.ar/convalidar-titulo-secundario-de-paises-con-convenio" rel="noopener noreferrer" target="_blank"><strong>https://www.argentina.gob.ar/convalidar-titulo-secundario-de-paises-con-convenio ↗</strong></a>
-    </p>
-  </section>
-
-  <!-- ============================================================ -->
-  <!-- SECCIÓN: PASO 1 - PREINSCRIPCIÓN ONLINE                      -->
-  <!-- ============================================================ -->
-  <section id="paso1-section" class="card" aria-label="Paso 1 Preinscripción Online">
-    <h2>📝 Guía de Inscripción · Paso 1: Preinscripción Online</h2>
-    <p class="intro-text">
-      Seguí este instructivo paso a paso para completar tu formulario digital de preinscripción en el sistema SIU-Guaraní de la UNLa.
-    </p>
-  </section>
-
-  <section class="step-card">
-    <h3><span>🌐</span> 1. Acceso al Sistema</h3>
-    <p>En el portal web de la UNLa, hacé click en la opción del menú superior que dice <strong>"INGRESO"</strong>. Luego, seleccioná el botón <strong>"¡INSCRIBITE AQUÍ!"</strong> para ingresar al sistema de preinscripción.</p>
-  </section>
-
-  <section class="step-card">
-    <h3><span>👤</span> 2. Creación de Usuario en SIU-Guaraní</h3>
-    <p>Serás redirigido al sistema de preinscripción SIU-Guaraní. Si es tu primera vez, hacé click en el botón <strong>"Registrate"</strong> para generar tu cuenta de usuario.</p>
-  </section>
-
-  <section class="step-card">
-    <h3><span>✍️</span> 3. Completar Datos Personales</h3>
-    <p>Rellená el formulario con tu información personal. Asegurate de que los datos sean exactos y coincidan con tu DNI:</p>
-    <ul>
-      <li><strong>Género, Nacionalidad y número de DNI.</strong></li>
-      <li><strong>Apellido y Nombre:</strong> <span class="important">tal cual figuran en tu documento</span>. El campo "Nombre de Pila Elegido" debe completarse únicamente si el nombre con el que te identificás, por tu identidad de género, difiere del documento. Caso contrario, dejalo vacío.</li>
-      <li><strong>Datos de contacto:</strong> Celular, pregunta secreta de recuperación y un correo electrónico válido.</li>
-    </ul>
-    
-    <div class="alert-box">
-      <span>⚠️</span>
-      <div><strong>¡Atención!</strong> Verificá muy bien al escribir tu correo electrónico, ya que será la vía de comunicación oficial que utilizará la UNLa para notificarte.</div>
-    </div>
-    
-    <p>Finalmente, completá el reCAPTCHA (<em>"No soy un robot"</em>) y hacé click en <strong>"Generar usuario"</strong>.</p>
-  </section>
-
-  <section class="step-card">
-    <h3><span>📧</span> 4. Verificación de Correo Electrónico</h3>
-    <p>Recibirás un email automático del sistema. Abrilo y hacé click en el <strong>enlace de confirmación</strong> para activar tu cuenta y continuar con la preinscripción.</p>
-  </section>
-
-  <section class="step-card">
-    <h3><span>🎓</span> 5. Elección de la Carrera</h3>
-    <p>Una vez confirmada tu cuenta, iniciá sesión para elegir tu carrera. El sistema te solicitará los siguientes campos:</p>
-    <ul>
-      <li><strong>Responsable Académica:</strong> El Departamento al que pertenece tu carrera (ej: Humanidades y Artes, Salud Comunitaria, Desarrollo Productivo y Tecnológico, o Planificación y Políticas Públicas).</li>
-      <li><strong>Propuesta:</strong> El nombre de la carrera que elegiste.</li>
-      <li><strong>Ubicación:</strong> Lanús.</li>
-      <li><strong>Modalidad:</strong> Presencial (o A distancia, según corresponda).</li>
-    </ul>
-    <p><em>Nota: Si te equivocás de propuesta, podés eliminarla y seleccionarla nuevamente antes de finalizar.</em></p>
-  </section>
-
-  <section class="step-card">
-    <h3><span>📋</span> 6. Carga de Datos Adicionales y Formularios</h3>
-    <p>Completá los formularios con tu información adicional. Los campos marcados con asterisco (*) <span class="important">son obligatorios</span>. Guardá los cambios a medida que avanzás:</p>
-    <ul>
-      <li><strong>Turno de cursada:</strong> Seleccioná el turno (Mañana, Tarde o Noche) entre los que ofrece tu carrera. <span class="important">¡Importante!</span> Aunque el sistema despliegue los tres turnos, verificá que el elegido esté habilitado para tu carrera en el cronograma oficial; de lo contrario, se te reasignará automáticamente uno válido.</li>
-      <li><strong>Datos principales, personales y de discapacidad:</strong> Completá toda la información requerida.</li>
-      <li><strong>Situación laboral y estudios previos:</strong> Completá las secciones restantes.</li>
-    </ul>
-  </section>
-
-  <section class="step-card">
-    <h3><span>📤</span> 7. Carga de Documentación Digital</h3>
-    <p>En la sección <strong>"Documentación"</strong> deberás adjuntar tus archivos en formato JPG o PDF.</p>
-    <div class="alert-box">
-      <span>📎</span>
-      <div>Los archivos <span class="important">no deben superar los 2 MB</span> cada uno y deben ser totalmente legibles y nítidos.</div>
-    </div>
-    <p>Documentación requerida:</p>
-    <ul>
-      <li><strong>Documento de Identidad:</strong> archivo con frente y dorso legibles.</li>
-      <li><strong>Foto digital:</strong> reciente, de frente y con fondo claro.</li>
-      <li><strong>Título secundario</strong>, constancia de título en trámite o certificado de alumno regular / materias adeudadas.</li>
-    </ul>
-  </section>
-
-  <section class="step-card">
-    <h3><span>🏁</span> 8. Finalización de la Preinscripción</h3>
-    <p>Una vez completados todos los campos y adjuntados los archivos, hacé click en el botón <strong>"Finalizar"</strong> para enviar tu postulación.</p>
-  </section>
-
-  <section class="step-card">
-    <h3><span>⏳</span> 9. Revisión y Confirmación</h3>
-    <p>Tu documentación será revisada por el equipo de Ingreso. Deberás esperar un correo electrónico que confirme la correcta recepción de tu trámite. Si completaste el formulario dentro del plazo, no te preocupes: el mail de confirmación puede llegar en días posteriores al cierre.</p>
-    
-    <div class="info-box">
-      <strong>⚠️ Recomendación importante:</strong> Mientras se procesa la revisión, por favor <strong>no vuelvas a ingresar al formulario para realizar modificaciones</strong>. Si se detecta algún error en tus archivos, se te notificará por correo.
-    </div>
-
-    <p>Transcurridas <strong>24 horas hábiles</strong> desde la llegada del mail de confirmación, se habilitará en el sistema de autogestión el cupón para continuar con el <strong>Paso 2 (pago de la tasa de inscripción)</strong>.</p>
-  </section>
-
-  <!-- ============================================================ -->
-  <!-- SECCIÓN: PASO 2 - AUTOGESTIÓN Y PAGO DE TASA                 -->
-  <!-- ============================================================ -->
-  <section id="paso2-section" class="card" aria-label="Paso 2 Autogestión y Pago">
-    <h2>💳 Guía de Inscripción · Paso 2: Autogestión y Pago de Tasa</h2>
-    <p class="intro-text">
-      Una vez confirmado el correo electrónico de tu documentación, deberás acceder al sistema de autogestión estudiantil para generar tu usuario definitivo y abonar el cupón de la tasa de inscripción.
-    </p>
-  </section>
-
-  <section class="step-card">
-    <h3><span>🌐</span> 1. Acceso a SIU-Guaraní 3W</h3>
-    <p>Una vez que hayas recibido el mail que confirma que tu documentación está aprobada, ingresá al sistema de autogestión estudiantil:</p>
-    <div class="link-box">
-      <span>👉</span>
-      <span>Portal de Autogestión: <a href="https://estudiantes.unla.edu.ar/autogestion3w/" target="_blank" rel="noopener noreferrer"><strong>https://estudiantes.unla.edu.ar/autogestion3w/ ↗</strong></a></span>
-    </div>
-    <p>Recordá que el cupón de pago estará habilitado <strong>24 horas hábiles posteriores</strong> a la llegada del mail de confirmación.</p>
-  </section>
-
-  <section class="step-card">
-    <h3><span>👤</span> 2. Primer Ingreso y Generación de Contraseña</h3>
-    <p>Al ser tu primer ingreso en este sistema, deberás crear tu contraseña de acceso:</p>
-    <ul>
-      <li>Hacé click en el enlace: <span class="important">"¿Olvidaste tu contraseña o sos un usuario nuevo?"</span>.</li>
-      <li>Completá el campo <strong>Número de documento</strong> ingresando tu DNI sin puntos ni espacios.</li>
-      <li>Recibirás un correo electrónico en tu casilla registrada con un enlace seguro para crear tu clave. <em>(Revisá la bandeja de entrada y la carpeta de correo no deseado/spam)</em>.</li>
-      <li>Abrí el enlace, escribí y confirmá tu nueva contraseña y hacé click en <strong>"Acceder"</strong>.</li>
-      <li>Iniciá sesión completando el campo <strong>Usuario</strong> con tu número de DNI (sin puntos) y la <strong>Contraseña</strong> que acabás de definir.</li>
-    </ul>
-  </section>
-
-  <section class="step-card">
-    <h3><span>📋</span> 3. Cupón de Pago de la Tasa de Inscripción</h3>
-    <p>Una vez dentro del portal de autogestión <strong>SIU-Guaraní 3W</strong>, finalizá el proceso con el pago correspondiente:</p>
-    <ul>
-      <li>El cupón de pago aparecerá en la plataforma <strong>a partir de las 24 horas hábiles</strong> desde la confirmación de tu documentación por email.</li>
-      <li>Hacé click sobre el cupón y el sistema te redirigirá a la pasarela de <strong>Mercado Pago</strong> para realizar el pago de forma digital y segura con tarjeta de débito, crédito o dinero en cuenta.</li>
-    </ul>
-    
-    <div class="alert-box">
-      <span>ℹ️</span>
-      <div>El abono de la tasa de inscripción se abona por única vez y se destina al fondo de becas estudiantiles de la Universidad.</div>
-    </div>
-  </section>
-
-  <!-- BOTÓN FLOTANTE VOLVER ARRIBA -->
-  <button type="button" id="btn-back-to-top" class="back-to-top-btn" title="Volver arriba" aria-label="Volver arriba">↑</button>
-
-</div>
-</main>
-
-<script>
-(function() {
-  "use strict";
-
-  const DEPT_COLORS_MAP = {
-    "DEPARTAMENTO DE HUMANIDADES Y ARTES": "#6d0f7d",
-    "DEPARTAMENTO DE DESARROLLO PRODUCTIVO Y TECNOLÓGICO": "#ce6c2f",
-    "DEPARTAMENTO DE PLANIFICACIÓN Y POLÍTICAS PÚBLICAS": "#273772",
-    "DEPARTAMENTO DE SALUD COMUNITARIA": "#787c12"
-  };
-
-  const CAREER_LINKS = {
-    'gestion de gobierno local': 'https://www.unla.edu.ar/carreras/pregrado/tecnicaturas/gestion-de-gobierno-local',
-    'tecnicatura universitaria en gestion de gobierno local': 'https://www.unla.edu.ar/carreras/pregrado/tecnicaturas/gestion-de-gobierno-local',
-    'tecnicatura superior en gestion de gobierno local': 'https://www.unla.edu.ar/carreras/pregrado/tecnicaturas/gestion-de-gobierno-local',
-    'gestion y administracion universitaria': 'https://www.unla.edu.ar/carreras/pregrado/tecnicaturas/gestion-y-administracion-universitaria',
-    'tecnicatura universitaria en gestion y administracion universitaria': 'https://www.unla.edu.ar/carreras/pregrado/tecnicaturas/gestion-y-administracion-universitaria',
-    'tecnicatura superior en gestion y administracion universitaria': 'https://www.unla.edu.ar/carreras/pregrado/tecnicaturas/gestion-y-administracion-universitaria',
-    'audiovision': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/audiovision',
-    'ciencia politica y gobierno': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/ciencia-politica-y-gobierno',
-    'ciencia y tecnologia de los alimentos': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/ciencia-y-tecnologia-de-los-alimentos',
-    'diseno industrial': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/diseno-industrial',
-    'diseno y comunicacion visual': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/diseno-y-comunicacion-visual',
-    'economia empresarial': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/economia-empresarial',
-    'economia politica': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/economia-politica',
-    'educacion': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/educacion',
-    'enfermeria': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/enfermeria',
-    'gestion ambiental urbana': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/gestion-ambiental-urbana',
-    'justicia y derechos humanos': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/justicia-y-derechos-humanos',
-    'musica de camara y sinfonica': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/musica-de-camara-y-sinfonica',
-    'nutricion': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/nutricion',
-    'planificacion logistica': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/planificacion-logistica',
-    'relaciones internacionales': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/relaciones-internacionales',
-    'seguridad ciudadana': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/seguridad-ciudadana',
-    'sistemas': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/sistemas',
-    'ingenieria ferroviaria': 'https://www.unla.edu.ar/carreras/grado/ingenierias/ferroviaria',
-    'trabajo social': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/trabajo-social',
-    'traductorado publico en idioma ingles': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/traductorado-publico-en-idioma-ingles',
-    'turismo': 'https://www.unla.edu.ar/carreras/grado/licenciaturas/turismo'
-  };
-
-  const data = {
-    departamentos: [
-      {
-        nombre: "DEPARTAMENTO DE HUMANIDADES Y ARTES",
-        carreras: ["Diseño y Comunicación Visual", "Audiovisión", "Diseño Industrial", "Música de Cámara y Sinfónica", "Traductorado Público en Idioma Inglés"]
-      },
-      {
-        nombre: "DEPARTAMENTO DE PLANIFICACIÓN Y POLÍTICAS PÚBLICAS",
-        carreras: ["Seguridad Ciudadana", "Ciencia Política y Gobierno", "Educación", "Justicia y Derechos Humanos", "Relaciones Internacionales", "Tecnicatura Superior en Gestión y Administración Universitaria", "Tecnicatura Universitaria en Gestión de Gobierno Local"]
-      },
-      {
-        nombre: "DEPARTAMENTO DE DESARROLLO PRODUCTIVO Y TECNOLÓGICO",
-        carreras: ["Turismo", "Sistemas", "Gestión Ambiental Urbana", "Economía Empresarial", "Economía Política", "Ciencia y Tecnología de los Alimentos", "Ingeniería Ferroviaria", "Planificación Logística"]
-      },
-      {
-        nombre: "DEPARTAMENTO DE SALUD COMUNITARIA",
-        carreras: ["Enfermería", "Nutrición", "Trabajo Social"]
-      }
-    ],
-    fechas: [
-      {
-        rango: "La inscripción abre el Martes 13 de octubre a las 11:00 hs\ny cierra el Miércoles 14 de octubre a las 17:00 hs",
-        inicio: "2026-10-13T11:00:00-03:00", fin: "2026-10-14T17:00:00-03:00",
-        titulo: "Inscripción UNLa: Nutrición y Sistemas",
-        carreras: [
-          { nombre: "Nutrición", turnos: ["mañana","noche"] },
-          { nombre: "Sistemas", turnos: ["mañana","tarde","noche"] }
+      const data = {
+        departamentos: [
+          {
+            nombre: "DEPARTAMENTO DE HUMANIDADES Y ARTES",
+            carreras: ["Diseño y Comunicación Visual", "Audiovisión", "Diseño Industrial", "Música de Cámara y Sinfónica", "Traductorado Público en Idioma Inglés"]
+          },
+          {
+            nombre: "DEPARTAMENTO DE PLANIFICACIÓN Y POLÍTICAS PÚBLICAS",
+            carreras: ["Seguridad Ciudadana", "Ciencia Política y Gobierno", "Educación", "Justicia y Derechos Humanos", "Relaciones Internacionales", "Tecnicatura Superior en Gestión y Administración Universitaria", "Tecnicatura Universitaria en Gestión de Gobierno Local"]
+          },
+          {
+            nombre: "DEPARTAMENTO DE DESARROLLO PRODUCTIVO Y TECNOLÓGICO",
+            carreras: ["Turismo", "Sistemas", "Gestión Ambiental Urbana", "Economía Empresarial", "Economía Política", "Ciencia y Tecnología de los Alimentos", "Ingeniería Ferroviaria", "Planificación Logística"]
+          },
+          {
+            nombre: "DEPARTAMENTO DE SALUD COMUNITARIA",
+            carreras: ["Enfermería", "Nutrición", "Trabajo Social"]
+          }
+        ],
+        fechas: [
+          {
+            rango: "La inscripción abre el Martes 13 de octubre a las 11:00 hs\ny cierra el Miércoles 14 de octubre a las 17:00 hs",
+            inicio: "2026-10-13T11:00:00-03:00", fin: "2026-10-14T17:00:00-03:00",
+            titulo: "Inscripción UNLa: Nutrición y Sistemas",
+            carreras: [
+              { nombre: "Nutrición", turnos: ["mañana", "noche"] },
+              { nombre: "Sistemas", turnos: ["mañana", "tarde", "noche"] }
+            ]
+          },
+          {
+            rango: "La inscripción abre el Lunes 19 de octubre a las 11:00 hs\ny cierra el Viernes 23 de octubre a las 17:00 hs",
+            inicio: "2026-10-19T11:00:00-03:00", fin: "2026-10-23T17:00:00-03:00",
+            titulo: "Inscripción UNLa: Audiovisión, Diseño y Com. Visual, Enfermería, Turismo",
+            carreras: [
+              { nombre: "Audiovisión", turnos: ["tarde", "mañana", "noche"] },
+              { nombre: "Diseño y Comunicación Visual", turnos: ["tarde", "noche", "mañana"] },
+              { nombre: "Enfermería", turnos: ["mañana", "tarde"] },
+              { nombre: "Turismo", turnos: ["mañana", "noche"] }
+            ]
+          },
+          {
+            rango: "La inscripción abre el Lunes 19 de octubre a las 11:00 hs\ny cierra el Viernes 13 de noviembre a las 17:00 hs",
+            inicio: "2026-10-19T11:00:00-03:00", fin: "2026-11-13T17:00:00-03:00",
+            titulo: "Inscripción UNLa: Carreras de Grado y Pregrado",
+            carreras: [
+              { nombre: "Gestión Ambiental Urbana", turnos: ["noche"] },
+              { nombre: "Economía Empresarial", turnos: ["noche"] },
+              { nombre: "Economía Política", turnos: ["noche"] },
+              { nombre: "Ciencia y Tecnología de los Alimentos", turnos: ["mañana", "noche"] },
+              { nombre: "Planificación Logística", turnos: ["mañana", "noche"] },
+              { nombre: "Ingeniería Ferroviaria", turnos: ["noche"] },
+              { nombre: "Diseño Industrial", turnos: ["tarde", "noche"] },
+              { nombre: "Música de Cámara y Sinfónica", turnos: ["tarde"] },
+              { nombre: "Traductorado Público en Idioma Inglés", turnos: ["mañana", "noche"] },
+              { nombre: "Tecnicatura Superior en Gestión y Administración Universitaria", modalidad: "distancia" },
+              { nombre: "Tecnicatura Universitaria en Gestión de Gobierno Local", turnos: ["noche"] },
+              { nombre: "Seguridad Ciudadana", turnos: ["noche"] },
+              { nombre: "Ciencia Política y Gobierno", turnos: ["noche"] },
+              { nombre: "Educación", turnos: ["noche"] },
+              { nombre: "Justicia y Derechos Humanos", turnos: ["noche"] },
+              { nombre: "Relaciones Internacionales", turnos: ["mañana", "noche"] },
+              { nombre: "Trabajo Social", turnos: ["mañana", "tarde", "noche"] }
+            ]
+          }
         ]
-      },
-      {
-        rango: "La inscripción abre el Lunes 19 de octubre a las 11:00 hs\ny cierra el Viernes 23 de octubre a las 17:00 hs",
-        inicio: "2026-10-19T11:00:00-03:00", fin: "2026-10-23T17:00:00-03:00",
-        titulo: "Inscripción UNLa: Audiovisión, Diseño y Com. Visual, Enfermería, Turismo",
-        carreras: [
-          { nombre: "Audiovisión", turnos: ["tarde","mañana","noche"] },
-          { nombre: "Diseño y Comunicación Visual", turnos: ["tarde","noche","mañana"] },
-          { nombre: "Enfermería", turnos: ["mañana","tarde"] },
-          { nombre: "Turismo", turnos: ["mañana","noche"] }
-        ]
-      },
-      {
-        rango: "La inscripción abre el Lunes 19 de octubre a las 11:00 hs\ny cierra el Viernes 13 de noviembre a las 17:00 hs",
-        inicio: "2026-10-19T11:00:00-03:00", fin: "2026-11-13T17:00:00-03:00",
-        titulo: "Inscripción UNLa: Carreras de Grado y Pregrado",
-        carreras: [
-          { nombre: "Gestión Ambiental Urbana", turnos: ["noche"] },
-          { nombre: "Economía Empresarial", turnos: ["noche"] },
-          { nombre: "Economía Política", turnos: ["noche"] },
-          { nombre: "Ciencia y Tecnología de los Alimentos", turnos: ["mañana","noche"] },
-          { nombre: "Planificación Logística", turnos: ["mañana","noche"] },
-          { nombre: "Ingeniería Ferroviaria", turnos: ["noche"] },
-          { nombre: "Diseño Industrial", turnos: ["tarde","noche"] },
-          { nombre: "Música de Cámara y Sinfónica", turnos: ["tarde"] },
-          { nombre: "Traductorado Público en Idioma Inglés", turnos: ["mañana","noche"] },
-          { nombre: "Tecnicatura Superior en Gestión y Administración Universitaria", modalidad: "distancia" },
-          { nombre: "Tecnicatura Universitaria en Gestión de Gobierno Local", turnos: ["noche"] },
-          { nombre: "Seguridad Ciudadana", turnos: ["noche"] },
-          { nombre: "Ciencia Política y Gobierno", turnos: ["noche"] },
-          { nombre: "Educación", turnos: ["noche"] },
-          { nombre: "Justicia y Derechos Humanos", turnos: ["noche"] },
-          { nombre: "Relaciones Internacionales", turnos: ["mañana","noche"] },
-          { nombre: "Trabajo Social", turnos: ["mañana","tarde","noche"] }
-        ]
+      };
+
+      const slug = (s) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+      const normalize = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim().toLowerCase();
+
+      const careerToDept = new Map();
+      data.departamentos.forEach(d => d.carreras.forEach(c => careerToDept.set(c, d.nombre)));
+
+      const careerMeta = new Map();
+      const dateIdByIndex = (i) => `fecha-${i + 1}`;
+
+      function getCareerUrl(name) {
+        const key = normalize(name.replace(/\s*\*+$/, ''));
+        if (CAREER_LINKS[key]) return CAREER_LINKS[key];
+        const noTec = key.replace(/^tecnicatura\s+(universitaria|superior)\s+en\s+/, '');
+        if (CAREER_LINKS[noTec]) return CAREER_LINKS[noTec];
+        return null;
       }
-    ]
-  };
 
-  const slug = (s) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-  const normalize = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim().toLowerCase();
+      function createBadges(turnos, modalidad, mini = false) {
+        const wrap = document.createElement("span");
+        wrap.className = "badges";
+        if (modalidad === "distancia") {
+          const b = document.createElement("span");
+          b.className = `badge badge-distancia ${mini ? 'mini' : ''}`;
+          b.textContent = "A distancia";
+          wrap.appendChild(b);
+        } else if (Array.isArray(turnos)) {
+          turnos.forEach(t => {
+            const b = document.createElement("span");
+            b.className = `badge badge-${t} ${mini ? 'mini' : ''}`;
+            b.textContent = t;
+            wrap.appendChild(b);
+          });
+        }
+        return wrap;
+      }
 
-  const careerToDept = new Map();
-  data.departamentos.forEach(d => d.carreras.forEach(c => careerToDept.set(c, d.nombre)));
+      function getRegistrationStatus(inicioStr, finStr) {
+        if (!inicioStr || !finStr) return null;
+        const now = new Date(), inicio = new Date(inicioStr), fin = new Date(finStr);
+        if (now >= inicio && now <= fin) {
+          return { status: "open", label: "Inscripción en curso", badgeClass: "status-open", icon: "🟢" };
+        } else if (now < inicio) {
+          const diffDays = Math.ceil((inicio - now) / (1000 * 60 * 60 * 24));
+          const label = diffDays > 1 ? `Próximamente (en ${diffDays} días)` : `Abre mañana a las 11:00 hs`;
+          return { status: "upcoming", label, badgeClass: "status-upcoming", icon: "🟡" };
+        } else {
+          return { status: "closed", label: "Inscripción finalizada", badgeClass: "status-closed", icon: "⚪" };
+        }
+      }
 
-  const careerMeta = new Map();
-  const dateIdByIndex = (i) => `fecha-${i+1}`;
+      function formatIsoForCalendar(dateObj) { return dateObj.toISOString().replace(/-|:|\.\d+/g, ''); }
 
-  function getCareerUrl(name) {
-    const key = normalize(name.replace(/\s*\*+$/, ''));
-    if (CAREER_LINKS[key]) return CAREER_LINKS[key];
-    const noTec = key.replace(/^tecnicatura\s+(universitaria|superior)\s+en\s+/, '');
-    if (CAREER_LINKS[noTec]) return CAREER_LINKS[noTec];
-    return null;
-  }
+      function makeGoogleCalendarUrl(title, details, startStr, endStr) {
+        const startIso = formatIsoForCalendar(new Date(startStr)), endIso = formatIsoForCalendar(new Date(endStr));
+        return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startIso}/${endIso}&details=${encodeURIComponent(details)}&location=${encodeURIComponent("Online - Universidad Nacional de Lanús (UNLa)")}`;
+      }
 
-  function createBadges(turnos, modalidad, mini = false) {
-    const wrap = document.createElement("span");
-    wrap.className = "badges";
-    if (modalidad === "distancia") {
-      const b = document.createElement("span");
-      b.className = `badge badge-distancia ${mini ? 'mini' : ''}`;
-      b.textContent = "A distancia";
-      wrap.appendChild(b);
-    } else if (Array.isArray(turnos)) {
-      turnos.forEach(t => {
-        const b = document.createElement("span");
-        b.className = `badge badge-${t} ${mini ? 'mini' : ''}`;
-        b.textContent = t;
-        wrap.appendChild(b);
+      function downloadIcsFile(title, details, startStr, endStr, filename) {
+        const startIso = formatIsoForCalendar(new Date(startStr)), endIso = formatIsoForCalendar(new Date(endStr)), nowIso = formatIsoForCalendar(new Date());
+        const icsContent = [
+          "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//UNLa//Inscripcion UNLa//ES", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+          "BEGIN:VEVENT", `UID:unla-insc-${Date.now()}@unla.edu.ar`, `DTSTAMP:${nowIso}`, `DTSTART:${startIso}`, `DTEND:${endIso}`,
+          `SUMMARY:${title}`, `DESCRIPTION:${details.replace(/\\n/g, '\\n')}`, "LOCATION:Online - Universidad Nacional de Lanús (UNLa)",
+          "STATUS:CONFIRMED", "END:VEVENT", "END:VCALENDAR"
+        ].join("\r\n");
+
+        const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url; a.download = filename || "inscripcion-unla.ics";
+        document.body.appendChild(a); a.click(); document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      }
+
+      // Renderizar Calendario
+      const datesRoot = document.getElementById("dates");
+      data.fechas.forEach((grupo, i) => {
+        const sectionId = dateIdByIndex(i);
+        const wrap = document.createElement("article");
+        wrap.className = "dates__group"; wrap.id = sectionId;
+
+        const st = getRegistrationStatus(grupo.inicio, grupo.fin);
+        const header = document.createElement("h3");
+        header.className = "date__header";
+
+        const titleWrap = document.createElement("div");
+        titleWrap.style.display = "flex"; titleWrap.style.alignItems = "center"; titleWrap.style.gap = "10px";
+        const rangoStyled = grupo.rango
+          .replace("La inscripci\u00f3n abre el ", '<span class="date-label">La inscripci\u00f3n abre el </span><span class="date-highlight">')
+          .replace("\ny cierra el ", '</span><br><span class="date-label">y cierra el </span><span class="date-highlight">')
+          + '</span>';
+        titleWrap.innerHTML = `<span class="icon">\uD83D\uDCC6</span> <span>${rangoStyled}</span>`;
+        header.appendChild(titleWrap);
+
+        if (st) {
+          const statusBadge = document.createElement("span");
+          statusBadge.className = `status-pill ${st.badgeClass}`;
+          statusBadge.innerHTML = `${st.icon} ${st.label}`;
+          header.appendChild(statusBadge);
+        }
+        wrap.appendChild(header);
+
+        if (grupo.inicio && grupo.fin) {
+          const calActions = document.createElement("div");
+          calActions.className = "cal-actions";
+          const calLabel = document.createElement("span");
+          calLabel.className = "cal-actions-title"; calLabel.textContent = "Recordatorio:";
+          calActions.appendChild(calLabel);
+
+          const gcalBtn = document.createElement("a");
+          gcalBtn.href = makeGoogleCalendarUrl(grupo.titulo, `Inscripción online UNLa.\n${grupo.rango}\nSitio oficial: https://www.unla.edu.ar`, grupo.inicio, grupo.fin);
+          gcalBtn.target = "_blank"; gcalBtn.rel = "noopener noreferrer"; gcalBtn.className = "btn-cal-action";
+          gcalBtn.innerHTML = `📅 Google Calendar`;
+          calActions.appendChild(gcalBtn);
+
+          const icsBtn = document.createElement("button");
+          icsBtn.type = "button"; icsBtn.className = "btn-cal-action";
+          icsBtn.innerHTML = `💾 Descargar .ics (iCal / Outlook)`;
+          icsBtn.addEventListener("click", () => {
+            downloadIcsFile(grupo.titulo, `Inscripción online UNLa.\n${grupo.rango}\nSitio oficial: https://www.unla.edu.ar`, grupo.inicio, grupo.fin, `inscripcion-unla-${slug(grupo.carreras[0]?.nombre || 'carreras')}.ics`);
+          });
+          calActions.appendChild(icsBtn);
+          wrap.appendChild(calActions);
+        }
+
+        const ul = document.createElement("ul");
+        ul.className = "career-list";
+
+        grupo.carreras.forEach(item => {
+          const li = document.createElement("li");
+          li.className = "li-line"; const anchorId = `carrera-${slug(item.nombre)}`; li.id = anchorId; li.dataset.career = item.nombre;
+
+          const topRow = document.createElement("div");
+          topRow.style.display = "flex"; topRow.style.justifyContent = "space-between"; topRow.style.alignItems = "flex-start"; topRow.style.gap = "8px";
+
+          const url = getCareerUrl(item.nombre);
+          let nameEl;
+          if (url) {
+            nameEl = document.createElement("a"); nameEl.href = url; nameEl.target = "_blank"; nameEl.rel = "noopener noreferrer";
+            nameEl.className = "career-link name"; nameEl.title = "Ver plan de estudios en web UNLa (abre en nueva pestaña)";
+            nameEl.innerHTML = (item.nombre + (item.notaModulo0 ? " *" : "")) + ' <span style="font-size:0.75em; opacity:0.6;">↗</span>';
+          } else {
+            nameEl = document.createElement("span"); nameEl.className = "name";
+            nameEl.textContent = item.nombre + (item.notaModulo0 ? " *" : "");
+          }
+          topRow.appendChild(nameEl);
+          topRow.appendChild(createBadges(item.turnos, item.modalidad, false));
+          li.appendChild(topRow);
+
+          // Fecha de inscripción (visible solo al seleccionar desde el TOC)
+          if (grupo.rango) {
+            const dateEl = document.createElement("div");
+            dateEl.className = "li-date-range";
+            dateEl.innerHTML = `<span class="cal-icon">📅</span><span>${grupo.rango.replace(/\n/g, '<br>')}</span>`;
+            li.appendChild(dateEl);
+          }
+
+          if (item.notaModulo0) {
+            const note = document.createElement("span"); note.className = "asterisk-note";
+            note.textContent = "* Ofrece Turno Tarde exclusivamente para el Módulo 0 y 1er cuatrimestre de 1er año.";
+            li.appendChild(note);
+          }
+
+          careerMeta.set(item.nombre, { dateId: sectionId, anchorId, turnos: item.turnos, modalidad: item.modalidad });
+          ul.appendChild(li);
+        });
+
+        wrap.appendChild(ul);
+        const footer = document.createElement("div");
+        footer.className = "group-footer";
+        const back = document.createElement("a");
+        back.href = "#toc-card"; back.className = "back"; back.textContent = "↑ Subir al índice de carreras";
+        footer.appendChild(back);
+        wrap.appendChild(footer);
+
+        datesRoot.appendChild(wrap);
       });
-    }
-    return wrap;
-  }
 
-  function getRegistrationStatus(inicioStr, finStr) {
-    if (!inicioStr || !finStr) return null;
-    const now = new Date(), inicio = new Date(inicioStr), fin = new Date(finStr);
-    if (now >= inicio && now <= fin) {
-      return { status: "open", label: "Inscripción en curso", badgeClass: "status-open", icon: "🟢" };
-    } else if (now < inicio) {
-      const diffDays = Math.ceil((inicio - now) / (1000 * 60 * 60 * 24));
-      const label = diffDays > 1 ? `Próximamente (en ${diffDays} días)` : `Abre mañana a las 11:00 hs`;
-      return { status: "upcoming", label, badgeClass: "status-upcoming", icon: "🟡" };
-    } else {
-      return { status: "closed", label: "Inscripción finalizada", badgeClass: "status-closed", icon: "⚪" };
-    }
-  }
+      // Renderizar TOC
+      const tocRoot = document.getElementById("toc");
+      data.departamentos.forEach(dep => {
+        const row = document.createElement("div"); row.className = "dept";
+        const color = DEPT_COLORS_MAP[dep.nombre] || "#1e293b";
+        row.style.setProperty("--dept-color", color);
 
-  function formatIsoForCalendar(dateObj) { return dateObj.toISOString().replace(/-|:|\.\d+/g, ''); }
+        const left = document.createElement("div"); left.className = "dept__title"; left.textContent = dep.nombre;
+        const right = document.createElement("ul"); right.className = "dept__list";
 
-  function makeGoogleCalendarUrl(title, details, startStr, endStr) {
-    const startIso = formatIsoForCalendar(new Date(startStr)), endIso = formatIsoForCalendar(new Date(endStr));
-    return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startIso}/${endIso}&details=${encodeURIComponent(details)}&location=${encodeURIComponent("Online - Universidad Nacional de Lanús (UNLa)")}`;
-  }
+        dep.carreras.forEach(carrera => {
+          const li = document.createElement("li"), a = document.createElement("a"), meta = careerMeta.get(carrera);
+          a.className = "pill"; a.style.setProperty("--dept-color", color);
 
-  function downloadIcsFile(title, details, startStr, endStr, filename) {
-    const startIso = formatIsoForCalendar(new Date(startStr)), endIso = formatIsoForCalendar(new Date(endStr)), nowIso = formatIsoForCalendar(new Date());
-    const icsContent = [
-      "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//UNLa//Inscripcion UNLa//ES", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
-      "BEGIN:VEVENT", `UID:unla-insc-${Date.now()}@unla.edu.ar`, `DTSTAMP:${nowIso}`, `DTSTART:${startIso}`, `DTEND:${endIso}`,
-      `SUMMARY:${title}`, `DESCRIPTION:${details.replace(/\\n/g, '\\n')}`, "LOCATION:Online - Universidad Nacional de Lanús (UNLa)",
-      "STATUS:CONFIRMED", "END:VEVENT", "END:VCALENDAR"
-    ].join("\r\n");
+          if (meta) {
+            a.href = `#${meta.anchorId}`; a.setAttribute("data-date", meta.dateId);
+            const label = document.createElement("span"); label.textContent = carrera;
+            a.appendChild(label); a.appendChild(createBadges(meta.turnos, meta.modalidad, true));
+          } else {
+            a.href = "#calendario"; a.textContent = carrera;
+          }
+          li.appendChild(a); right.appendChild(li);
+        });
 
-    const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url; a.download = filename || "inscripcion-unla.ics";
-    document.body.appendChild(a); a.click(); document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  }
-
-  // Renderizar Calendario
-  const datesRoot = document.getElementById("dates");
-  data.fechas.forEach((grupo, i) => {
-    const sectionId = dateIdByIndex(i);
-    const wrap = document.createElement("article");
-    wrap.className = "dates__group"; wrap.id = sectionId;
-
-    const st = getRegistrationStatus(grupo.inicio, grupo.fin);
-    const header = document.createElement("h3");
-    header.className = "date__header";
-
-    const titleWrap = document.createElement("div");
-    titleWrap.style.display = "flex"; titleWrap.style.alignItems = "center"; titleWrap.style.gap = "10px";
-    const rangoStyled = grupo.rango
-      .replace("La inscripci\u00f3n abre el ", '<span class="date-label">La inscripci\u00f3n abre el </span><span class="date-highlight">')
-      .replace("\ny cierra el ", '</span><br><span class="date-label">y cierra el </span><span class="date-highlight">')
-      + '</span>';
-    titleWrap.innerHTML = `<span class="icon">\uD83D\uDCC6</span> <span>${rangoStyled}</span>`;
-    header.appendChild(titleWrap);
-
-    if (st) {
-      const statusBadge = document.createElement("span");
-      statusBadge.className = `status-pill ${st.badgeClass}`;
-      statusBadge.innerHTML = `${st.icon} ${st.label}`;
-      header.appendChild(statusBadge);
-    }
-    wrap.appendChild(header);
-
-    if (grupo.inicio && grupo.fin) {
-      const calActions = document.createElement("div");
-      calActions.className = "cal-actions";
-      const calLabel = document.createElement("span");
-      calLabel.className = "cal-actions-title"; calLabel.textContent = "Recordatorio:";
-      calActions.appendChild(calLabel);
-
-      const gcalBtn = document.createElement("a");
-      gcalBtn.href = makeGoogleCalendarUrl(grupo.titulo, `Inscripción online UNLa.\n${grupo.rango}\nSitio oficial: https://www.unla.edu.ar`, grupo.inicio, grupo.fin);
-      gcalBtn.target = "_blank"; gcalBtn.rel = "noopener noreferrer"; gcalBtn.className = "btn-cal-action";
-      gcalBtn.innerHTML = `📅 Google Calendar`;
-      calActions.appendChild(gcalBtn);
-
-      const icsBtn = document.createElement("button");
-      icsBtn.type = "button"; icsBtn.className = "btn-cal-action";
-      icsBtn.innerHTML = `💾 Descargar .ics (iCal / Outlook)`;
-      icsBtn.addEventListener("click", () => {
-        downloadIcsFile(grupo.titulo, `Inscripción online UNLa.\n${grupo.rango}\nSitio oficial: https://www.unla.edu.ar`, grupo.inicio, grupo.fin, `inscripcion-unla-${slug(grupo.carreras[0]?.nombre || 'carreras')}.ics`);
+        row.appendChild(left); row.appendChild(right);
+        tocRoot.appendChild(row);
       });
-      calActions.appendChild(icsBtn);
-      wrap.appendChild(calActions);
-    }
 
-    const ul = document.createElement("ul");
-    ul.className = "career-list";
-
-    grupo.carreras.forEach(item => {
-      const li = document.createElement("li");
-      li.className = "li-line"; const anchorId = `carrera-${slug(item.nombre)}`; li.id = anchorId; li.dataset.career = item.nombre;
-
-      const topRow = document.createElement("div");
-      topRow.style.display = "flex"; topRow.style.justifyContent = "space-between"; topRow.style.alignItems = "flex-start"; topRow.style.gap = "8px";
-
-      const url = getCareerUrl(item.nombre);
-      let nameEl;
-      if (url) {
-        nameEl = document.createElement("a"); nameEl.href = url; nameEl.target = "_blank"; nameEl.rel = "noopener noreferrer";
-        nameEl.className = "career-link name"; nameEl.title = "Ver plan de estudios en web UNLa (abre en nueva pestaña)";
-        nameEl.innerHTML = (item.nombre + (item.notaModulo0 ? " *" : "")) + ' <span style="font-size:0.75em; opacity:0.6;">↗</span>';
-      } else {
-        nameEl = document.createElement("span"); nameEl.className = "name";
-        nameEl.textContent = item.nombre + (item.notaModulo0 ? " *" : "");
+      // Scroll suave y selección
+      function clearSelected() {
+        document.querySelectorAll("#dates .li-line.selected").forEach(el => {
+          el.classList.remove("selected"); el.style.removeProperty("--sel-color");
+        });
       }
-      topRow.appendChild(nameEl);
-      topRow.appendChild(createBadges(item.turnos, item.modalidad, false));
-      li.appendChild(topRow);
-
-      // Fecha de inscripción (visible solo al seleccionar desde el TOC)
-      if (grupo.rango) {
-        const dateEl = document.createElement("div");
-        dateEl.className = "li-date-range";
-        dateEl.innerHTML = `<span class="cal-icon">📅</span><span>${grupo.rango.replace(/\n/g, '<br>')}</span>`;
-        li.appendChild(dateEl);
+      function markSelected(anchorId, deptName) {
+        clearSelected();
+        const el = document.getElementById(anchorId);
+        if (!el) return;
+        el.classList.add("selected");
+        el.style.setProperty("--sel-color", DEPT_COLORS_MAP[deptName] || "#8c1d2c");
       }
 
-      if (item.notaModulo0) {
-        const note = document.createElement("span"); note.className = "asterisk-note";
-        note.textContent = "* Ofrece Turno Tarde exclusivamente para el Módulo 0 y 1er cuatrimestre de 1er año.";
-        li.appendChild(note);
-      }
-
-      careerMeta.set(item.nombre, { dateId: sectionId, anchorId, turnos: item.turnos, modalidad: item.modalidad });
-      ul.appendChild(li);
-    });
-
-    wrap.appendChild(ul);
-    const footer = document.createElement("div");
-    footer.className = "group-footer";
-    const back = document.createElement("a");
-    back.href = "#toc-card"; back.className = "back"; back.textContent = "↑ Subir al índice de carreras";
-    footer.appendChild(back);
-    wrap.appendChild(footer);
-
-    datesRoot.appendChild(wrap);
-  });
-
-  // Renderizar TOC
-  const tocRoot = document.getElementById("toc");
-  data.departamentos.forEach(dep => {
-    const row = document.createElement("div"); row.className = "dept";
-    const color = DEPT_COLORS_MAP[dep.nombre] || "#1e293b";
-    row.style.setProperty("--dept-color", color);
-
-    const left = document.createElement("div"); left.className = "dept__title"; left.textContent = dep.nombre;
-    const right = document.createElement("ul"); right.className = "dept__list";
-
-    dep.carreras.forEach(carrera => {
-      const li = document.createElement("li"), a = document.createElement("a"), meta = careerMeta.get(carrera);
-      a.className = "pill"; a.style.setProperty("--dept-color", color);
-
-      if (meta) {
-        a.href = `#${meta.anchorId}`; a.setAttribute("data-date", meta.dateId);
-        const label = document.createElement("span"); label.textContent = carrera;
-        a.appendChild(label); a.appendChild(createBadges(meta.turnos, meta.modalidad, true));
-      } else {
-        a.href = "#calendario"; a.textContent = carrera;
-      }
-      li.appendChild(a); right.appendChild(li);
-    });
-
-    row.appendChild(left); row.appendChild(right);
-    tocRoot.appendChild(row);
-  });
-
-  // Scroll suave y selección
-  function clearSelected() {
-    document.querySelectorAll("#dates .li-line.selected").forEach(el => {
-      el.classList.remove("selected"); el.style.removeProperty("--sel-color");
-    });
-  }
-  function markSelected(anchorId, deptName) {
-    clearSelected();
-    const el = document.getElementById(anchorId);
-    if (!el) return;
-    el.classList.add("selected");
-    el.style.setProperty("--sel-color", DEPT_COLORS_MAP[deptName] || "#8c1d2c");
-  }
-
-  tocRoot.addEventListener("click", (e) => {
-    const a = e.target.closest("a.pill");
-    if (!a) return;
-    const dateId = a.getAttribute("data-date"), hash = a.getAttribute("href");
-    if (dateId && hash) {
-      e.preventDefault();
-      const anchorId = hash.slice(1), target = document.getElementById(anchorId);
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth", block: "center" });
-        const nameText = target.querySelector(".name")?.textContent.replace(/\s*\*+.*$/, "") || "";
-        markSelected(anchorId, careerToDept.get(nameText));
-      }
-    }
-  });
-
-  // Filtros y Buscador
-  const searchInput = document.getElementById("career-search");
-  const fMan = document.getElementById("f-manana"), fTar = document.getElementById("f-tarde"), fNoc = document.getElementById("f-noche"), fDis = document.getElementById("f-dist");
-  const btnClear = document.getElementById("btn-clear"), noResultsToc = document.getElementById("no-results-toc"), noResultsDates = document.getElementById("no-results-dates");
-
-  function passesFilter(meta, careerName, query) {
-    if (query && !normalize(careerName).includes(normalize(query))) return false;
-    const man = fMan.checked, tar = fTar.checked, noc = fNoc.checked, dis = fDis.checked;
-    if (!man && !tar && !noc && !dis) return true;
-    if (meta?.modalidad === "distancia") return dis;
-    const ts = new Set(meta?.turnos || []);
-    return (man && ts.has("mañana")) || (tar && ts.has("tarde")) || (noc && ts.has("noche"));
-  }
-
-  function applyFilters() {
-    const query = searchInput.value.trim();
-    btnClear.style.display = (fMan.checked || fTar.checked || fNoc.checked || fDis.checked || query !== "") ? "inline-block" : "none";
-
-    let visibleInDates = 0;
-    document.querySelectorAll("#dates .li-line").forEach(li => {
-      const name = li.dataset.career || li.querySelector(".name")?.textContent.replace(/\s*\*+.*$/, "").trim() || "";
-      const show = passesFilter(careerMeta.get(name), name, query);
-      li.style.display = show ? "" : "none";
-      if (show) visibleInDates++;
-    });
-
-    document.querySelectorAll("#dates .dates__group").forEach(group => {
-      group.style.display = Array.from(group.querySelectorAll(".li-line")).some(li => li.style.display !== "none") ? "" : "none";
-    });
-
-    let visibleInToc = 0;
-    document.querySelectorAll("#toc .dept").forEach(dept => {
-      let visibleInDept = 0;
-      dept.querySelectorAll("li").forEach(li => {
-        const pill = li.querySelector("a.pill");
-        const name = pill?.querySelector("span")?.textContent.trim() || pill?.textContent.trim() || "";
-        const show = passesFilter(careerMeta.get(name), name, query);
-        li.style.display = show ? "" : "none";
-        if (show) { visibleInDept++; visibleInToc++; }
+      tocRoot.addEventListener("click", (e) => {
+        const a = e.target.closest("a.pill");
+        if (!a) return;
+        const dateId = a.getAttribute("data-date"), hash = a.getAttribute("href");
+        if (dateId && hash) {
+          e.preventDefault();
+          const anchorId = hash.slice(1), target = document.getElementById(anchorId);
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "center" });
+            const nameText = target.querySelector(".name")?.textContent.replace(/\s*\*+.*$/, "") || "";
+            markSelected(anchorId, careerToDept.get(nameText));
+          }
+        }
       });
-      dept.style.display = visibleInDept > 0 ? "" : "none";
-    });
 
-    noResultsToc.style.display = visibleInToc === 0 ? "block" : "none";
-    noResultsDates.style.display = visibleInDates === 0 ? "block" : "none";
-  }
+      // Filtros y Buscador
+      const searchInput = document.getElementById("career-search");
+      const fMan = document.getElementById("f-manana"), fTar = document.getElementById("f-tarde"), fNoc = document.getElementById("f-noche"), fDis = document.getElementById("f-dist");
+      const btnClear = document.getElementById("btn-clear"), noResultsToc = document.getElementById("no-results-toc"), noResultsDates = document.getElementById("no-results-dates");
 
-  [fMan, fTar, fNoc, fDis].forEach(el => el.addEventListener("change", applyFilters));
-  searchInput.addEventListener("input", applyFilters);
-
-  btnClear.addEventListener("click", () => {
-    fMan.checked = fTar.checked = fNoc.checked = fDis.checked = false;
-    searchInput.value = "";
-    applyFilters();
-  });
-
-  // Desplazamiento suave global
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const href = this.getAttribute('href');
-      if (href.length > 1 && !this.classList.contains('pill')) {
-        const target = document.querySelector(href);
-        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      function passesFilter(meta, careerName, query) {
+        if (query && !normalize(careerName).includes(normalize(query))) return false;
+        const man = fMan.checked, tar = fTar.checked, noc = fNoc.checked, dis = fDis.checked;
+        if (!man && !tar && !noc && !dis) return true;
+        if (meta?.modalidad === "distancia") return dis;
+        const ts = new Set(meta?.turnos || []);
+        return (man && ts.has("mañana")) || (tar && ts.has("tarde")) || (noc && ts.has("noche"));
       }
-    });
-  });
 
-  // Botón flotante volver arriba
-  const backToTopBtn = document.getElementById("btn-back-to-top");
-  if (backToTopBtn) {
-    window.addEventListener("scroll", () => {
-      backToTopBtn.classList.toggle("visible", window.scrollY > 350);
-    }, { passive: true });
-    backToTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-  }
-})();
-</script>
+      function applyFilters() {
+        const query = searchInput.value.trim();
+        btnClear.style.display = (fMan.checked || fTar.checked || fNoc.checked || fDis.checked || query !== "") ? "inline-block" : "none";
+
+        let visibleInDates = 0;
+        document.querySelectorAll("#dates .li-line").forEach(li => {
+          const name = li.dataset.career || li.querySelector(".name")?.textContent.replace(/\s*\*+.*$/, "").trim() || "";
+          const show = passesFilter(careerMeta.get(name), name, query);
+          li.style.display = show ? "" : "none";
+          if (show) visibleInDates++;
+        });
+
+        document.querySelectorAll("#dates .dates__group").forEach(group => {
+          group.style.display = Array.from(group.querySelectorAll(".li-line")).some(li => li.style.display !== "none") ? "" : "none";
+        });
+
+        let visibleInToc = 0;
+        document.querySelectorAll("#toc .dept").forEach(dept => {
+          let visibleInDept = 0;
+          dept.querySelectorAll("li").forEach(li => {
+            const pill = li.querySelector("a.pill");
+            const name = pill?.querySelector("span")?.textContent.trim() || pill?.textContent.trim() || "";
+            const show = passesFilter(careerMeta.get(name), name, query);
+            li.style.display = show ? "" : "none";
+            if (show) { visibleInDept++; visibleInToc++; }
+          });
+          dept.style.display = visibleInDept > 0 ? "" : "none";
+        });
+
+        noResultsToc.style.display = visibleInToc === 0 ? "block" : "none";
+        noResultsDates.style.display = visibleInDates === 0 ? "block" : "none";
+      }
+
+      [fMan, fTar, fNoc, fDis].forEach(el => el.addEventListener("change", applyFilters));
+      searchInput.addEventListener("input", applyFilters);
+
+      btnClear.addEventListener("click", () => {
+        fMan.checked = fTar.checked = fNoc.checked = fDis.checked = false;
+        searchInput.value = "";
+        applyFilters();
+      });
+
+      // Desplazamiento suave global
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href.length > 1 && !this.classList.contains('pill')) {
+            const target = document.querySelector(href);
+            if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+          }
+        });
+      });
+
+      // Botón flotante volver arriba
+      const backToTopBtn = document.getElementById("btn-back-to-top");
+      if (backToTopBtn) {
+        window.addEventListener("scroll", () => {
+          backToTopBtn.classList.toggle("visible", window.scrollY > 350);
+        }, { passive: true });
+        backToTopBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+      }
+    })();
+  </script>
 </body>
+
 </html>
