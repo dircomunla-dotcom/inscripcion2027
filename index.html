@@ -36,6 +36,7 @@
   font-size: 1.35rem; color: #7c1331; display: flex; align-items: center; gap: 10px;
   border-bottom: 2px solid #f1f5f9; padding-bottom: 12px; margin-bottom: 18px;
 }
+#unla-insc-2026 h3 { font-size: 1.15rem; color: #0f172a; display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
 #unla-insc-2026 .intro-text { font-size: 1.02rem; color: #475569; margin-bottom: 14px; }
 
 /* Resumen de Inscripción (Pasos) */
@@ -173,6 +174,45 @@
 #unla-insc-2026 .cta-banner .cta-icon { font-size: 1.8rem; flex-shrink: 0; }
 #unla-insc-2026 .no-results { text-align: center; padding: 24px; color: #64748b; font-style: italic; display: none; }
 
+/* Artículo 7 y Extranjeros */
+#unla-insc-2026 .law-steps { padding-left: 20px; margin: 14px 0; }
+#unla-insc-2026 .law-steps li { margin-bottom: 10px; color: #334155; font-size: 0.96rem; line-height: 1.5; }
+#unla-insc-2026 .notice-box {
+  background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px 18px; margin-top: 14px;
+  font-size: 0.92rem; color: #475569; border-left: 4px solid #7c1331;
+}
+
+/* Pasos del proceso (paso1 y paso2) */
+#unla-insc-2026 .step-card {
+  background: #ffffff; border: 1px solid #e2e8f0; border-left: 5px solid #8c1d2c; border-radius: 14px;
+  padding: 20px 22px; box-shadow: 0 2px 5px rgba(0,0,0,0.03); transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+#unla-insc-2026 .step-card:hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(0,0,0,0.06); }
+#unla-insc-2026 .step-card p { margin: 6px 0; font-size: 0.95rem; color: #334155; }
+#unla-insc-2026 .step-card p:last-child { margin-bottom: 0; }
+#unla-insc-2026 .step-card ul { margin: 8px 0; padding-left: 22px; color: #334155; font-size: 0.95rem; }
+#unla-insc-2026 .step-card li { margin: 5px 0; }
+
+/* Resaltados y avisos (paso1 y paso2) */
+#unla-insc-2026 .important { font-weight: 700; color: #9f1239; }
+#unla-insc-2026 .alert-box {
+  background: #fff8f9; border: 1px solid #fecdd3; border-radius: 10px; padding: 12px 16px; margin: 10px 0;
+  font-size: 0.92rem; color: #9f1239; display: flex; gap: 8px; align-items: flex-start;
+}
+#unla-insc-2026 .info-box {
+  background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 10px; padding: 12px 16px; margin: 10px 0;
+  font-size: 0.92rem; color: #166534;
+}
+#unla-insc-2026 .link-box {
+  background: #f1f5f9; border: 1px solid #cbd5e1; border-radius: 10px; padding: 12px 16px; margin: 12px 0;
+  font-size: 0.95rem; display: flex; align-items: center; gap: 8px;
+}
+
+/* Separadores de sección */
+#unla-insc-2026 .section-divider {
+  border: none; border-top: 2px dashed #e2e8f0; margin: 8px 0;
+}
+
 /* Botón flotante volver arriba */
 #unla-insc-2026 .back-to-top-btn {
   position: fixed; bottom: 26px; right: 26px; width: 48px; height: 48px; border-radius: 50%; background: #8c1d2c;
@@ -187,6 +227,7 @@
 @media (max-width: 768px) {
   #unla-insc-2026 { padding: 16px 8px; }
   #unla-insc-2026 .card { padding: 18px 16px; border-radius: 12px; }
+  #unla-insc-2026 .step-card { padding: 16px 18px; border-radius: 12px; }
   #unla-insc-2026 .dept { grid-template-columns: 1fr; gap: 8px; }
   #unla-insc-2026 .dept__title { border-left-width: 3px; padding-left: 8px; margin-bottom: 4px; }
   #unla-insc-2026 .filters-container { flex-direction: column; align-items: flex-start; }
@@ -202,6 +243,7 @@
   #unla-insc-2026 .btn-reset-filters, #unla-insc-2026 .back-to-top-btn, #unla-insc-2026 .back,
   #unla-insc-2026 .group-footer, #unla-insc-2026 .cal-actions, #unla-insc-2026 .cta-banner { display: none !important; }
   #unla-insc-2026 .card { box-shadow: none !important; border: 1px solid #cbd5e1 !important; padding: 14px 18px !important; page-break-inside: avoid; }
+  #unla-insc-2026 .step-card { box-shadow: none !important; border: 1px solid #cbd5e1 !important; page-break-inside: avoid; }
   #unla-insc-2026 .dates__group { border: 1px solid #cbd5e1 !important; page-break-inside: avoid; margin-bottom: 14px !important; }
   #unla-insc-2026 .date__header { background: #f1f5f9 !important; color: #0f172a !important; border-bottom: 1px solid #cbd5e1 !important; }
   #unla-insc-2026 .li-line { background: #ffffff !important; border: 1px solid #e2e8f0 !important; break-inside: avoid; }
@@ -217,7 +259,9 @@
 <main id="unla-insc-2026">
 <div class="wrap">
 
-  <!-- SECCIÓN: RESUMEN DE LA INSCRIPCIÓN E INTRODUCCIÓN -->
+  <!-- ============================================================ -->
+  <!-- SECCIÓN: RESUMEN DE LA INSCRIPCIÓN E INTRODUCCIÓN            -->
+  <!-- ============================================================ -->
   <section class="card" aria-label="Resumen de la inscripción">
     <h1 class="hero-title">🎓 Inscripción a Carreras de Grado y Pregrado UNLa</h1>
     <p class="intro-text">
@@ -254,11 +298,16 @@
         <li><a href="#toc-card" class="highlight-nav">🏛️ Carreras por departamento</a></li>
         <li><a href="#calendario">📅 Calendario de fechas</a></li>
         <li><a href="#docs-title">🗂️ Documentación necesaria</a></li>
+        <li><a href="#art7-section">📜 Modalidades especiales de ingreso</a></li>
+        <li><a href="#paso1-section">📝 Paso 1: Preinscripción online</a></li>
+        <li><a href="#paso2-section">💳 Paso 2: Autogestión y pago</a></li>
       </ul>
     </div>
   </section>
 
-  <!-- SECCIÓN: ÍNDICE POR DEPARTAMENTO Y FILTROS -->
+  <!-- ============================================================ -->
+  <!-- SECCIÓN: ÍNDICE POR DEPARTAMENTO Y FILTROS                   -->
+  <!-- ============================================================ -->
   <section id="toc-card" aria-labelledby="toc-title" class="card">
     <h2 id="toc-title">🏛️ Carreras por Departamento</h2>
 
@@ -286,14 +335,18 @@
     <div id="no-results-toc" class="no-results">No se encontraron carreras que coincidan con los filtros seleccionados.</div>
   </section>
 
-  <!-- SECCIÓN: CALENDARIO DE FECHAS -->
+  <!-- ============================================================ -->
+  <!-- SECCIÓN: CALENDARIO DE FECHAS                                -->
+  <!-- ============================================================ -->
   <section aria-labelledby="cal-title" class="card" id="calendario">
     <h2 id="cal-title">🗓️ Fechas de inscripción y turnos disponibles para cursada</h2>
     <div id="dates"></div>
     <div id="no-results-dates" class="no-results">No se encontraron fechas de inscripción para la búsqueda actual.</div>
   </section>
 
-  <!-- SECCIÓN: DOCUMENTACIÓN NECESARIA -->
+  <!-- ============================================================ -->
+  <!-- SECCIÓN: DOCUMENTACIÓN NECESARIA                             -->
+  <!-- ============================================================ -->
   <section id="docs-title" aria-labelledby="docs-title" class="card doc-section">
     <h2>🗂️ Documentación necesaria</h2>
     <p class="intro-text">
@@ -320,6 +373,196 @@
     <span class="cta-icon" aria-hidden="true">⚠️</span>
     <span>El botón de acceso al formulario de inscripción online se habilitará en este sitio web únicamente durante los días y horarios correspondientes a cada carrera.</span>
   </aside>
+
+  <!-- ============================================================ -->
+  <!-- SECCIÓN: MODALIDADES ESPECIALES DE INGRESO (ARTÍCULO 7)      -->
+  <!-- ============================================================ -->
+  <section id="art7-section" class="card" aria-label="Modalidades Especiales de Ingreso">
+    <h2>📜 Modalidades Especiales de Ingreso · UNLa</h2>
+    <p class="intro-text">
+      Información y requisitos para postulantes mayores de 25 años sin título secundario (Artículo 7 de la Ley de Educación Superior) y estudiantes con estudios secundarios cursados en el extranjero.
+    </p>
+
+    <div class="quick-nav-container">
+      <span class="quick-nav-label">Navegación de secciones:</span>
+      <ul class="quick-nav" aria-label="Accesos directos">
+        <li><a href="#law-title" class="highlight-nav">📜 Ingreso por Artículo 7 (+25 años)</a></li>
+        <li><a href="#foreign-title">🌐 Estudiantes extranjeros</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: ARTÍCULO 7 -->
+  <section id="law-section" aria-labelledby="law-title" class="card law-section">
+    <h2 id="law-title">📜 Ingreso por Artículo 7 - Ley 24.521</h2>
+    <p class="intro-text">Las personas mayores de 25 años que no hayan finalizado sus estudios secundarios pueden ingresar a la Universidad siempre que reúnan los siguientes requisitos:</p>
+    <ol class="law-steps">
+      <li><strong>Edad:</strong> Tener 25 años cumplidos al momento de formalizar la inscripción.</li>
+      <li><strong>Experiencia laboral:</strong> Acreditar un mínimo de tres (3) años de experiencia laboral comprobable afín al área de la carrera elegida.</li>
+      <li><strong>Entrevista institucional:</strong> Aprobar la entrevista personal con la persona responsable de Secretaría Académica y la Dirección de la carrera.</li>
+      <li><strong>Examen general:</strong> Aprobar el examen referido a las cuatro áreas del conocimiento: Lengua, Matemática, Ciencias Sociales y Ciencias Naturales.</li>
+    </ol>
+    
+    <div class="notice-box">
+      ℹ️ La modalidad del examen, así como la fecha y horario de la entrevista individual, se comunicarán oportunamente a través de la casilla de correo electrónico informada por el aspirante.<br/>
+      Los aspirantes que aprueben satisfactoriamente la entrevista y el examen estarán en condiciones de ingresar a la carrera.
+    </div>
+  </section>
+
+  <!-- SECCIÓN: ESTUDIANTES EXTRANJEROS -->
+  <section id="foreign-section" aria-labelledby="foreign-title" class="card foreign-section">
+    <h2 id="foreign-title">🌐 Estudiantes Extranjeros</h2>
+    <p class="intro-text">
+      Si sos extranjero o completaste tus estudios secundarios en el exterior, debés convalidar tu título de nivel medio ante el Ministerio de Capital Humano / Educación de la Nación Argentina antes de formalizar tu ingreso.
+    </p>
+    <p style="margin: 12px 0 6px 0; font-size: 0.95rem; color: #334155;">
+      Este trámite requiere una solicitud previa de turno online. Para conocer los requisitos, documentación a presentar y realizar la solicitud, ingresá al sitio oficial del trámite nacional:
+    </p>
+    <p style="margin-top: 10px;">
+      👉 <a href="https://www.argentina.gob.ar/convalidar-titulo-secundario-de-paises-con-convenio" rel="noopener noreferrer" target="_blank"><strong>https://www.argentina.gob.ar/convalidar-titulo-secundario-de-paises-con-convenio ↗</strong></a>
+    </p>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SECCIÓN: PASO 1 - PREINSCRIPCIÓN ONLINE                      -->
+  <!-- ============================================================ -->
+  <section id="paso1-section" class="card" aria-label="Paso 1 Preinscripción Online">
+    <h2>📝 Guía de Inscripción · Paso 1: Preinscripción Online</h2>
+    <p class="intro-text">
+      Seguí este instructivo paso a paso para completar tu formulario digital de preinscripción en el sistema SIU-Guaraní de la UNLa.
+    </p>
+  </section>
+
+  <section class="step-card">
+    <h3><span>🌐</span> 1. Acceso al Sistema</h3>
+    <p>En el portal web de la UNLa, hacé click en la opción del menú superior que dice <strong>"INGRESO"</strong>. Luego, seleccioná el botón <strong>"¡INSCRIBITE AQUÍ!"</strong> para ingresar al sistema de preinscripción.</p>
+  </section>
+
+  <section class="step-card">
+    <h3><span>👤</span> 2. Creación de Usuario en SIU-Guaraní</h3>
+    <p>Serás redirigido al sistema de preinscripción SIU-Guaraní. Si es tu primera vez, hacé click en el botón <strong>"Registrate"</strong> para generar tu cuenta de usuario.</p>
+  </section>
+
+  <section class="step-card">
+    <h3><span>✍️</span> 3. Completar Datos Personales</h3>
+    <p>Rellená el formulario con tu información personal. Asegurate de que los datos sean exactos y coincidan con tu DNI:</p>
+    <ul>
+      <li><strong>Género, Nacionalidad y número de DNI.</strong></li>
+      <li><strong>Apellido y Nombre:</strong> <span class="important">tal cual figuran en tu documento</span>. El campo "Nombre de Pila Elegido" debe completarse únicamente si el nombre con el que te identificás, por tu identidad de género, difiere del documento. Caso contrario, dejalo vacío.</li>
+      <li><strong>Datos de contacto:</strong> Celular, pregunta secreta de recuperación y un correo electrónico válido.</li>
+    </ul>
+    
+    <div class="alert-box">
+      <span>⚠️</span>
+      <div><strong>¡Atención!</strong> Verificá muy bien al escribir tu correo electrónico, ya que será la vía de comunicación oficial que utilizará la UNLa para notificarte.</div>
+    </div>
+    
+    <p>Finalmente, completá el reCAPTCHA (<em>"No soy un robot"</em>) y hacé click en <strong>"Generar usuario"</strong>.</p>
+  </section>
+
+  <section class="step-card">
+    <h3><span>📧</span> 4. Verificación de Correo Electrónico</h3>
+    <p>Recibirás un email automático del sistema. Abrilo y hacé click en el <strong>enlace de confirmación</strong> para activar tu cuenta y continuar con la preinscripción.</p>
+  </section>
+
+  <section class="step-card">
+    <h3><span>🎓</span> 5. Elección de la Carrera</h3>
+    <p>Una vez confirmada tu cuenta, iniciá sesión para elegir tu carrera. El sistema te solicitará los siguientes campos:</p>
+    <ul>
+      <li><strong>Responsable Académica:</strong> El Departamento al que pertenece tu carrera (ej: Humanidades y Artes, Salud Comunitaria, Desarrollo Productivo y Tecnológico, o Planificación y Políticas Públicas).</li>
+      <li><strong>Propuesta:</strong> El nombre de la carrera que elegiste.</li>
+      <li><strong>Ubicación:</strong> Lanús.</li>
+      <li><strong>Modalidad:</strong> Presencial (o A distancia, según corresponda).</li>
+    </ul>
+    <p><em>Nota: Si te equivocás de propuesta, podés eliminarla y seleccionarla nuevamente antes de finalizar.</em></p>
+  </section>
+
+  <section class="step-card">
+    <h3><span>📋</span> 6. Carga de Datos Adicionales y Formularios</h3>
+    <p>Completá los formularios con tu información adicional. Los campos marcados con asterisco (*) <span class="important">son obligatorios</span>. Guardá los cambios a medida que avanzás:</p>
+    <ul>
+      <li><strong>Turno de cursada:</strong> Seleccioná el turno (Mañana, Tarde o Noche) entre los que ofrece tu carrera. <span class="important">¡Importante!</span> Aunque el sistema despliegue los tres turnos, verificá que el elegido esté habilitado para tu carrera en el cronograma oficial; de lo contrario, se te reasignará automáticamente uno válido.</li>
+      <li><strong>Datos principales, personales y de discapacidad:</strong> Completá toda la información requerida.</li>
+      <li><strong>Situación laboral y estudios previos:</strong> Completá las secciones restantes.</li>
+    </ul>
+  </section>
+
+  <section class="step-card">
+    <h3><span>📤</span> 7. Carga de Documentación Digital</h3>
+    <p>En la sección <strong>"Documentación"</strong> deberás adjuntar tus archivos en formato JPG o PDF.</p>
+    <div class="alert-box">
+      <span>📎</span>
+      <div>Los archivos <span class="important">no deben superar los 2 MB</span> cada uno y deben ser totalmente legibles y nítidos.</div>
+    </div>
+    <p>Documentación requerida:</p>
+    <ul>
+      <li><strong>Documento de Identidad:</strong> archivo con frente y dorso legibles.</li>
+      <li><strong>Foto digital:</strong> reciente, de frente y con fondo claro.</li>
+      <li><strong>Título secundario</strong>, constancia de título en trámite o certificado de alumno regular / materias adeudadas.</li>
+    </ul>
+  </section>
+
+  <section class="step-card">
+    <h3><span>🏁</span> 8. Finalización de la Preinscripción</h3>
+    <p>Una vez completados todos los campos y adjuntados los archivos, hacé click en el botón <strong>"Finalizar"</strong> para enviar tu postulación.</p>
+  </section>
+
+  <section class="step-card">
+    <h3><span>⏳</span> 9. Revisión y Confirmación</h3>
+    <p>Tu documentación será revisada por el equipo de Ingreso. Deberás esperar un correo electrónico que confirme la correcta recepción de tu trámite. Si completaste el formulario dentro del plazo, no te preocupes: el mail de confirmación puede llegar en días posteriores al cierre.</p>
+    
+    <div class="info-box">
+      <strong>⚠️ Recomendación importante:</strong> Mientras se procesa la revisión, por favor <strong>no vuelvas a ingresar al formulario para realizar modificaciones</strong>. Si se detecta algún error en tus archivos, se te notificará por correo.
+    </div>
+
+    <p>Transcurridas <strong>24 horas hábiles</strong> desde la llegada del mail de confirmación, se habilitará en el sistema de autogestión el cupón para continuar con el <strong>Paso 2 (pago de la tasa de inscripción)</strong>.</p>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SECCIÓN: PASO 2 - AUTOGESTIÓN Y PAGO DE TASA                 -->
+  <!-- ============================================================ -->
+  <section id="paso2-section" class="card" aria-label="Paso 2 Autogestión y Pago">
+    <h2>💳 Guía de Inscripción · Paso 2: Autogestión y Pago de Tasa</h2>
+    <p class="intro-text">
+      Una vez confirmado el correo electrónico de tu documentación, deberás acceder al sistema de autogestión estudiantil para generar tu usuario definitivo y abonar el cupón de la tasa de inscripción.
+    </p>
+  </section>
+
+  <section class="step-card">
+    <h3><span>🌐</span> 1. Acceso a SIU-Guaraní 3W</h3>
+    <p>Una vez que hayas recibido el mail que confirma que tu documentación está aprobada, ingresá al sistema de autogestión estudiantil:</p>
+    <div class="link-box">
+      <span>👉</span>
+      <span>Portal de Autogestión: <a href="https://estudiantes.unla.edu.ar/autogestion3w/" target="_blank" rel="noopener noreferrer"><strong>https://estudiantes.unla.edu.ar/autogestion3w/ ↗</strong></a></span>
+    </div>
+    <p>Recordá que el cupón de pago estará habilitado <strong>24 horas hábiles posteriores</strong> a la llegada del mail de confirmación.</p>
+  </section>
+
+  <section class="step-card">
+    <h3><span>👤</span> 2. Primer Ingreso y Generación de Contraseña</h3>
+    <p>Al ser tu primer ingreso en este sistema, deberás crear tu contraseña de acceso:</p>
+    <ul>
+      <li>Hacé click en el enlace: <span class="important">"¿Olvidaste tu contraseña o sos un usuario nuevo?"</span>.</li>
+      <li>Completá el campo <strong>Número de documento</strong> ingresando tu DNI sin puntos ni espacios.</li>
+      <li>Recibirás un correo electrónico en tu casilla registrada con un enlace seguro para crear tu clave. <em>(Revisá la bandeja de entrada y la carpeta de correo no deseado/spam)</em>.</li>
+      <li>Abrí el enlace, escribí y confirmá tu nueva contraseña y hacé click en <strong>"Acceder"</strong>.</li>
+      <li>Iniciá sesión completando el campo <strong>Usuario</strong> con tu número de DNI (sin puntos) y la <strong>Contraseña</strong> que acabás de definir.</li>
+    </ul>
+  </section>
+
+  <section class="step-card">
+    <h3><span>📋</span> 3. Cupón de Pago de la Tasa de Inscripción</h3>
+    <p>Una vez dentro del portal de autogestión <strong>SIU-Guaraní 3W</strong>, finalizá el proceso con el pago correspondiente:</p>
+    <ul>
+      <li>El cupón de pago aparecerá en la plataforma <strong>a partir de las 24 horas hábiles</strong> desde la confirmación de tu documentación por email.</li>
+      <li>Hacé click sobre el cupón y el sistema te redirigirá a la pasarela de <strong>Mercado Pago</strong> para realizar el pago de forma digital y segura con tarjeta de débito, crédito o dinero en cuenta.</li>
+    </ul>
+    
+    <div class="alert-box">
+      <span>ℹ️</span>
+      <div>El abono de la tasa de inscripción se abona por única vez y se destina al fondo de becas estudiantiles de la Universidad.</div>
+    </div>
+  </section>
 
   <!-- BOTÓN FLOTANTE VOLVER ARRIBA -->
   <button type="button" id="btn-back-to-top" class="back-to-top-btn" title="Volver arriba" aria-label="Volver arriba">↑</button>
