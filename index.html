@@ -86,6 +86,7 @@
 }
 #unla-insc-2026 .btn-reset-filters:hover { background: #fecaca; color: #7f1d1d; }
 #unla-insc-2026 .turnos-note {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
   font-size: 0.88rem; color: #475569; background: #fff8f9; border-left: 4px solid #8c1d2c; padding: 10px 14px; border-radius: 0 8px 8px 0; margin: 0 0 20px 0;
 }
 
@@ -343,7 +344,11 @@
     </div>
 
     <div class="turnos-note" role="note">
-      🕒 <strong>Franjas horarias estimadas:</strong> Turno Mañana (09:00 a 13:00 hs) · Turno Tarde (14:00 a 18:00 hs) · Turno Noche (18:00 a 22:00 hs).
+      <span style="font-size:1rem;">🕒</span>
+      <span><strong>Franjas horarias:</strong></span>
+      <span class="badge badge-mañana" style="font-size:0.8rem;padding:5px 10px;">Turno Mañana &nbsp;09:00 – 13:00 hs</span>
+      <span class="badge badge-tarde" style="font-size:0.8rem;padding:5px 10px;">Turno Tarde &nbsp;14:00 – 18:00 hs</span>
+      <span class="badge badge-noche" style="font-size:0.8rem;padding:5px 10px;">Turno Noche &nbsp;18:00 – 22:00 hs</span>
     </div>
 
     <div class="toc" id="toc"></div>
@@ -354,7 +359,7 @@
   <!-- SECCIÓN: CALENDARIO DE FECHAS                                -->
   <!-- ============================================================ -->
   <section aria-labelledby="cal-title" class="card" id="calendario">
-    <h2 id="cal-title">🗓️ Fechas de inscripción y turnos disponibles para cursada</h2>
+    <h2 id="cal-title">🗓️ Fechas de inscripción y turnos disponibles en los que se cursará</h2>
     <div id="dates"></div>
     <div id="no-results-dates" class="no-results">No se encontraron fechas de inscripción para la búsqueda actual.</div>
   </section>
