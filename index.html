@@ -632,7 +632,7 @@
     ],
     fechas: [
       {
-        rango: "ABRE: Lunes 13 de Octubre a las 11:00 hs\nCIERRA: Martes 14 de Octubre a las 17:00 hs",
+        rango: "ABRE: Martes 13 de Octubre a las 11:00 hs\nCIERRA: Miércoles 14 de Octubre a las 17:00 hs",
         inicio: "2026-10-13T11:00:00-03:00", fin: "2026-10-14T17:00:00-03:00",
         titulo: "Inscripción UNLa: Nutrición y Sistemas",
         carreras: [
@@ -804,7 +804,7 @@
 
     grupo.carreras.forEach(item => {
       const li = document.createElement("li");
-      li.className = "li-line"; const anchorId = `carrera-${slug(item.nombre)}`; li.id = anchorId;
+      li.className = "li-line"; const anchorId = `carrera-${slug(item.nombre)}`; li.id = anchorId; li.dataset.career = item.nombre;
 
       const topRow = document.createElement("div");
       topRow.style.display = "flex"; topRow.style.justifyContent = "space-between"; topRow.style.alignItems = "flex-start"; topRow.style.gap = "8px";
@@ -921,7 +921,7 @@
 
     let visibleInDates = 0;
     document.querySelectorAll("#dates .li-line").forEach(li => {
-      const name = li.querySelector(".name")?.textContent.replace(/\s*\*+.*$/, "").trim() || "";
+      const name = li.dataset.career || li.querySelector(".name")?.textContent.replace(/\s*\*+.*$/, "").trim() || "";
       const show = passesFilter(careerMeta.get(name), name, query);
       li.style.display = show ? "" : "none";
       if (show) visibleInDates++;
