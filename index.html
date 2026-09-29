@@ -1518,7 +1518,7 @@
               { nombre: "Diseño Industrial", turnos: ["tarde", "noche"] },
               { nombre: "Música de Cámara y Sinfónica", turnos: ["tarde"] },
               { nombre: "Traductorado Público en Idioma Inglés", turnos: ["mañana", "noche"] },
-              { nombre: "Tecnicatura Superior en Gestión y Administración Universitaria", modalidad: "distancia" },
+              { nombre: "Tecnicatura Superior en Gestión y Administración Universitaria", modalidad: "distancia", aclaracion: "Esta propuesta es sólo para trabajadores y trabajadoras nodocentes de universidades e institutos universitarios públicos o privados." },
               { nombre: "Tecnicatura Universitaria en Gestión de Gobierno Local", turnos: ["noche"] },
               { nombre: "Seguridad Ciudadana", turnos: ["noche"] },
               { nombre: "Ciencia Política y Gobierno", turnos: ["noche"] },
@@ -1691,6 +1691,12 @@
           if (item.notaModulo0) {
             const note = document.createElement("span"); note.className = "asterisk-note";
             note.textContent = "* Ofrece Turno Tarde exclusivamente para el Módulo 0 y 1er cuatrimestre de 1er año.";
+            li.appendChild(note);
+          }
+
+          if (item.aclaracion) {
+            const note = document.createElement("span"); note.className = "asterisk-note";
+            note.textContent = item.aclaracion;
             li.appendChild(note);
           }
 
