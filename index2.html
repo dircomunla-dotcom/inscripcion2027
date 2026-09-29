@@ -1422,7 +1422,7 @@
             li.appendChild(note);
           }
 
-          careerMeta.set(item.nombre, { dateId: sectionId, anchorId, turnos: item.turnos, modalidad: item.modalidad });
+          careerMeta.set(item.nombre, { dateId: sectionId, anchorId, turnos: item.turnos, modalidad: item.modalidad, aclaracion: item.aclaracion });
           ul.appendChild(li);
         });
 
@@ -1453,8 +1453,35 @@
 
           if (meta) {
             a.href = `#${meta.anchorId}`; a.setAttribute("data-date", meta.dateId);
-            const label = document.createElement("span"); label.textContent = carrera;
-            a.appendChild(label); a.appendChild(createBadges(meta.turnos, meta.modalidad, true));
+            a.dataset.career = carrera;
+
+            const topRow = document.createElement("span");
+            topRow.style.display = "inline-flex";
+            topRow.style.alignItems = "center";
+            topRow.style.gap = "8px";
+            topRow.style.flexWrap = "wrap";
+
+            const label = document.createElement("span");
+            label.className = "pill-name";
+            label.textContent = carrera;
+            topRow.appendChild(label);
+            topRow.appendChild(createBadges(meta.turnos, meta.modalidad, true));
+            a.appendChild(topRow);
+
+            if (meta.aclaracion) {
+              a.style.flexDirection = "column";
+              a.style.alignItems = "flex-start";
+              a.style.gap = "4px";
+              const note = document.createElement("span");
+              note.className = "pill-note";
+              note.style.fontSize = "0.78rem";
+              note.style.fontWeight = "400";
+              note.style.color = "#475569";
+              note.style.fontStyle = "italic";
+              note.style.lineHeight = "1.35";
+              note.textContent = meta.aclaracion;
+              a.appendChild(note);
+            }
           } else {
             a.href = "#calendario"; a.textContent = carrera;
           }
@@ -1529,7 +1556,7 @@
           let visibleInDept = 0;
           dept.querySelectorAll("li").forEach(li => {
             const pill = li.querySelector("a.pill");
-            const name = pill?.querySelector("span")?.textContent.trim() || pill?.textContent.trim() || "";
+            const name = pill?.dataset.career || pill?.querySelector(".pill-name")?.textContent.trim() || pill?.querySelector("span")?.textContent.trim() || pill?.textContent.trim() || "";
             const show = passesFilter(careerMeta.get(name), name, query);
             li.style.display = show ? "" : "none";
             if (show) { visibleInDept++; visibleInToc++; }
