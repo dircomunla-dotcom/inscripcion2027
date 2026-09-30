@@ -601,23 +601,20 @@
       border-radius: 999px;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
       letter-spacing: 0.02em;
-      text-transform: uppercase;
-      white-space: nowrap;
     }
 
     #unla-insc-2026 .status-pill.status-open {
       background: #dcfce7;
-      color: #15803d;
+      color: #166534;
       border: 1px solid #86efac;
-      box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2);
     }
 
     #unla-insc-2026 .status-pill.status-upcoming {
-      background: #fef9c3;
-      color: #854d0e;
-      border: 1px solid #fde047;
+      background: #fef3c7;
+      color: #92400e;
+      border: 1px solid #fcd34d;
     }
 
     #unla-insc-2026 .status-pill.status-closed {
@@ -629,18 +626,17 @@
     #unla-insc-2026 .cal-actions {
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       gap: 8px;
-      padding: 10px 16px;
+      padding: 10px 18px;
       background: #f8fafc;
       border-bottom: 1px solid #e2e8f0;
-      align-items: center;
     }
 
-    #unla-insc-2026 .cal-actions .cal-actions-title {
-      font-size: 0.78rem;
+    #unla-insc-2026 .cal-actions-title {
+      font-size: 0.82rem;
       font-weight: 700;
-      color: #64748b;
-      text-transform: uppercase;
+      color: #475569;
       margin-right: 4px;
     }
 
@@ -648,13 +644,13 @@
       display: inline-flex;
       align-items: center;
       gap: 5px;
-      padding: 5px 10px;
       background: #ffffff;
       border: 1px solid #cbd5e1;
-      border-radius: 6px;
+      border-radius: 8px;
+      padding: 5px 10px;
       font-size: 0.8rem;
       font-weight: 600;
-      color: #334155;
+      color: #334155 !important;
       cursor: pointer;
       text-decoration: none !important;
       transition: all 0.15s ease;
@@ -663,24 +659,25 @@
     #unla-insc-2026 .btn-cal-action:hover {
       background: #f1f5f9;
       border-color: #94a3b8;
-      color: #0f172a;
+      color: #0f172a !important;
+      transform: translateY(-1px);
     }
 
-    /* Checklist, Notices & Banner */
+    /* Checklist Documentación */
     #unla-insc-2026 .checklist {
       list-style: none;
-      margin: 12px 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+      margin: 16px 0;
+      display: grid;
+      gap: 12px;
     }
 
     #unla-insc-2026 .checklist li {
       position: relative;
-      padding-left: 28px;
-      font-size: 0.95rem;
+      padding-left: 32px;
       color: #334155;
+      font-size: 0.95rem;
+      line-height: 1.45;
     }
 
     #unla-insc-2026 .checklist li::before {
@@ -688,15 +685,15 @@
       position: absolute;
       left: 0;
       top: 0;
-      font-weight: 800;
-      color: #15803d;
+      width: 22px;
+      height: 22px;
       background: #dcfce7;
-      width: 20px;
-      height: 20px;
+      color: #166534;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-weight: 800;
       font-size: 0.75rem;
     }
 
@@ -1099,7 +1096,9 @@
       <!-- SECCIÓN: ARTÍCULO 7 -->
       <section id="law-section" aria-labelledby="law-title" class="card law-section">
         <h2 id="law-title">📜 Ingreso por Artículo 7 - Ley 24.521</h2>
-        <p class="intro-text">Las <strong>personas mayores de 25 años</strong> que <strong>no hayan finalizado sus estudios secundarios</strong> (ambas condiciones) pueden ingresar a la Universidad siempre que reúnan los siguientes requisitos:</p>
+        <p class="intro-text">Las <strong>personas mayores de 25 años</strong> que <strong>no hayan finalizado sus
+            estudios secundarios</strong> (ambas condiciones) pueden ingresar a la Universidad siempre que reúnan los
+          siguientes requisitos:</p>
         <ol class="law-steps">
           <li><strong>Edad:</strong> Tener 25 años cumplidos al momento de formalizar la inscripción.</li>
           <li><strong>Experiencia laboral:</strong> Acreditar un mínimo de tres (3) años de experiencia laboral
