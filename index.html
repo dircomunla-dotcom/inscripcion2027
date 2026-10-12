@@ -17,14 +17,23 @@
     /* ===== ESTILOS ENCAPSULADOS BAJO #unla-insc-2026 ===== */
     @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
 
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+    }
+
     #unla-insc-2026 {
       font-family: 'Archivo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.5;
       color: #1e293b;
-      background-color: #f8fafc;
-      padding: 24px 12px;
+      background-color: transparent;
+      padding: 0;
       box-sizing: border-box;
       scroll-behavior: smooth;
+      --theme-gray-light: #f4f6f9; /* Tono 1: Gris claro luminoso */
+      --theme-gray-alt: #e5e9f0;   /* Tono 2: Gris medio suave diferenciador */
+      --theme-border-divider: #d8dee8;
     }
 
     #unla-insc-2026 *,
@@ -32,6 +41,34 @@
     #unla-insc-2026 *::after {
       box-sizing: inherit;
       font-family: inherit;
+    }
+
+    /* ===== FRANJAS TEMÁTICAS EN ESCALAS DE GRISES ===== */
+    #unla-insc-2026 .theme-block {
+      width: 100%;
+      padding: 34px 16px;
+      box-sizing: border-box;
+      border-bottom: 1px solid var(--theme-border-divider);
+    }
+
+    #unla-insc-2026 .theme-block:last-of-type {
+      border-bottom: none;
+    }
+
+    /* Alternancia de tonos en escala de grises por temática */
+    #unla-insc-2026 .theme-hero,
+    #unla-insc-2026 .theme-fechas,
+    #unla-insc-2026 .theme-especiales,
+    #unla-insc-2026 .theme-paso2,
+    #unla-insc-2026 .theme-bg-1 {
+      background-color: var(--theme-gray-light);
+    }
+
+    #unla-insc-2026 .theme-carreras,
+    #unla-insc-2026 .theme-docs,
+    #unla-insc-2026 .theme-paso1,
+    #unla-insc-2026 .theme-bg-2 {
+      background-color: var(--theme-gray-alt);
     }
 
     #unla-insc-2026 .wrap {
@@ -62,6 +99,7 @@
       border-radius: 16px;
       padding: 24px 28px;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -2px rgba(0, 0, 0, 0.03);
+      scroll-margin-top: 24px;
     }
 
     #unla-insc-2026 h1,
@@ -779,6 +817,7 @@
       padding: 20px 22px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
       transition: transform 0.15s ease, box-shadow 0.15s ease;
+      scroll-margin-top: 24px;
     }
 
     #unla-insc-2026 .step-card:hover {
@@ -1006,6 +1045,10 @@
         height: 44px;
         font-size: 1.2rem;
       }
+
+      #unla-insc-2026 .theme-block {
+        padding: 24px 12px;
+      }
     }
 
     @media print {
@@ -1014,6 +1057,12 @@
       #unla-insc-2026 {
         background: #ffffff !important;
         color: #000000 !important;
+        padding: 0 !important;
+      }
+
+      #unla-insc-2026 .theme-block {
+        background: transparent !important;
+        border: none !important;
         padding: 0 !important;
       }
 
@@ -1094,12 +1143,13 @@
 <body>
 
   <main id="unla-insc-2026">
-    <div class="wrap">
 
-      <!-- ============================================================ -->
-      <!-- SECCIÓN: RESUMEN DE LA INSCRIPCIÓN E INTRODUCCIÓN            -->
-      <!-- ============================================================ -->
-      <section class="card" aria-label="Resumen de la inscripción">
+    <!-- ============================================================ -->
+    <!-- TEMA 1: RESUMEN DE LA INSCRIPCIÓN E INTRODUCCIÓN             -->
+    <!-- ============================================================ -->
+    <div class="theme-block theme-hero">
+      <div class="wrap">
+        <section class="card" aria-label="Resumen de la inscripción">
         <h1 class="hero-title">🎓 Inscripción a Carreras de Grado y Pregrado UNLa 2027</h1>
         <p class="intro-text">
           El trámite de ingreso a la Universidad Nacional de Lanús es <strong>100% online</strong>. El proceso se
@@ -1155,11 +1205,15 @@
           </ul>
         </div>
       </section>
+      </div>
+    </div>
 
-      <!-- ============================================================ -->
-      <!-- SECCIÓN: ÍNDICE POR DEPARTAMENTO Y FILTROS                   -->
-      <!-- ============================================================ -->
-      <section id="toc-card" aria-labelledby="toc-title" class="card">
+    <!-- ============================================================ -->
+    <!-- TEMA 2: CARRERAS POR DEPARTAMENTO                            -->
+    <!-- ============================================================ -->
+    <div class="theme-block theme-carreras">
+      <div class="wrap">
+        <section id="toc-card" aria-labelledby="toc-title" class="card">
         <h2 id="toc-title">🏛️ Carreras por Departamento</h2>
 
         <div class="search-bar-wrap">
@@ -1195,21 +1249,29 @@
         <div id="no-results-toc" class="no-results">No se encontraron carreras que coincidan con los filtros
           seleccionados.</div>
       </section>
+      </div>
+    </div>
 
-      <!-- ============================================================ -->
-      <!-- SECCIÓN: CALENDARIO DE FECHAS                                -->
-      <!-- ============================================================ -->
-      <section aria-labelledby="cal-title" class="card" id="calendario">
+    <!-- ============================================================ -->
+    <!-- TEMA 3: FECHAS DE INSCRIPCIÓN Y TURNOS                       -->
+    <!-- ============================================================ -->
+    <div class="theme-block theme-fechas">
+      <div class="wrap">
+        <section aria-labelledby="cal-title" class="card" id="calendario">
         <h2 id="cal-title">🗓️ Fechas de inscripción y turnos disponibles en los que se cursará</h2>
         <div id="dates"></div>
         <div id="no-results-dates" class="no-results">No se encontraron fechas de inscripción para la búsqueda actual.
         </div>
       </section>
+      </div>
+    </div>
 
-      <!-- ============================================================ -->
-      <!-- SECCIÓN: DOCUMENTACIÓN NECESARIA                             -->
-      <!-- ============================================================ -->
-      <section id="docs-title" aria-labelledby="docs-title" class="card doc-section">
+    <!-- ============================================================ -->
+    <!-- TEMA 4: DOCUMENTACIÓN NECESARIA                              -->
+    <!-- ============================================================ -->
+    <div class="theme-block theme-docs">
+      <div class="wrap">
+        <section id="docs-title" aria-labelledby="docs-title" class="card doc-section">
         <h2>🗂️ Documentación necesaria</h2>
         <p class="intro-text">
           <strong>La inscripción es 100% online a través de formulario.</strong> Tené preparados con anticipación
@@ -1242,11 +1304,15 @@
         <span>El acceso a la inscripción online se habilitará en este sitio web únicamente durante los días y horarios
           correspondientes a cada carrera.</span>
       </aside>
+      </div>
+    </div>
 
-      <!-- ============================================================ -->
-      <!-- SECCIÓN: MODALIDADES ESPECIALES DE INGRESO (ARTÍCULO 7)      -->
-      <!-- ============================================================ -->
-      <section id="art7-section" class="card" aria-label="Modalidades Especiales de Ingreso">
+    <!-- ============================================================ -->
+    <!-- TEMA 5: MODALIDADES ESPECIALES DE INGRESO                    -->
+    <!-- ============================================================ -->
+    <div class="theme-block theme-especiales">
+      <div class="wrap">
+        <section id="art7-section" class="card" aria-label="Modalidades Especiales de Ingreso">
         <h2>📜 Modalidades Especiales de Ingreso · UNLa</h2>
         <p class="intro-text">
           Información y requisitos para postulantes mayores de 25 años sin título secundario (Artículo 7 de la Ley de
@@ -1310,18 +1376,22 @@
               ↗</strong></a>
         </p>
       </section>
-
-      <!-- BOTÓN PRINCIPAL: INSCRIBITE AQUÍ -->
-      <div class="cta-inscribite-wrap" id="boton-inscribite" style="display: none;">
-        <a href="https://estudiantes.unla.edu.ar/preinscripcion/unla/?__o=" target="_blank" rel="noopener noreferrer" class="btn-inscribite-cta" title="¡Inscribite aquí!">
-          <span>👉</span> ¡INSCRIBITE AQUÍ!
-        </a>
       </div>
+    </div>
 
-      <!-- ============================================================ -->
-      <!-- SECCIÓN: PASO 1 - PREINSCRIPCIÓN ONLINE                      -->
-      <!-- ============================================================ -->
-      <section id="paso1-section" class="card" aria-label="Paso 1 Preinscripción Online">
+    <!-- ============================================================ -->
+    <!-- TEMA 6: PASO 1 - PREINSCRIPCIÓN ONLINE                       -->
+    <!-- ============================================================ -->
+    <div class="theme-block theme-paso1">
+      <div class="wrap">
+        <!-- BOTÓN PRINCIPAL: INSCRIBITE AQUÍ -->
+        <div class="cta-inscribite-wrap" id="boton-inscribite" style="display: none;">
+          <a href="https://estudiantes.unla.edu.ar/preinscripcion/unla/?__o=" target="_blank" rel="noopener noreferrer" class="btn-inscribite-cta" title="¡Inscribite aquí!">
+            <span>👉</span> ¡INSCRIBITE AQUÍ!
+          </a>
+        </div>
+
+        <section id="paso1-section" class="card" aria-label="Paso 1 Preinscripción Online">
         <h2>📝 Guía de Inscripción · Paso 1: Preinscripción Online</h2>
         <p class="intro-text">
           Seguí este instructivo paso a paso para completar tu formulario digital de preinscripción en el sistema
@@ -1461,11 +1531,15 @@
           </iframe>
         </div>
       </section>
+      </div>
+    </div>
 
-      <!-- ============================================================ -->
-      <!-- SECCIÓN: PASO 2 - AUTOGESTIÓN Y PAGO DE TASA                 -->
-      <!-- ============================================================ -->
-      <section id="paso2-section" class="card" aria-label="Paso 2 Autogestión y Pago">
+    <!-- ============================================================ -->
+    <!-- TEMA 7: PASO 2 - AUTOGESTIÓN Y PAGO DE TASA                  -->
+    <!-- ============================================================ -->
+    <div class="theme-block theme-paso2">
+      <div class="wrap">
+        <section id="paso2-section" class="card" aria-label="Paso 2 Autogestión y Pago">
         <h2>💳 Guía de Inscripción · Paso 2: Autogestión y Pago de Tasa</h2>
         <p class="intro-text">
           Una vez confirmado el correo electrónico de tu documentación, deberás acceder al sistema de autogestión
@@ -1535,12 +1609,13 @@
           </iframe>
         </div>
       </section>
-
-      <!-- BOTÓN FLOTANTE VOLVER ARRIBA -->
-      <button type="button" id="btn-back-to-top" class="back-to-top-btn" title="Volver arriba"
-        aria-label="Volver arriba">↑</button>
-
+      </div>
     </div>
+
+    <!-- BOTÓN FLOTANTE VOLVER ARRIBA -->
+    <button type="button" id="btn-back-to-top" class="back-to-top-btn" title="Volver arriba"
+      aria-label="Volver arriba">↑</button>
+
   </main>
 
   <script>
