@@ -1711,9 +1711,17 @@
         return wrap;
       }
 
+      // Asegurar que la fecha se interprete siempre en GMT-3 (Buenos Aires, Argentina)
+      function parseBuenosAiresDate(dateStr) {
+        if (!dateStr) return null;
+        const str = dateStr.trim();
+        const hasTimezone = /(Z|[+-]\d{2}:?\d{2})$/i.test(str);
+        return new Date(hasTimezone ? str : `${str}-03:00`);
+      }
+
       function getRegistrationStatus(inicioStr, finStr) {
         if (!inicioStr || !finStr) return null;
-        const now = new Date(), inicio = new Date(inicioStr), fin = new Date(finStr);
+        const now = new Date(), inicio = parseBuenosAiresDate(inicioStr), fin = parseBuenosAiresDate(finStr);
         if (now >= inicio && now <= fin) {
           return { status: "open", label: "Inscripción en curso", badgeClass: "status-open", icon: "🟢" };
         } else if (now > fin) {
