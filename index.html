@@ -471,6 +471,13 @@
       border-color: #bbf7d0;
     }
 
+    #unla-insc-2026 .badge.badge-prorroga {
+      background: #fef3c7;
+      color: #92400e;
+      border-color: #f59e0b;
+      font-weight: 800;
+    }
+
     #unla-insc-2026 .pill .mini {
       font-size: 0.68rem;
       padding: 3px 6px;
@@ -656,6 +663,13 @@
       background: #f1f5f9;
       color: #64748b;
       border: 1px solid #cbd5e1;
+    }
+
+    #unla-insc-2026 .status-pill.status-prorroga {
+      background: #fef3c7;
+      color: #92400e;
+      border: 1px solid #f59e0b;
+      font-weight: 800;
     }
 
     /* Checklist, Notices & Banner */
@@ -1640,12 +1654,20 @@
           {
             rango: "La inscripción abre el Lunes 19 de octubre de 2026 a las 11:00 hs\ny cierra el Lunes 26 de octubre de 2026 a las 17:00 hs",
             inicio: "2026-10-19T11:00:00-03:00", fin: "2026-10-26T17:00:00-03:00",
-            titulo: "Inscripción UNLa: Audiovisión, Diseño y Com. Visual, Enfermería, Turismo",
+            titulo: "Inscripción UNLa: Audiovisión, Diseño y Com. Visual",
             carreras: [
               { nombre: "Audiovisión", turnos: ["tarde", "mañana", "noche"] },
-              { nombre: "Diseño y Comunicación Visual", turnos: ["tarde", "noche", "mañana"] },
-              { nombre: "Enfermería", turnos: ["mañana", "tarde"] },
-              { nombre: "Turismo", turnos: ["mañana", "noche"] }
+              { nombre: "Diseño y Comunicación Visual", turnos: ["tarde", "noche", "mañana"] }
+            ]
+          },
+          {
+            rango: "La inscripción abre el Lunes 19 de octubre de 2026 a las 11:00 hs\ny cierra el Viernes 30 de octubre de 2026 a las 17:00 hs (Prórroga)",
+            inicio: "2026-10-19T11:00:00-03:00", fin: "2026-10-30T17:00:00-03:00",
+            titulo: "Inscripción UNLa (Prórroga): Enfermería y Turismo",
+            esProrroga: true,
+            carreras: [
+              { nombre: "Enfermería", turnos: ["mañana", "tarde"], esProrroga: true },
+              { nombre: "Turismo", turnos: ["mañana", "noche"], esProrroga: true }
             ]
           },
           {
@@ -1692,9 +1714,15 @@
         return null;
       }
 
-      function createBadges(turnos, modalidad, mini = false) {
+      function createBadges(turnos, modalidad, mini = false, esProrroga = false) {
         const wrap = document.createElement("span");
         wrap.className = "badges";
+        if (esProrroga) {
+          const b = document.createElement("span");
+          b.className = `badge badge-prorroga ${mini ? 'mini' : ''}`;
+          b.textContent = "Prórroga";
+          wrap.appendChild(b);
+        }
         if (modalidad === "distancia") {
           const b = document.createElement("span");
           b.className = `badge badge-distancia ${mini ? 'mini' : ''}`;
@@ -1756,6 +1784,12 @@
           statusBadge.innerHTML = `${st.icon} ${st.label}`;
           header.appendChild(statusBadge);
         }
+        if (grupo.esProrroga) {
+          const prorrogaBadge = document.createElement("span");
+          prorrogaBadge.className = "status-pill status-prorroga";
+          prorrogaBadge.innerHTML = "📢 Prórroga";
+          header.appendChild(prorrogaBadge);
+        }
         wrap.appendChild(header);
 
         const ul = document.createElement("ul");
@@ -1779,7 +1813,7 @@
             nameEl.textContent = item.nombre + (item.notaModulo0 ? " *" : "");
           }
           topRow.appendChild(nameEl);
-          topRow.appendChild(createBadges(item.turnos, item.modalidad, false));
+          topRow.appendChild(createBadges(item.turnos, item.modalidad, false, !!(item.esProrroga || grupo.esProrroga)));
           li.appendChild(topRow);
 
           // Fecha de inscripción (visible solo al seleccionar desde el TOC)
@@ -1802,7 +1836,7 @@
             li.appendChild(note);
           }
 
-          careerMeta.set(item.nombre, { dateId: sectionId, anchorId, turnos: item.turnos, modalidad: item.modalidad, aclaracion: item.aclaracion });
+          careerMeta.set(item.nombre, { dateId: sectionId, anchorId, turnos: item.turnos, modalidad: item.modalidad, aclaracion: item.aclaracion, esProrroga: !!(item.esProrroga || grupo.esProrroga) });
           ul.appendChild(li);
         });
 
@@ -1845,7 +1879,7 @@
             label.className = "pill-name";
             label.textContent = carrera;
             topRow.appendChild(label);
-            topRow.appendChild(createBadges(meta.turnos, meta.modalidad, true));
+            topRow.appendChild(createBadges(meta.turnos, meta.modalidad, true, meta.esProrroga));
             a.appendChild(topRow);
 
             if (meta.aclaracion) {
@@ -1907,7 +1941,12 @@
       const btnClear = document.getElementById("btn-clear"), noResultsToc = document.getElementById("no-results-toc"), noResultsDates = document.getElementById("no-results-dates");
 
       function passesFilter(meta, careerName, query) {
-        if (query && !normalize(careerName).includes(normalize(query))) return false;
+        if (query) {
+          const q = normalize(query);
+          const matchesName = normalize(careerName).includes(q);
+          const matchesProrroga = meta?.esProrroga && (q === "prorroga" || q === "prorrogar");
+          if (!matchesName && !matchesProrroga) return false;
+        }
         const man = fMan.checked, tar = fTar.checked, noc = fNoc.checked, dis = fDis.checked;
         if (!man && !tar && !noc && !dis) return true;
         if (meta?.modalidad === "distancia") return dis;
